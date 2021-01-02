@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- 2020-09-15 Tue 10:50 -->
+<!-- 2021-01-02 Sat 13:54 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>日本大学文理学部社会学科 Blackboard FAQ 非公式</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -50,7 +50,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -193,50 +193,26 @@
 </style>
 <link rel="stylesheet" type="text/css" href="sugano-styles-dark.css">
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -247,200 +223,261 @@ for the JavaScript code in this tag.
 <h2>&#30446;&#27425;</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org51dfe29">概要</a>
+<li><a href="#org0e40b6f">概要</a>
 <ul>
-<li><a href="#orgf4aa540">概要</a></li>
-<li><a href="#org0c30142">キーワード指定でページ内検索</a></li>
-<li><a href="#org240eba5">注意</a></li>
+<li><a href="#org0e8c7e0">概要</a></li>
+<li><a href="#orgaa7bb80">注意</a></li>
+<li><a href="#org7c32207">キーワード指定でページ内検索</a></li>
 </ul>
 </li>
-<li><a href="#orga057091">1. 個別の授業</a></li>
-<li><a href="#org957dc5a">2. Blackboard へのログイン</a>
+<li><a href="#orga44cf73">1. 個別の授業</a></li>
+<li><a href="#org703f228">2. Blackboard へのログイン</a>
 <ul>
-<li><a href="#orgeec44fe">2.1. ログイン</a></li>
+<li><a href="#orge2e885d">2.1. ログイン</a></li>
 </ul>
 </li>
-<li><a href="#org932a523">3. Blackboard のコース</a>
+<li><a href="#orga8e33ac">3. Blackboard のコース</a>
 <ul>
-<li><a href="#org1d1d32e">3.1. コースの検索</a></li>
-<li><a href="#org33be841">3.2. コースの登録</a></li>
-<li><a href="#orgdc725fd">3.3. コースの表示</a></li>
-<li><a href="#orgfca3dd2">3.4. コースの解除</a></li>
+<li><a href="#orgc531c3f">3.1. コースの検索</a></li>
+<li><a href="#org57744e8">3.2. コースの登録</a></li>
+<li><a href="#org5a5b39d">3.3. コースの表示</a></li>
+<li><a href="#org590be35">3.4. コースの利用</a></li>
+<li><a href="#org10a1159">3.5. コースの解除</a></li>
 </ul>
 </li>
-<li><a href="#org67b57fd">4. Blackboard の課題</a>
+<li><a href="#org4cf0a5d">4. Blackboard の課題</a>
 <ul>
-<li><a href="#org439979f">4.1. 課題の提出</a></li>
+<li><a href="#orged310df">4.1. 課題の提出</a></li>
 </ul>
 </li>
-<li><a href="#orga637208">5. Blackboard の Eメール</a>
+<li><a href="#org499e073">5. Blackboard の Eメール</a>
 <ul>
-<li><a href="#orgffb409f">5.1. Eメール</a></li>
+<li><a href="#org88971e2">5.1. Eメール</a></li>
 </ul>
 </li>
-<li><a href="#org674987a">6. Blackboard の掲示板</a>
+<li><a href="#org76209cf">6. Blackboard の掲示板</a>
 <ul>
-<li><a href="#org257668e">6.1. 掲示板の編集</a></li>
+<li><a href="#org5761415">6.1. 掲示板の編集</a></li>
 </ul>
 </li>
-<li><a href="#org9f757aa">7. Blackboard の教材</a>
+<li><a href="#org08eb666">7. Blackboard の教材</a>
 <ul>
-<li><a href="#org8e14b73">7.1. 教材の閲覧・視聴・ダウンロード</a></li>
+<li><a href="#orga030444">7.1. 教材の閲覧・視聴・ダウンロード</a></li>
 </ul>
 </li>
-<li><a href="#org9fe8a40">8. その他</a>
+<li><a href="#org58dc923">8. その他</a>
 <ul>
-<li><a href="#org4851e84">8.1. 個別の授業への問い合わせ、対応の要請</a></li>
+<li><a href="#org2d5ff29">8.1. 個別の授業への問い合わせ、対応の要請</a></li>
 </ul>
 </li>
-<li><a href="#org0cdea33">9. メールとアカウント</a>
+<li><a href="#org0aef55a">9. メールとアカウント</a>
 <ul>
-<li><a href="#org2ed9bf8">9.1. stu メールアドレスがわからない</a></li>
-<li><a href="#orga2e251d">9.2. 文理学部のメールがわからない</a></li>
-<li><a href="#orgcb14b98">9.3. メールで分からないことが多い</a></li>
-<li><a href="#org6459f98">9.4. NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</a></li>
-<li><a href="#orgc27e5f0">9.5. stu メール / Microsoft Office365 Web利用 / Zoom / Webex</a></li>
-<li><a href="#org44b4880">9.6. Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</a></li>
-<li><a href="#org003c57a">9.7. tアドレス</a></li>
-<li><a href="#orgaf02f24">9.8. 教育 Web Mail (Active!Mail) とは何か?</a></li>
-<li><a href="#org779762b">9.9. 教員に送信したEメールの返信をチェックしたい</a></li>
-<li><a href="#org39e0d51">9.10. ツールの eメールに質問を送った場合、返信をどこで確認するのか?</a></li>
-<li><a href="#org8bf293f">9.11. 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</a></li>
+<li><a href="#orgf623d91">9.1. stu メールアドレスがわからない</a></li>
+<li><a href="#orga42a9a6">9.2. 文理学部のメールがわからない</a></li>
+<li><a href="#orgd48d4fe">9.3. メールで分からないことが多い</a></li>
+<li><a href="#orga936a6c">9.4. NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</a></li>
+<li><a href="#org124e49e">9.5. stu メール / Microsoft Office365 Web利用 / Zoom / Webex</a></li>
+<li><a href="#orgb68bc34">9.6. Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</a></li>
+<li><a href="#org15d1d27">9.7. tアドレス</a></li>
+<li><a href="#orgf8edb2a">9.8. 教育 Web Mail (Active!Mail) とは何か?</a></li>
+<li><a href="#org9204971">9.9. 教員に送信したEメールの返信をチェックしたい</a></li>
+<li><a href="#orga10f76f">9.10. ツールの eメールに質問を送った場合、返信をどこで確認するのか?</a></li>
+<li><a href="#orgd127b46">9.11. 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</a></li>
 </ul>
 </li>
-<li><a href="#orgeebe584">10. Blackboard</a>
+<li><a href="#orgaedbe34">10. Blackboard</a>
 <ul>
-<li><a href="#org88e66cf">10.1. 課題についての質問を Bb ツールのメール機能で送信したが返事がない</a></li>
-<li><a href="#org29c01cf">10.2. PC からファイル添付することができない</a></li>
-<li><a href="#org61d8df8">10.3. 課題が出されているが、提出先がない</a></li>
-<li><a href="#orge1ff14d">10.4. 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</a></li>
-<li><a href="#orgf2f4926">10.5. 課題の提出をやり直したい / 再提出をしたい</a></li>
-<li><a href="#orgecc5cbf">10.6. 課題提出で失敗</a></li>
-<li><a href="#org800f5fb">10.7. 課題提出ができなくなった</a></li>
-<li><a href="#org6a421ee">10.8. 教材の添付ファイルがダウンロードできない</a></li>
-<li><a href="#orge1d55c2">10.9. 課題提出でのエラー</a></li>
-<li><a href="#org041f940">10.10. スマートフォンで課題を提出しても、反映されない</a></li>
-<li><a href="#orgb94f7e4">10.11. 期限切れの課題を提出したい</a></li>
-<li><a href="#orgc08abdf">10.12. Blackboard で提出した課題の内容の確認をしたい</a></li>
-<li><a href="#orgc42ec7d">10.13. 長文を記入して送信を行うと、作業内容が全て消えた</a></li>
-<li><a href="#org91c1931">10.14. 「この Microsoft Edge は推奨されません」</a></li>
-<li><a href="#orgf180954">10.15. Microsoft Word 提出の際の行間の余白について</a></li>
-<li><a href="#org8b2ea01">10.16. PC で授業の動画を見ることができなくなった</a></li>
-<li><a href="#orgbdb2635">10.17. Word での提出の仕方がわからない</a></li>
-<li><a href="#orgd916c07">10.18. 音声付きPowerPointスライドの閲覧について</a></li>
-<li><a href="#org460d1bb">10.19. 教材の音声ファイルが再生できない</a></li>
-<li><a href="#org4ca3669">10.20. 授業の動画再生について</a></li>
-<li><a href="#org62641bd">10.21. 掲示板に間違って作ったスレッドを、削除したい</a></li>
-<li><a href="#org5d3a0f8">10.22. 登録していた授業が消えた</a></li>
-<li><a href="#orgc4f0165">10.23. 新しい Blackboard に入るためのメールアドレスが分からない</a></li>
-<li><a href="#org651a202">10.24. 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</a></li>
-<li><a href="#org594f7ce">10.25. 掲示板にある、購読とはどのような機能か?</a></li>
-<li><a href="#org36f17d9">10.26. 過去に登録したコースを消去したい</a></li>
-<li><a href="#orgaa81944">10.27. スマホの Blackboard アプリで、表示するコースを選ぶ</a></li>
-<li><a href="#org745d667">10.28. Google Chrome ブラウザでの利用時に、表示リストを減らしたい</a></li>
+<li><a href="#org600e6a7">10.1. 課題についての質問を Bb ツールのメール機能で送信したが返事がない</a></li>
+<li><a href="#orgd8a9bb3">10.2. PC からファイル添付することができない</a></li>
+<li><a href="#orgaba1b9f">10.3. 課題が出されているが、提出先がない</a></li>
+<li><a href="#org251c968">10.4. 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</a></li>
+<li><a href="#orgb725843">10.5. 課題の提出をやり直したい / 再提出をしたい</a></li>
+<li><a href="#org92c0336">10.6. 課題提出で失敗</a></li>
+<li><a href="#org6a28b90">10.7. 課題提出ができなくなった</a></li>
+<li><a href="#orgea3f92e">10.8. 教材の添付ファイルがダウンロードできない</a></li>
+<li><a href="#orga87076e">10.9. 課題提出でのエラー</a></li>
+<li><a href="#org770813e">10.10. スマートフォンで課題を提出しても、反映されない</a></li>
+<li><a href="#orgbe2fe97">10.11. 期限切れの課題を提出したい</a></li>
+<li><a href="#org94bc5ac">10.12. Blackboard で提出した課題の内容の確認をしたい</a></li>
+<li><a href="#org1505c91">10.13. 長文を記入して送信を行うと、作業内容が全て消えた</a></li>
+<li><a href="#org36c94d4">10.14. 「この Microsoft Edge は推奨されません」</a></li>
+<li><a href="#orgf23aac9">10.15. Microsoft Word 提出の際の行間の余白について</a></li>
+<li><a href="#orgf67a001">10.16. PC で授業の動画を見ることができなくなった</a></li>
+<li><a href="#orgb0d440e">10.17. Word での提出の仕方がわからない</a></li>
+<li><a href="#org24f81ff">10.18. 音声付きPowerPointスライドの閲覧について</a></li>
+<li><a href="#org01c5e8c">10.19. 教材の音声ファイルが再生できない</a></li>
+<li><a href="#orgd28346f">10.20. 授業の動画再生について</a></li>
+<li><a href="#org6ef6a68">10.21. 掲示板に間違って作ったスレッドを、削除したい</a></li>
+<li><a href="#org3833401">10.22. 登録していた授業が消えた</a></li>
+<li><a href="#org221ed61">10.23. 新しい Blackboard に入るためのメールアドレスが分からない</a></li>
+<li><a href="#orgb582642">10.24. 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</a></li>
+<li><a href="#orga9a2c43">10.25. 掲示板にある、購読とはどのような機能か?</a></li>
+<li><a href="#org36636de">10.26. 過去に登録したコースを消去したい</a></li>
+<li><a href="#orgfbfebf1">10.27. スマホの Blackboard アプリで、表示するコースを選ぶ</a></li>
+<li><a href="#org7757c06">10.28. Google Chrome ブラウザでの利用時に、表示リストを減らしたい</a></li>
 </ul>
 </li>
-<li><a href="#org4aed9cf">11. Blackboard 掲示板</a>
+<li><a href="#org64e896e">11. Blackboard 掲示板</a>
 <ul>
-<li><a href="#org2416c9d">11.1. Blackboard の掲示板で検索をしたい</a></li>
+<li><a href="#org53a3cd7">11.1. Blackboard の掲示板で検索をしたい</a></li>
 </ul>
 </li>
-<li><a href="#org8a0ff9b">12. 語学</a>
+<li><a href="#orgc246631">12. 語学</a>
 <ul>
-<li><a href="#org305d95d">12.1. 英語の eラーニング (neo) にログインできない</a></li>
-<li><a href="#org7a4fa3b">12.2. sアカウントとは何か?</a></li>
-<li><a href="#orgd741ef2">12.3. 英語のクラス分けが分からない</a></li>
+<li><a href="#org50093e5">12.1. 英語の eラーニング (neo) にログインできない</a></li>
+<li><a href="#org8533014">12.2. sアカウントとは何か?</a></li>
+<li><a href="#org2c3708a">12.3. 英語のクラス分けが分からない</a></li>
 </ul>
 </li>
-<li><a href="#orgdb346b1">13. Microsoft Office365</a>
+<li><a href="#org2b24b23">13. Microsoft Office365</a>
 <ul>
-<li><a href="#orgeb06947">13.1. Microsoft Office365 のインストールが分からない</a></li>
-<li><a href="#org66de987">13.2. 文理学部では Microsoft Office365 は2種類</a></li>
-<li><a href="#org519e512">13.3. 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</a></li>
+<li><a href="#org90e8f8c">13.1. Microsoft Office365 のインストールが分からない</a></li>
+<li><a href="#org3c455e6">13.2. 文理学部では Microsoft Office365 は2種類</a></li>
+<li><a href="#org4c41931">13.3. 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</a></li>
 </ul>
 </li>
-<li><a href="#org619bc41">14. Webex</a>
+<li><a href="#org817a52b">14. Webex</a>
 <ul>
-<li><a href="#orgaf060c2">14.1. Webex がわからない</a></li>
+<li><a href="#orgf315efe">14.1. Webex がわからない</a></li>
+<li><a href="#org2f2fccd">14.2. (教職員) Webex でミーティングを開始する</a></li>
 </ul>
 </li>
-<li><a href="#orgdec5b07">15. Zoom</a>
+<li><a href="#orgf0db6b9">15. Zoom</a>
 <ul>
-<li><a href="#org6bd995e">15.1. Surface GO (Microsoft Windows S) に Zoom をインストールできない</a></li>
+<li><a href="#org714f749">15.1. Zoom 利用での注意</a></li>
+<li><a href="#org37e2c05">15.2. Surface GO (Microsoft Windows S) に Zoom をインストールできない</a></li>
 </ul>
 </li>
-<li><a href="#org59d38ce">16. Blackboard Collaborate Ultra</a>
+<li><a href="#org5711109">16. Blackboard Collaborate Ultra</a>
 <ul>
-<li><a href="#org27ffc85">16.1. Blackboard Collaborate Ultra について</a></li>
+<li><a href="#orgf50d1ca">16.1. Blackboard Collaborate Ultra について</a></li>
 </ul>
 </li>
-<li><a href="#orgbd133e8">17. 授業情報</a>
+<li><a href="#org608368b">17. 授業情報</a>
 <ul>
-<li><a href="#org341e292">17.1. Blackboard でクラウド移行が出来ていない科目</a></li>
-<li><a href="#org880c25d">17.2. 夏期集中講義の実施日時・形態が分からない</a></li>
-<li><a href="#org60fb84a">17.3. オンラインで行われる集中講義の情報を知りたい</a></li>
-<li><a href="#orgf60304b">17.4. 夏期集中の授業の実施日程が分からない</a></li>
+<li><a href="#orgdc48ce3">17.1. Blackboard でクラウド移行が出来ていない科目</a></li>
+<li><a href="#orgf142543">17.2. 夏期集中講義の実施日時・形態が分からない</a></li>
+<li><a href="#org80311d2">17.3. オンラインで行われる集中講義の情報を知りたい</a></li>
+<li><a href="#orgf0c4c08">17.4. 夏期集中の授業の実施日程が分からない</a></li>
 </ul>
 </li>
-<li><a href="#orgf12c568">18. NU-AppsG / Google Classroom</a>
+<li><a href="#org02fff8c">18. NU-AppsG / Google Classroom</a>
 <ul>
-<li><a href="#orgc543687">18.1. NU-AppsG とは何ですか?</a></li>
-<li><a href="#org72a7c3d">18.2. Google Classroom にクラスコードを入力しても、エラーで参加できない</a></li>
-<li><a href="#org221afd7">18.3. NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</a></li>
-<li><a href="#org3b57af8">18.4. Google Classroom の授業で、参加の方法が分からない</a></li>
-<li><a href="#orgcef1f52">18.5. Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</a></li>
-<li><a href="#org6006ad8">18.6. Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</a></li>
-<li><a href="#org6d52d59">18.7. Google Classroom で、教員にメールが送れない</a></li>
-<li><a href="#orgf110b4f">18.8. 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</a></li>
-<li><a href="#org18ab7af">18.9. Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</a></li>
-<li><a href="#orgf15aa02">18.10. NU-AppsG にログインできません → 事前にログインしておいて下さい</a></li>
-<li><a href="#orge26a497">18.11. Google Classroom クラスへの登録を解除する</a></li>
-<li><a href="#org11c0cb8">18.12. 研究生の NU-AppsG</a></li>
+<li><a href="#orge648ade">18.1. NU-AppsG とは何ですか?</a></li>
+<li><a href="#org46b880b">18.2. Google Classroom にクラスコードを入力しても、エラーで参加できない</a></li>
+<li><a href="#org0631467">18.3. NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</a></li>
+<li><a href="#orgf1dd983">18.4. Google Classroom の授業で、参加の方法が分からない</a></li>
+<li><a href="#org4c3ef84">18.5. Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</a></li>
+<li><a href="#orgfc84e36">18.6. Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</a></li>
+<li><a href="#orga510ed7">18.7. Google Classroom で、教員にメールが送れない</a></li>
+<li><a href="#orgeb95163">18.8. 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</a></li>
+<li><a href="#orga1d63b1">18.9. Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</a></li>
+<li><a href="#org84174ad">18.10. NU-AppsG にログインできません → 事前にログインしておいて下さい</a></li>
+<li><a href="#org4d67b08">18.11. Google Classroom クラスへの登録を解除する</a></li>
+<li><a href="#org61b4c22">18.12. 研究生の NU-AppsG</a></li>
 </ul>
 </li>
-<li><a href="#orgf962826">19. その他</a>
+<li><a href="#orga6892cc">19. その他</a>
 <ul>
-<li><a href="#org8d93005">19.1. 教科書が届かない</a></li>
-<li><a href="#org44073e7">19.2. オンデマンド型の授業では、出席確認をするか</a></li>
+<li><a href="#orga89b74d">19.1. 教科書が届かない</a></li>
+<li><a href="#org4c88def">19.2. オンデマンド型の授業では、出席確認をするか</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-org51dfe29" class="outline-2">
-<h2 id="org51dfe29">概要</h2>
-<div class="outline-text-2" id="text-org51dfe29">
+<div id="outline-container-org0e40b6f" class="outline-2">
+<h2 id="org0e40b6f">概要</h2>
+<div class="outline-text-2" id="text-org0e40b6f">
 </div>
 
-<div id="outline-container-orgf4aa540" class="outline-3">
-<h3 id="orgf4aa540">概要</h3>
-<div class="outline-text-3" id="text-orgf4aa540">
+<div id="outline-container-org0e8c7e0" class="outline-3">
+<h3 id="org0e8c7e0">概要</h3>
+<div class="outline-text-3" id="text-org0e8c7e0">
 <ul class="org-ul">
-<li>項目や順序は不定期更新で変わります。リンクはトップページ <a href="https://sugano-lab.github.io/blackboard-faq/">https://sugano-lab.github.io/blackboard-faq/</a> にして下さい。
+<li>リンクはトップページ <a href="https://sugano-lab.github.io/blackboard-faq/">https://sugano-lab.github.io/blackboard-faq/</a> にして下さい。更新頻度は低いです。
 <ul class="org-ul">
 <li>1ページで全てを閲覧： <a href="https://sugano-lab.github.io/blackboard-faq/blackboard-faq-all.html">https://sugano-lab.github.io/blackboard-faq/blackboard-faq-all.html</a></li>
-<li>PDFで閲覧： <a href="https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf">https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf</a> (日付とバージョンも不定期更新)</li>
+<li>PDFで閲覧： <a href="https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf">https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf</a></li>
 </ul></li>
-<li>業務情報のごった煮、見るためというよりも、忘れないための情報のアーカイブ</li>
-<li>遠隔授業実施に伴う、 Blackboard 等での問い合わせと回答に関するメモ (未整理・重複あり)
+<li>遠隔授業実施に伴う、 Blackboard 等でのお問い合わせと回答に関するメモ (未整理・重複あり)
 <ul class="org-ul">
 <li><a href="https://www.chs.nihon-u.ac.jp/">文理学部HP</a> / <a href="https://comits2.educ.chs.nihon-u.ac.jp/uniprove_pt/UnLoginAction">COMITS2</a> / 学内文書による通達 / <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/launcher?type=Course&amp;id=_2302_1&amp;url=">Blackboard 20204702 : 遠隔授業サポート（社会学科）</a> / <a href="http://dep.chs.nihon-u.ac.jp/sociology/index.htm">社会学科HP</a> / <a href="http://dep.chs.nihon-u.ac.jp/sociology/form.html">社会学科メールお問い合わせフォーム</a> / <a href="https://sites.google.com/a/nihon-u.ac.jp/nusocio/home">nusocio 日本大学文理学部社会学科【新年度情報】</a> / 電話による対応 等にまたがる情報</li>
 </ul></li>
 
-<li>可能な範囲で役立つよう努めていますが、記載内容について正確さの保証はできません
+<li>内容について正確さの保証はありません
 <ol class="org-ol">
-<li>作成者は、現在は Blackboard を授業で使っておらず、あまり詳しくない</li>
-<li>作成者は、 Microsoft Windows 、 Word 等を普段あまり使っていない</li>
-<li>回答への学生からのフィードバックが殆どないため、解決 / 未解決は不明のまま</li>
+<li>作成者は、 Blackboard、 Microsoft Windows 、 Word をあまり使いません</li>
+<li>匿名のお問い合せが多く、フィードバックも得られないため、解決したのかどうか不明です</li>
 </ol></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0c30142" class="outline-3">
-<h3 id="org0c30142">キーワード指定でページ内検索</h3>
-<div class="outline-text-3" id="text-org0c30142">
+<div id="outline-container-orgaa7bb80" class="outline-3">
+<h3 id="orgaa7bb80">注意</h3>
+<div class="outline-text-3" id="text-orgaa7bb80">
+
+<figure id="org3f7f369">
+<img src="figures/blackboard-faq-dot-01.png" alt="blackboard-faq-dot-01.png" width="720">
+
+<figcaption><span class="figure-number">&#22259;1:  </span>遠隔授業での質問</figcaption>
+</figure>
+
+
+
+
+
+<ul class="org-ul">
+<li>遠隔授業についての質問は、基本的には、授業担当の教員が対応
+<ol class="org-ol">
+<li>授業の <b>シラバス</b> 、Comits2、学部HP を確認
+<ul class="org-ul">
+<li>授業の <b>シラバスを確認</b> を必ずしましょう</li>
+<li><a href="https://syllabus.chs.nihon-u.ac.jp/">https://syllabus.chs.nihon-u.ac.jp/</a></li>
+<li>シラバスを確認すれば、簡単に解決することも多いです</li>
+</ul></li>
+
+<li>Blackboard <b>連絡事項</b>
+<ul class="org-ul">
+<li>受講授業の Blackboard のコースで、 <b>連絡事項</b> を確認しましょう</li>
+<li><a href="https://nuchs.blackboard.com/">https://nuchs.blackboard.com/</a></li>
+</ul></li>
+
+<li>Blackboard <b>掲示板</b> 
+<ul class="org-ul">
+<li>Blackboard <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> で <b>検索</b> し、過去の回答を参考にして下さい</li>
+<li>2020年度前期の問いあわせと対応については、この Webページにもまとめました (2020年度後期は未反映)</li>
+<li><b>ページ内検索</b> をすれば、過去の情報を再利用・活用できます</li>
+</ul></li>
+
+<li><a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> へ書き込みをしてみてください
+<ul class="org-ul">
+<li>解決しない場合、 <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> へ書き込みをしてみてください</li>
+<li>Eメールによるお問い合わせは、御遠慮ください (情報共有・作業連携が進まない、責任の所在が不明)</li>
+<li><b>掲示板</b> には、記名でも匿名でも、書き込みができます</li>
+<li>問い合わせをする場合、 <b>状況判断と解決に必要な具体的情報を含める</b> こと</li>
+<li>知っていること、解決できることは、 <b>学生同士で回答</b> し、助けあって下さい</li>
+<li>解決した / 解決しなかったなどのフィードバックも、重要な貢献です</li>
+</ul></li>
+
+<li>解決しない場合、授業の Blackboard のEメールで授業担当教員へ問い合わせをしてみてください
+<ul class="org-ul">
+<li>Google Classroom の場合、コメント、限定公開コメント、Googleフォーム等で授業担当教員へ問い合わせ</li>
+</ul></li>
+</ol></li>
+
+<li>文理学部内の他学科でも、同様の問い合わせと対応が発生していると思われるので、他学科での <b>問い合わせや回答の情報を共有</b> する枠組みが望ましい</li>
+
+<li>社会学科と別の総合教育科目への問い合わせや、語学科目への問い合わせ、管轄外の総合教育科目についての他学科学生からの電話問い合わせについては、改善・効率化の余地がある</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c32207" class="outline-3">
+<h3 id="org7c32207">キーワード指定でページ内検索</h3>
+<div class="outline-text-3" id="text-org7c32207">
 <ul class="org-ul">
 <li>Webページ内全て確認するのは大変。キーワード指定で <b>ページ内検索</b> 。
 <ul class="org-ul">
@@ -453,56 +490,13 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org240eba5" class="outline-3">
-<h3 id="org240eba5">注意</h3>
-<div class="outline-text-3" id="text-org240eba5">
-<ul class="org-ul">
-<li>授業についての質問は、基本的には、授業担当教員が対応すべきもの
-<ol class="org-ol">
-<li>受講生は、まず、 <b>シラバスを確認</b> しましょう
-<ul class="org-ul">
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/">https://syllabus.chs.nihon-u.ac.jp/</a></li>
-</ul></li>
-
-<li>受講生は、授業の <b>連絡事項</b> を確認し、 <b>掲示板</b> で問い合わせをしましょう
-<ul class="org-ul">
-<li><a href="https://nuchs.blackboard.com/">https://nuchs.blackboard.com/</a></li>
-<li>問い合わせをする場合、 <b>状況判断と解決に必要な具体的情報を含める</b> こと</li>
-</ul></li>
-
-<li>解決しない場合、授業の Blackboard のEメールで授業担当教員へ問い合わせをしてみてください
-<ul class="org-ul">
-<li>Google Classroom の場合、コメント、限定公開コメント、Googleフォーム等で授業担当教員へ問い合わせ</li>
-</ul></li>
-
-<li><a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> で <b>検索</b> し、過去の回答を参考にして下さい
-<ul class="org-ul">
-<li>この Webページで <b>ページ内検索</b> をして、過去の情報も再利用・活用して下さい</li>
-</ul></li>
-
-<li>解決しない場合、 <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> へ問い合わせてください
-<ul class="org-ul">
-<li>問い合わせをする場合、 <b>状況判断と解決に必要な具体的情報を含める</b> こと</li>
-<li>知っていること、解決できることは、 <b>学生同士で回答</b> し、助けあって下さい</li>
-<li>解決した / 解決しなかったなどのフィードバックも、重要な貢献です</li>
-<li><a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> でEメールによる問い合わせは、情報共有・作業連携が進まないので対応が遅れる可能性があります</li>
-</ul></li>
-</ol></li>
-
-<li>文理学部内の他学科でも、同様の問い合わせと対応が発生していると思われるので、他学科での <b>問い合わせや回答の情報を共有</b> する枠組みが欲しい</li>
-
-<li>社会学科と別の総合教育科目への問い合わせや、語学科目への問い合わせ、管轄外の総合教育科目についての他学科学生からの電話問い合わせについては、改善・効率化の余地がある</li>
-</ul>
-</div>
-</div>
 </div>
 
-<div id="outline-container-orga057091" class="outline-2">
-<h2 id="orga057091"><span class="section-number-2">1</span> 個別の授業</h2>
+<div id="outline-container-orga44cf73" class="outline-2">
+<h2 id="orga44cf73"><span class="section-number-2">1</span> 個別の授業</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-個別の授業についての対応情報・記録は、この Webページでの掲載は控えさせて頂く
+個別の授業についての対応情報・記録は、この Webページでの掲載は控えさせて頂きます
 </p>
 
 <ol class="org-ol">
@@ -526,16 +520,16 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-org957dc5a" class="outline-2">
-<h2 id="org957dc5a"><span class="section-number-2">2</span> Blackboard へのログイン</h2>
+<div id="outline-container-org703f228" class="outline-2">
+<h2 id="org703f228"><span class="section-number-2">2</span> Blackboard へのログイン</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgeec44fe" class="outline-3">
-<h3 id="orgeec44fe"><span class="section-number-3">2.1</span> ログイン</h3>
+<div id="outline-container-orge2e885d" class="outline-3">
+<h3 id="orge2e885d"><span class="section-number-3">2.1</span> ログイン</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orge56410a" class="outline-4">
-<h4 id="orge56410a"><span class="section-number-4">2.1.1</span> どの Webページからログインをするのか？</h4>
+<div id="outline-container-org8f289bf" class="outline-4">
+<h4 id="org8f289bf"><span class="section-number-4">2.1.1</span> どの Webページからログインをするのでしょうか？</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>文理学部の Blackboard は、 Amazon AWS を利用するクラウド環境へ移行しました。
@@ -551,8 +545,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org47fc1c6" class="outline-4">
-<h4 id="org47fc1c6"><span class="section-number-4">2.1.2</span> ログインのアカウントとパスワードがわからない</h4>
+<div id="outline-container-org2903a52" class="outline-4">
+<h4 id="org2903a52"><span class="section-number-4">2.1.2</span> ログインのアカウントとパスワードがわかりせん</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>ログインするには、文理学部の Microsoft Office365 Outlook メールアドレスが必要です。</li>
@@ -562,8 +556,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org2eff779" class="outline-4">
-<h4 id="org2eff779"><span class="section-number-4">2.1.3</span> ログインすると、エラー表示</h4>
+<div id="outline-container-org7153559" class="outline-4">
+<h4 id="org7153559"><span class="section-number-4">2.1.3</span> ログインすると、エラー表示</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>Windows の Internet Explorer など古い Webブラウザを利用すると、ログインでエラーになります。</li>
@@ -577,16 +571,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org932a523" class="outline-2">
-<h2 id="org932a523"><span class="section-number-2">3</span> Blackboard のコース</h2>
+<div id="outline-container-orga8e33ac" class="outline-2">
+<h2 id="orga8e33ac"><span class="section-number-2">3</span> Blackboard のコース</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org1d1d32e" class="outline-3">
-<h3 id="org1d1d32e"><span class="section-number-3">3.1</span> コースの検索</h3>
+<div id="outline-container-orgc531c3f" class="outline-3">
+<h3 id="orgc531c3f"><span class="section-number-3">3.1</span> コースの検索</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-org8e654b8" class="outline-4">
-<h4 id="org8e654b8"><span class="section-number-4">3.1.1</span> 履修する授業のコースを検索しても、見つからない</h4>
+<div id="outline-container-org6c3fdf0" class="outline-4">
+<h4 id="org6c3fdf0"><span class="section-number-4">3.1.1</span> 履修する授業のコースを検索しても、見つからない</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <ul class="org-ul">
 <li>稀に、 Blackboard でのコース名が、シラバス上の授業科目名の表記と、若干異なることがあります。</li>
@@ -598,12 +592,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org33be841" class="outline-3">
-<h3 id="org33be841"><span class="section-number-3">3.2</span> コースの登録</h3>
+<div id="outline-container-org57744e8" class="outline-3">
+<h3 id="org57744e8"><span class="section-number-3">3.2</span> コースの登録</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-org74a34c1" class="outline-4">
-<h4 id="org74a34c1"><span class="section-number-4">3.2.1</span> 履修する授業のコースを見つけたが、登録できない</h4>
+<div id="outline-container-org371685d" class="outline-4">
+<h4 id="org371685d"><span class="section-number-4">3.2.1</span> 履修する授業のコースを見つけたが、登録できない</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <ul class="org-ul">
 <li>教員側が、何らかの事情で、まだ登録可能にしていないことが可能性として考えられます。</li>
@@ -612,8 +606,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga2510e3" class="outline-4">
-<h4 id="orga2510e3"><span class="section-number-4">3.2.2</span> 履修する授業のコースに登録したのですが、教材がなく、授業に参加できない</h4>
+<div id="outline-container-org39c9bef" class="outline-4">
+<h4 id="org39c9bef"><span class="section-number-4">3.2.2</span> 履修する授業のコースに登録したのですが、教材がなく、授業に参加できない</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <ul class="org-ul">
 <li>履修する授業の、前年度 (2019年度等) のコースなどに登録をしていないか、確認をして下さい。</li>
@@ -623,8 +617,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgda8fe31" class="outline-4">
-<h4 id="orgda8fe31"><span class="section-number-4">3.2.3</span> 履修する授業のコースから、いつの間にか登録解除されていた</h4>
+<div id="outline-container-orgf6225ed" class="outline-4">
+<h4 id="orgf6225ed"><span class="section-number-4">3.2.3</span> 履修する授業のコースから、いつの間にか登録解除されていた</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <ul class="org-ul">
 <li>授業によっては、受講者を何らかの基準で選別するということがあるかもしれませんが、連絡などがある筈です。</li>
@@ -636,22 +630,23 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgdc725fd" class="outline-3">
-<h3 id="orgdc725fd"><span class="section-number-3">3.3</span> コースの表示</h3>
+<div id="outline-container-org5a5b39d" class="outline-3">
+<h3 id="org5a5b39d"><span class="section-number-3">3.3</span> コースの表示</h3>
 <div class="outline-text-3" id="text-3-3">
 </div>
-<div id="outline-container-orgc88c428" class="outline-4">
-<h4 id="orgc88c428"><span class="section-number-4">3.3.1</span> スマホで、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
+<div id="outline-container-org7edf7ac" class="outline-4">
+<h4 id="org7edf7ac"><span class="section-number-4">3.3.1</span> スマホで、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
 <div class="outline-text-4" id="text-3-3-1">
 <ul class="org-ul">
+<li>Blackboard のコースの登録解除は、教員にしか出来ません。</li>
 <li>スマホの Blackboard アプリでは、表示するコースを選べます。</li>
 <li>画面上の設定で、試してみて下さい。</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgfcf5694" class="outline-4">
-<h4 id="orgfcf5694"><span class="section-number-4">3.3.2</span> PC / Mac で、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
+<div id="outline-container-org38267ed" class="outline-4">
+<h4 id="org38267ed"><span class="section-number-4">3.3.2</span> PC / Mac で、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
 <div class="outline-text-4" id="text-3-3-2">
 <ul class="org-ul">
 <li>PC/Mac での Blackboard でも、表示を選択できます。</li>
@@ -660,7 +655,7 @@ for the JavaScript code in this tag.
 </div>
 
 <ol class="org-ol">
-<li><a id="org630a599"></a>「コースをリストで非表示にする」<br>
+<li><a id="orgb89dc7f"></a>「コースをリストで非表示にする」<br>
 <div class="outline-text-5" id="text-3-3-2-1">
 <ul class="org-ul">
 <li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses">https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses</a></li>
@@ -680,43 +675,60 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgfca3dd2" class="outline-3">
-<h3 id="orgfca3dd2"><span class="section-number-3">3.4</span> コースの解除</h3>
+<div id="outline-container-org590be35" class="outline-3">
+<h3 id="org590be35"><span class="section-number-3">3.4</span> コースの利用</h3>
 <div class="outline-text-3" id="text-3-4">
 </div>
-<div id="outline-container-org6d344f4" class="outline-4">
-<h4 id="org6d344f4"><span class="section-number-4">3.4.1</span> 履修をしない授業のコースに、間違って自己登録をしてしまった / コースから解除したい</h4>
+<div id="outline-container-org9e11205" class="outline-4">
+<h4 id="org9e11205"><span class="section-number-4">3.4.1</span> 教材・資料は、いつまで利用できますか</h4>
 <div class="outline-text-4" id="text-3-4-1">
 <ul class="org-ul">
-<li>Blackboard の授業のコースから、学生自身による解除は、できないようです。</li>
-<li>コースの教員に解除を依頼する必要があります。</li>
-<li>ただし、対応は教員次第です。</li>
+<li>履修した授業の Blackboard のコースの教材・資料は、 <b>年度ごとに削除</b> されるとのことです。</li>
 </ul>
 </div>
 </div>
+</div>
 
-<div id="outline-container-org71a0da6" class="outline-4">
-<h4 id="org71a0da6"><span class="section-number-4">3.4.2</span> 過去に受講し、現在は不要である授業のコースを解除したい</h4>
-<div class="outline-text-4" id="text-3-4-2">
+<div id="outline-container-org10a1159" class="outline-3">
+<h3 id="org10a1159"><span class="section-number-3">3.5</span> コースの解除</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org889b44d" class="outline-4">
+<h4 id="org889b44d"><span class="section-number-4">3.5.1</span> 履修をしない授業のコースに、間違って自己登録をしてしまった / コースから解除したい</h4>
+<div class="outline-text-4" id="text-3-5-1">
 <ul class="org-ul">
-<li>Blackboard で、自分にとって不必要なコースから解除したい場合、学生側からは無理のようです。</li>
-<li>不要なコースの教員に解除を依頼することが対策として考えられますが、対応は、教員次第になると思います。</li>
+<li>Blackboard の授業のコースから、学生自身による解除は、できません。</li>
+<li>コースの教員に連絡して、解除を依頼する必要があります。</li>
+<li>対応は教員次第です。</li>
+<li>学部や教務課にお問い合わせ頂いても、 Blackboard のコースの管理・登録・解除は、担当教員にしか操作権限がありません。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3855769" class="outline-4">
+<h4 id="org3855769"><span class="section-number-4">3.5.2</span> 過去に受講し、現在は不要である授業のコースを解除したい</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<ul class="org-ul">
+<li>Blackboard で、自分にとって不必要なコースから解除したい場合、学生側からは無理です。</li>
+<li>不要なコースの教員に、登録の解除を依頼することが対策として考えられますが、対応は、教員次第になります。</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org67b57fd" class="outline-2">
-<h2 id="org67b57fd"><span class="section-number-2">4</span> Blackboard の課題</h2>
+
+
+<div id="outline-container-org4cf0a5d" class="outline-2">
+<h2 id="org4cf0a5d"><span class="section-number-2">4</span> Blackboard の課題</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org439979f" class="outline-3">
-<h3 id="org439979f"><span class="section-number-3">4.1</span> 課題の提出</h3>
+<div id="outline-container-orged310df" class="outline-3">
+<h3 id="orged310df"><span class="section-number-3">4.1</span> 課題の提出</h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org1be43a1" class="outline-4">
-<h4 id="org1be43a1"><span class="section-number-4">4.1.1</span> 課題を提出するとエラー / 課題の提出ができない</h4>
+<div id="outline-container-org686f879" class="outline-4">
+<h4 id="org686f879"><span class="section-number-4">4.1.1</span> 課題を提出するとエラー / 課題の提出ができない</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <ul class="org-ul">
 <li>PC / Mac で、 Google Chrome ブラウザの最新バージョンをインストールして、使ってみて下さい。
@@ -729,8 +741,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org01b400a" class="outline-4">
-<h4 id="org01b400a"><span class="section-number-4">4.1.2</span> 今まで PC で課題の提出ができていたが、提出できなくなった</h4>
+<div id="outline-container-org5316760" class="outline-4">
+<h4 id="org5316760"><span class="section-number-4">4.1.2</span> 今まで PC で課題の提出ができていたが、提出できなくなった</h4>
 <div class="outline-text-4" id="text-4-1-2">
 <ul class="org-ul">
 <li>PC / Mac で、 Google Chrome ブラウザの最新バージョンをインストールして、使ってみて下さい。
@@ -741,8 +753,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org3cf695b" class="outline-4">
-<h4 id="org3cf695b"><span class="section-number-4">4.1.3</span> 間違って課題を提出してしまった / 再提出をしたい</h4>
+<div id="outline-container-org35108ec" class="outline-4">
+<h4 id="org35108ec"><span class="section-number-4">4.1.3</span> 間違って課題を提出してしまった / 再提出をしたい</h4>
 <div class="outline-text-4" id="text-4-1-3">
 <ul class="org-ul">
 <li>Blackboard の課題提出のデフォルト設定が1回の場合、そのままの設定の授業も多いかもしれません。</li>
@@ -768,8 +780,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orge374176" class="outline-4">
-<h4 id="orge374176"><span class="section-number-4">4.1.4</span> 課題を提出したが、提出内容が空になってしまった</h4>
+<div id="outline-container-org0067e03" class="outline-4">
+<h4 id="org0067e03"><span class="section-number-4">4.1.4</span> 課題を提出したが、提出内容が空になってしまった</h4>
 <div class="outline-text-4" id="text-4-1-4">
 <ul class="org-ul">
 <li>編集中で開いていたままの状態で Wordドキュメントなどを添付すると、失敗することがあるようです。</li>
@@ -792,8 +804,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org471c7db" class="outline-4">
-<h4 id="org471c7db"><span class="section-number-4">4.1.5</span> 期限が過ぎた課題の提出をしたい</h4>
+<div id="outline-container-org7ecfbed" class="outline-4">
+<h4 id="org7ecfbed"><span class="section-number-4">4.1.5</span> 期限が過ぎた課題の提出をしたい</h4>
 <div class="outline-text-4" id="text-4-1-5">
 <ul class="org-ul">
 <li><p>
@@ -814,16 +826,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga637208" class="outline-2">
-<h2 id="orga637208"><span class="section-number-2">5</span> Blackboard の Eメール</h2>
+<div id="outline-container-org499e073" class="outline-2">
+<h2 id="org499e073"><span class="section-number-2">5</span> Blackboard の Eメール</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgffb409f" class="outline-3">
-<h3 id="orgffb409f"><span class="section-number-3">5.1</span> Eメール</h3>
+<div id="outline-container-org88971e2" class="outline-3">
+<h3 id="org88971e2"><span class="section-number-3">5.1</span> Eメール</h3>
 <div class="outline-text-3" id="text-5-1">
 </div>
-<div id="outline-container-orga3d95b2" class="outline-4">
-<h4 id="orga3d95b2"><span class="section-number-4">5.1.1</span> 教員に Eメールで連絡をする方法がわからない</h4>
+<div id="outline-container-org83ad735" class="outline-4">
+<h4 id="org83ad735"><span class="section-number-4">5.1.1</span> 教員に Eメールで連絡をする方法がわからない</h4>
 <div class="outline-text-4" id="text-5-1-1">
 <ul class="org-ul">
 <li>受講している授業の Blackboard でコースの画面で、メニューで「ツール」→「Ｅメールの送信」から送信相手を選んで、メールを送れます。</li>
@@ -834,8 +846,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgff7ee59" class="outline-4">
-<h4 id="orgff7ee59"><span class="section-number-4">5.1.2</span> 教員に連絡をとる方法を知りたい</h4>
+<div id="outline-container-org129ebd6" class="outline-4">
+<h4 id="org129ebd6"><span class="section-number-4">5.1.2</span> 教員に連絡をとる方法を知りたい</h4>
 <div class="outline-text-4" id="text-5-1-2">
 <ul class="org-ul">
 <li>授業によって、利用可能な選択肢が異なります。</li>
@@ -844,8 +856,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org37cc4e5" class="outline-4">
-<h4 id="org37cc4e5"><span class="section-number-4">5.1.3</span> 教員に Eメールを送信する方法がわからない</h4>
+<div id="outline-container-org69aabff" class="outline-4">
+<h4 id="org69aabff"><span class="section-number-4">5.1.3</span> 教員に Eメールを送信する方法がわからない</h4>
 <div class="outline-text-4" id="text-5-1-3">
 <ul class="org-ul">
 <li>その授業の教員が、 Blackboard のコースで Eメール機能を有効にしていれば、 Eメールで連絡ができます。</li>
@@ -855,8 +867,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org85dad22" class="outline-4">
-<h4 id="org85dad22"><span class="section-number-4">5.1.4</span> 教員に Eメールを送ったが、返事が来ない</h4>
+<div id="outline-container-orgae111b3" class="outline-4">
+<h4 id="orgae111b3"><span class="section-number-4">5.1.4</span> 教員に Eメールを送ったが、返事が来ない</h4>
 <div class="outline-text-4" id="text-5-1-4">
 <ul class="org-ul">
 <li>教員次第です。</li>
@@ -864,8 +876,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org5a0c3f2" class="outline-4">
-<h4 id="org5a0c3f2"><span class="section-number-4">5.1.5</span> Eメールの送受信すると、文字化けをしてしまい、全く読めない</h4>
+<div id="outline-container-org3464382" class="outline-4">
+<h4 id="org3464382"><span class="section-number-4">5.1.5</span> Eメールの送受信すると、文字化けをしてしまい、全く読めない</h4>
 <div class="outline-text-4" id="text-5-1-5">
 <ul class="org-ul">
 <li>すみません、この問題は解決できていません。</li>
@@ -883,16 +895,16 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org674987a" class="outline-2">
-<h2 id="org674987a"><span class="section-number-2">6</span> Blackboard の掲示板</h2>
+<div id="outline-container-org76209cf" class="outline-2">
+<h2 id="org76209cf"><span class="section-number-2">6</span> Blackboard の掲示板</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org257668e" class="outline-3">
-<h3 id="org257668e"><span class="section-number-3">6.1</span> 掲示板の編集</h3>
+<div id="outline-container-org5761415" class="outline-3">
+<h3 id="org5761415"><span class="section-number-3">6.1</span> 掲示板の編集</h3>
 <div class="outline-text-3" id="text-6-1">
 </div>
-<div id="outline-container-org9baa810" class="outline-4">
-<h4 id="org9baa810"><span class="section-number-4">6.1.1</span> 掲示板で、匿名で記入するつもりが、誤って記名で記入をしてしまった / 匿名に修正をしたい</h4>
+<div id="outline-container-orgbfad42e" class="outline-4">
+<h4 id="orgbfad42e"><span class="section-number-4">6.1.1</span> 掲示板で、匿名で記入するつもりが、誤って記名で記入をしてしまった / 匿名に修正をしたい</h4>
 <div class="outline-text-4" id="text-6-1-1">
 <ul class="org-ul">
 <li>Blackboard の掲示板では、学生のアカウントの場合、自分で記入したタイトル、内容の修正は、一切できません。</li>
@@ -904,8 +916,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgea65f3b" class="outline-4">
-<h4 id="orgea65f3b"><span class="section-number-4">6.1.2</span> 掲示板で、記入したタイトルや文章を削除・編集したい</h4>
+<div id="outline-container-orgdc1553d" class="outline-4">
+<h4 id="orgdc1553d"><span class="section-number-4">6.1.2</span> 掲示板で、記入したタイトルや文章を削除・編集したい</h4>
 <div class="outline-text-4" id="text-6-1-2">
 <ul class="org-ul">
 <li>学生のアカウントでは、修正はできません。</li>
@@ -914,8 +926,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf11e43c" class="outline-4">
-<h4 id="orgf11e43c"><span class="section-number-4">6.1.3</span> ログインの方法がわからない</h4>
+<div id="outline-container-org4d7c544" class="outline-4">
+<h4 id="org4d7c544"><span class="section-number-4">6.1.3</span> ログインの方法がわからない</h4>
 <div class="outline-text-4" id="text-6-1-3">
 <ul class="org-ul">
 <li>文理学部の Blackboard は、これまでの学内サーバから Amazon AWS を利用するクラウド環境の Blackboard へ移行しました。</li>
@@ -929,16 +941,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org9f757aa" class="outline-2">
-<h2 id="org9f757aa"><span class="section-number-2">7</span> Blackboard の教材</h2>
+<div id="outline-container-org08eb666" class="outline-2">
+<h2 id="org08eb666"><span class="section-number-2">7</span> Blackboard の教材</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org8e14b73" class="outline-3">
-<h3 id="org8e14b73"><span class="section-number-3">7.1</span> 教材の閲覧・視聴・ダウンロード</h3>
+<div id="outline-container-orga030444" class="outline-3">
+<h3 id="orga030444"><span class="section-number-3">7.1</span> 教材の閲覧・視聴・ダウンロード</h3>
 <div class="outline-text-3" id="text-7-1">
 </div>
-<div id="outline-container-orgf79e6bc" class="outline-4">
-<h4 id="orgf79e6bc"><span class="section-number-4">7.1.1</span> 教材の動画が視聴できない</h4>
+<div id="outline-container-org3ceb162" class="outline-4">
+<h4 id="org3ceb162"><span class="section-number-4">7.1.1</span> 教材の動画が視聴できない</h4>
 <div class="outline-text-4" id="text-7-1-1">
 <ul class="org-ul">
 <li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
@@ -947,8 +959,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org004949c" class="outline-4">
-<h4 id="org004949c"><span class="section-number-4">7.1.2</span> 音声付き PowerPoint の音声が再生できない</h4>
+<div id="outline-container-org00db54a" class="outline-4">
+<h4 id="org00db54a"><span class="section-number-4">7.1.2</span> 音声付き PowerPoint の音声が再生できない</h4>
 <div class="outline-text-4" id="text-7-1-2">
 <ul class="org-ul">
 <li>音声付き PowerPoint の資料は、互換性の点で注意が必要かもしれません。 Blackboard に限らない問題と思われます。</li>
@@ -961,8 +973,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1bb8106" class="outline-4">
-<h4 id="org1bb8106"><span class="section-number-4">7.1.3</span> 教材の資料がダウンロードできない</h4>
+<div id="outline-container-orgf035076" class="outline-4">
+<h4 id="orgf035076"><span class="section-number-4">7.1.3</span> 教材の資料がダウンロードできない</h4>
 <div class="outline-text-4" id="text-7-1-3">
 <ul class="org-ul">
 <li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
@@ -972,8 +984,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga211f59" class="outline-4">
-<h4 id="orga211f59"><span class="section-number-4">7.1.4</span> 教材の資料がダウンロードできていたのに、できなくなった</h4>
+<div id="outline-container-org53a97ae" class="outline-4">
+<h4 id="org53a97ae"><span class="section-number-4">7.1.4</span> 教材の資料がダウンロードできていたのに、できなくなった</h4>
 <div class="outline-text-4" id="text-7-1-4">
 <ul class="org-ul">
 <li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
@@ -985,16 +997,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org9fe8a40" class="outline-2">
-<h2 id="org9fe8a40"><span class="section-number-2">8</span> その他</h2>
+<div id="outline-container-org58dc923" class="outline-2">
+<h2 id="org58dc923"><span class="section-number-2">8</span> その他</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org4851e84" class="outline-3">
-<h3 id="org4851e84"><span class="section-number-3">8.1</span> 個別の授業への問い合わせ、対応の要請</h3>
+<div id="outline-container-org2d5ff29" class="outline-3">
+<h3 id="org2d5ff29"><span class="section-number-3">8.1</span> 個別の授業への問い合わせ、対応の要請</h3>
 <div class="outline-text-3" id="text-8-1">
 </div>
-<div id="outline-container-orga5494c5" class="outline-4">
-<h4 id="orga5494c5"><span class="section-number-4">8.1.1</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
+<div id="outline-container-orgf67295c" class="outline-4">
+<h4 id="orgf67295c"><span class="section-number-4">8.1.1</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
 <div class="outline-text-4" id="text-8-1-1">
 <ul class="org-ul">
 <li>大学の授業は、それぞれの授業の担当教員の責任で行っております。</li>
@@ -1004,8 +1016,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd2e5c98" class="outline-4">
-<h4 id="orgd2e5c98"><span class="section-number-4">8.1.2</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
+<div id="outline-container-orgd81688e" class="outline-4">
+<h4 id="orgd81688e"><span class="section-number-4">8.1.2</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
 <div class="outline-text-4" id="text-8-1-2">
 <ul class="org-ul">
 <li>シラバスで、その授業が総合教育科目かどうかを調べて下さい。</li>
@@ -1016,8 +1028,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org659f29b" class="outline-4">
-<h4 id="org659f29b"><span class="section-number-4">8.1.3</span> その他</h4>
+<div id="outline-container-org746bbbe" class="outline-4">
+<h4 id="org746bbbe"><span class="section-number-4">8.1.3</span> その他</h4>
 <div class="outline-text-4" id="text-8-1-3">
 <ul class="org-ul">
 <li>授業内容の更新が見当たらない</li>
@@ -1034,12 +1046,12 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-org0cdea33" class="outline-2">
-<h2 id="org0cdea33"><span class="section-number-2">9</span> メールとアカウント</h2>
+<div id="outline-container-org0aef55a" class="outline-2">
+<h2 id="org0aef55a"><span class="section-number-2">9</span> メールとアカウント</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org2ed9bf8" class="outline-3">
-<h3 id="org2ed9bf8"><span class="section-number-3">9.1</span> stu メールアドレスがわからない</h3>
+<div id="outline-container-orgf623d91" class="outline-3">
+<h3 id="orgf623d91"><span class="section-number-3">9.1</span> stu メールアドレスがわからない</h3>
 <div class="outline-text-3" id="text-9-1">
 <ul class="org-ul">
 <li>***@stu.chs.nihon-u.ac.jp」アドレスの確認方法</li>
@@ -1054,8 +1066,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga2e251d" class="outline-3">
-<h3 id="orga2e251d"><span class="section-number-3">9.2</span> 文理学部のメールがわからない</h3>
+<div id="outline-container-orga42a9a6" class="outline-3">
+<h3 id="orga42a9a6"><span class="section-number-3">9.2</span> 文理学部のメールがわからない</h3>
 <div class="outline-text-3" id="text-9-2">
 <ul class="org-ul">
 <li>文理学部のメールがわからない
@@ -1080,8 +1092,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgcb14b98" class="outline-3">
-<h3 id="orgcb14b98"><span class="section-number-3">9.3</span> メールで分からないことが多い</h3>
+<div id="outline-container-orgd48d4fe" class="outline-3">
+<h3 id="orgd48d4fe"><span class="section-number-3">9.3</span> メールで分からないことが多い</h3>
 <div class="outline-text-3" id="text-9-3">
 <ul class="org-ul">
 <li>学校から NU-AppsG のアカウントに関する情報が送られてきたが、オンライン受講で必要なのか?</li>
@@ -1094,8 +1106,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org6459f98" class="outline-3">
-<h3 id="org6459f98"><span class="section-number-3">9.4</span> NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</h3>
+<div id="outline-container-orga936a6c" class="outline-3">
+<h3 id="orga936a6c"><span class="section-number-3">9.4</span> NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</h3>
 <div class="outline-text-3" id="text-9-4">
 <ul class="org-ul">
 <li>NU-AppsG (ch****@g.nihon-u.ac.jp)</li>
@@ -1118,8 +1130,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgc27e5f0" class="outline-3">
-<h3 id="orgc27e5f0"><span class="section-number-3">9.5</span> stu メール / Microsoft Office365 Web利用 / Zoom / Webex</h3>
+<div id="outline-container-org124e49e" class="outline-3">
+<h3 id="org124e49e"><span class="section-number-3">9.5</span> stu メール / Microsoft Office365 Web利用 / Zoom / Webex</h3>
 <div class="outline-text-3" id="text-9-5">
 <ul class="org-ul">
 <li>***@stu.chs.nihon-u.ac.jp</li>
@@ -1132,8 +1144,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org44b4880" class="outline-3">
-<h3 id="org44b4880"><span class="section-number-3">9.6</span> Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</h3>
+<div id="outline-container-orgb68bc34" class="outline-3">
+<h3 id="orgb68bc34"><span class="section-number-3">9.6</span> Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</h3>
 <div class="outline-text-3" id="text-9-6">
 <ul class="org-ul">
 <li>文理学部生は、日本大学全学サービスの Office365 と、文理学部サービスの Office365 と、二つの Office365サービスを使える</li>
@@ -1144,8 +1156,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org003c57a" class="outline-3">
-<h3 id="org003c57a"><span class="section-number-3">9.7</span> tアドレス</h3>
+<div id="outline-container-org15d1d27" class="outline-3">
+<h3 id="org15d1d27"><span class="section-number-3">9.7</span> tアドレス</h3>
 <div class="outline-text-3" id="text-9-7">
 <ul class="org-ul">
 <li>tアドレスとは何か？
@@ -1167,8 +1179,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgaf02f24" class="outline-3">
-<h3 id="orgaf02f24"><span class="section-number-3">9.8</span> 教育 Web Mail (Active!Mail) とは何か?</h3>
+<div id="outline-container-orgf8edb2a" class="outline-3">
+<h3 id="orgf8edb2a"><span class="section-number-3">9.8</span> 教育 Web Mail (Active!Mail) とは何か?</h3>
 <div class="outline-text-3" id="text-9-8">
 <ul class="org-ul">
 <li>文理学部ポータルサイトの教育用 Web Mail (Active!Mail)
@@ -1185,8 +1197,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org779762b" class="outline-3">
-<h3 id="org779762b"><span class="section-number-3">9.9</span> 教員に送信したEメールの返信をチェックしたい</h3>
+<div id="outline-container-org9204971" class="outline-3">
+<h3 id="org9204971"><span class="section-number-3">9.9</span> 教員に送信したEメールの返信をチェックしたい</h3>
 <div class="outline-text-3" id="text-9-9">
 <p>
 教員に送信したEメールの返信をチェックしたい
@@ -1200,8 +1212,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org39e0d51" class="outline-3">
-<h3 id="org39e0d51"><span class="section-number-3">9.10</span> ツールの eメールに質問を送った場合、返信をどこで確認するのか?</h3>
+<div id="outline-container-orga10f76f" class="outline-3">
+<h3 id="orga10f76f"><span class="section-number-3">9.10</span> ツールの eメールに質問を送った場合、返信をどこで確認するのか?</h3>
 <div class="outline-text-3" id="text-9-10">
 <ul class="org-ul">
 <li>ポータルサイトの下にある
@@ -1212,8 +1224,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org8bf293f" class="outline-3">
-<h3 id="org8bf293f"><span class="section-number-3">9.11</span> 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</h3>
+<div id="outline-container-orgd127b46" class="outline-3">
+<h3 id="orgd127b46"><span class="section-number-3">9.11</span> 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</h3>
 <div class="outline-text-3" id="text-9-11">
 <ul class="org-ul">
 <li>文理学部のメール xxx@stu.chs.nihon-u.ac.jp <a href="https://mail.office365.com/">https://mail.office365.com/</a> でメールを送受信すると、文字化けとなり、文字が全く読めない</li>
@@ -1227,12 +1239,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgeebe584" class="outline-2">
-<h2 id="orgeebe584"><span class="section-number-2">10</span> Blackboard</h2>
+<div id="outline-container-orgaedbe34" class="outline-2">
+<h2 id="orgaedbe34"><span class="section-number-2">10</span> Blackboard</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-org88e66cf" class="outline-3">
-<h3 id="org88e66cf"><span class="section-number-3">10.1</span> 課題についての質問を Bb ツールのメール機能で送信したが返事がない</h3>
+<div id="outline-container-org600e6a7" class="outline-3">
+<h3 id="org600e6a7"><span class="section-number-3">10.1</span> 課題についての質問を Bb ツールのメール機能で送信したが返事がない</h3>
 <div class="outline-text-3" id="text-10-1">
 <ul class="org-ul">
 <li>質問：課題についての質問を Bb ツールのメール機能で送信したが返事がない</li>
@@ -1249,8 +1261,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org29c01cf" class="outline-3">
-<h3 id="org29c01cf"><span class="section-number-3">10.2</span> PC からファイル添付することができない</h3>
+<div id="outline-container-orgd8a9bb3" class="outline-3">
+<h3 id="orgd8a9bb3"><span class="section-number-3">10.2</span> PC からファイル添付することができない</h3>
 <div class="outline-text-3" id="text-10-2">
 <ul class="org-ul">
 <li>質問：PC からファイル添付することができない
@@ -1290,8 +1302,8 @@ EdgeでMicrosoft Office の文書ファイル (Word/Excel/PowerPoint) を添付�
 </div>
 
 
-<div id="outline-container-org61d8df8" class="outline-3">
-<h3 id="org61d8df8"><span class="section-number-3">10.3</span> 課題が出されているが、提出先がない</h3>
+<div id="outline-container-orgaba1b9f" class="outline-3">
+<h3 id="orgaba1b9f"><span class="section-number-3">10.3</span> 課題が出されているが、提出先がない</h3>
 <div class="outline-text-3" id="text-10-3">
 <ul class="org-ul">
 <li>質問：課題が出されているが、提出先がない
@@ -1312,8 +1324,8 @@ EdgeでMicrosoft Office の文書ファイル (Word/Excel/PowerPoint) を添付�
 </div>
 </div>
 
-<div id="outline-container-orge1ff14d" class="outline-3">
-<h3 id="orge1ff14d"><span class="section-number-3">10.4</span> 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</h3>
+<div id="outline-container-org251c968" class="outline-3">
+<h3 id="org251c968"><span class="section-number-3">10.4</span> 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</h3>
 <div class="outline-text-3" id="text-10-4">
 <ul class="org-ul">
 <li>質問：Blackboard の課題提出で、 「新規に開始」がなく、課題の再提出ができない</li>
@@ -1340,8 +1352,8 @@ EdgeでMicrosoft Office の文書ファイル (Word/Excel/PowerPoint) を添付�
 </div>
 </div>
 
-<div id="outline-container-orgf2f4926" class="outline-3">
-<h3 id="orgf2f4926"><span class="section-number-3">10.5</span> 課題の提出をやり直したい / 再提出をしたい</h3>
+<div id="outline-container-orgb725843" class="outline-3">
+<h3 id="orgb725843"><span class="section-number-3">10.5</span> 課題の提出をやり直したい / 再提出をしたい</h3>
 <div class="outline-text-3" id="text-10-5">
 <ul class="org-ul">
 <li>教員側で、手動で、課題の提出を複数回に設定している場合は、再提出が出来る</li>
@@ -1356,8 +1368,8 @@ EdgeでMicrosoft Office の文書ファイル (Word/Excel/PowerPoint) を添付�
 </div>
 </div>
 
-<div id="outline-container-orgecc5cbf" class="outline-3">
-<h3 id="orgecc5cbf"><span class="section-number-3">10.6</span> 課題提出で失敗</h3>
+<div id="outline-container-org92c0336" class="outline-3">
+<h3 id="org92c0336"><span class="section-number-3">10.6</span> 課題提出で失敗</h3>
 <div class="outline-text-3" id="text-10-6">
 <ul class="org-ul">
 <li>Word ファイルを編集中・開いたままの状態で添付すると、送信失敗というトラブル</li>
@@ -1384,8 +1396,8 @@ Office 365 (see below) has the ability to save files as PDFs.</li>
 </div>
 </div>
 
-<div id="outline-container-org800f5fb" class="outline-3">
-<h3 id="org800f5fb"><span class="section-number-3">10.7</span> 課題提出ができなくなった</h3>
+<div id="outline-container-org6a28b90" class="outline-3">
+<h3 id="org6a28b90"><span class="section-number-3">10.7</span> 課題提出ができなくなった</h3>
 <div class="outline-text-3" id="text-10-7">
 <ul class="org-ul">
 <li>質問：Blackboard で課題提出が PC からできなくなった
@@ -1409,8 +1421,8 @@ Office 365 (see below) has the ability to save files as PDFs.</li>
 </div>
 </div>
 
-<div id="outline-container-org6a421ee" class="outline-3">
-<h3 id="org6a421ee"><span class="section-number-3">10.8</span> 教材の添付ファイルがダウンロードできない</h3>
+<div id="outline-container-orgea3f92e" class="outline-3">
+<h3 id="orgea3f92e"><span class="section-number-3">10.8</span> 教材の添付ファイルがダウンロードできない</h3>
 <div class="outline-text-3" id="text-10-8">
 <ul class="org-ul">
 <li>質問：Blackboard がクラウド移行してから、全ての授業で教材の添付ファイルがダウンロードできない
@@ -1449,8 +1461,8 @@ Office 365 (see below) has the ability to save files as PDFs.</li>
 </div>
 
 
-<div id="outline-container-orge1d55c2" class="outline-3">
-<h3 id="orge1d55c2"><span class="section-number-3">10.9</span> 課題提出でのエラー</h3>
+<div id="outline-container-orga87076e" class="outline-3">
+<h3 id="orga87076e"><span class="section-number-3">10.9</span> 課題提出でのエラー</h3>
 <div class="outline-text-3" id="text-10-9">
 <ul class="org-ul">
 <li>質問：課題を提出したときに、 Blackboard でエラー
@@ -1467,8 +1479,8 @@ Office 365 (see below) has the ability to save files as PDFs.</li>
 </div>
 
 
-<div id="outline-container-org041f940" class="outline-3">
-<h3 id="org041f940"><span class="section-number-3">10.10</span> スマートフォンで課題を提出しても、反映されない</h3>
+<div id="outline-container-org770813e" class="outline-3">
+<h3 id="org770813e"><span class="section-number-3">10.10</span> スマートフォンで課題を提出しても、反映されない</h3>
 <div class="outline-text-3" id="text-10-10">
 <ul class="org-ul">
 <li>質問：iPad や PCだと提出扱いになる
@@ -1496,7 +1508,7 @@ Office 365 (see below) has the ability to save files as PDFs.</li>
 </ul>
 
 
-<pre class="example">
+<pre class="example" id="org8d50d22">
 Blackboardの利用環境ブラウザの対応状況
 
 Bbの現在のバージョン（Q2-2019 CU7）での推奨環境は、以下のとおりです。
@@ -1521,8 +1533,8 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 </div>
 </div>
 
-<div id="outline-container-orgb94f7e4" class="outline-3">
-<h3 id="orgb94f7e4"><span class="section-number-3">10.11</span> 期限切れの課題を提出したい</h3>
+<div id="outline-container-orgbe2fe97" class="outline-3">
+<h3 id="orgbe2fe97"><span class="section-number-3">10.11</span> 期限切れの課題を提出したい</h3>
 <div class="outline-text-3" id="text-10-11">
 <ul class="org-ul">
 <li>質問：期限切れの課題を提出したい
@@ -1537,7 +1549,7 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 <li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a></li>
 </ul>
 
-<pre class="example">
+<pre class="example" id="orgcddd002">
   「教員により、答案の提出が1回に制限されている場合は、提出後に作業を編集することはできません。
   教員が複数回の答案の提出を許可しており、期日を過ぎてから提出する場合は、
   その答案には期限遅れのマークが付きます。
@@ -1549,8 +1561,8 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 
 
 
-<div id="outline-container-orgc08abdf" class="outline-3">
-<h3 id="orgc08abdf"><span class="section-number-3">10.12</span> Blackboard で提出した課題の内容の確認をしたい</h3>
+<div id="outline-container-org94bc5ac" class="outline-3">
+<h3 id="org94bc5ac"><span class="section-number-3">10.12</span> Blackboard で提出した課題の内容の確認をしたい</h3>
 <div class="outline-text-3" id="text-10-12">
 <ul class="org-ul">
 <li>質問：Blackboard で提出した課題の内容の確認をしたい</li>
@@ -1563,8 +1575,8 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 </div>
 </div>
 
-<div id="outline-container-orgc42ec7d" class="outline-3">
-<h3 id="orgc42ec7d"><span class="section-number-3">10.13</span> 長文を記入して送信を行うと、作業内容が全て消えた</h3>
+<div id="outline-container-org1505c91" class="outline-3">
+<h3 id="org1505c91"><span class="section-number-3">10.13</span> 長文を記入して送信を行うと、作業内容が全て消えた</h3>
 <div class="outline-text-3" id="text-10-13">
 <ul class="org-ul">
 <li>質問：長文を記入して送信を行うと、作業内容が全て消えた</li>
@@ -1575,8 +1587,8 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 </div>
 </div>
 
-<div id="outline-container-org91c1931" class="outline-3">
-<h3 id="org91c1931"><span class="section-number-3">10.14</span> 「この Microsoft Edge は推奨されません」</h3>
+<div id="outline-container-org36c94d4" class="outline-3">
+<h3 id="org36c94d4"><span class="section-number-3">10.14</span> 「この Microsoft Edge は推奨されません」</h3>
 <div class="outline-text-3" id="text-10-14">
 <ul class="org-ul">
 <li>質問：Blackboard にサインインするとき、この Microsoft Edge は推奨されませんと表示される</li>
@@ -1601,7 +1613,7 @@ Microsoft Edgeにつきましては、2020年1月15日にリリースされたCh
 </ul></li>
 </ul>
 
-<pre class="example">
+<pre class="example" id="orgc1d7490">
 BlackBoard利用時の推奨ブラウザについて＞投稿日 : 2020年5月25日 15時33分00秒 JST
 
 2020年3月に実施したバージョンアップにより，
@@ -1623,8 +1635,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-orgf180954" class="outline-3">
-<h3 id="orgf180954"><span class="section-number-3">10.15</span> Microsoft Word 提出の際の行間の余白について</h3>
+<div id="outline-container-orgf23aac9" class="outline-3">
+<h3 id="orgf23aac9"><span class="section-number-3">10.15</span> Microsoft Word 提出の際の行間の余白について</h3>
 <div class="outline-text-3" id="text-10-15">
 <ul class="org-ul">
 <li>質問：Blackboard で提出した際に、 Microsoft Word ファイルの文字の行間の余白が勝手に大きくなった
@@ -1651,8 +1663,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org8b2ea01" class="outline-3">
-<h3 id="org8b2ea01"><span class="section-number-3">10.16</span> PC で授業の動画を見ることができなくなった</h3>
+<div id="outline-container-orgf67a001" class="outline-3">
+<h3 id="orgf67a001"><span class="section-number-3">10.16</span> PC で授業の動画を見ることができなくなった</h3>
 <div class="outline-text-3" id="text-10-16">
 <ul class="org-ul">
 <li>質問：PC で授業の動画を見ることができなくなった</li>
@@ -1682,7 +1694,7 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 <a href="http://www.lt-lab.teikyo-u.ac.jp/lms-ss/index.php?%A4%AA%C3%CE%A4%E9%A4%BB%2F%B2%E1%B5%EE%A4%CE%C9%D4%B6%F1%B9%E7%BE%F0%CA%F3">教材の閲覧，再生やアップロードができないことがあるトラブルが発生しています（2020.06.12）</a>
 </p>
 
-<pre class="example">
+<pre class="example" id="org785a728">
     &gt; 6/12から発生しておりますトラブルについて，ベンダーより状況報告がありましたので報告いたします．
     &gt; Blackboard社からの正式な報告はありませんが，6/13(土)11:00頃から現象は解消されたようです．
     &gt; 正式な報告があるまで様子見として，ご利用いただけますようお願いいたします．
@@ -1702,8 +1714,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-orgbdb2635" class="outline-3">
-<h3 id="orgbdb2635"><span class="section-number-3">10.17</span> Word での提出の仕方がわからない</h3>
+<div id="outline-container-orgb0d440e" class="outline-3">
+<h3 id="orgb0d440e"><span class="section-number-3">10.17</span> Word での提出の仕方がわからない</h3>
 <div class="outline-text-3" id="text-10-17">
 <ul class="org-ul">
 <li>質問：Word での提出の仕方がわからない</li>
@@ -1759,8 +1771,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-orgd916c07" class="outline-3">
-<h3 id="orgd916c07"><span class="section-number-3">10.18</span> 音声付きPowerPointスライドの閲覧について</h3>
+<div id="outline-container-org24f81ff" class="outline-3">
+<h3 id="org24f81ff"><span class="section-number-3">10.18</span> 音声付きPowerPointスライドの閲覧について</h3>
 <div class="outline-text-3" id="text-10-18">
 <ul class="org-ul">
 <li>質問：教材の音声付きのパワーポイントで、音声を聞けない
@@ -1777,8 +1789,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-org181e056" class="outline-4">
-<h4 id="org181e056"><span class="section-number-4">10.18.1</span> 【Apple Keynote アプリ】</h4>
+<div id="outline-container-org96963a1" class="outline-4">
+<h4 id="org96963a1"><span class="section-number-4">10.18.1</span> 【Apple Keynote アプリ】</h4>
 <div class="outline-text-4" id="text-10-18-1">
 <ul class="org-ul">
 <li>Keynote はある程度の互換性があると思われるが、PowerPoint 書類の全ての機能を利用できない可能性はある</li>
@@ -1787,8 +1799,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org26365de" class="outline-4">
-<h4 id="org26365de"><span class="section-number-4">10.18.2</span> 【Microsoft PowerPoint アプリ】</h4>
+<div id="outline-container-org8bf4d99" class="outline-4">
+<h4 id="org8bf4d99"><span class="section-number-4">10.18.2</span> 【Microsoft PowerPoint アプリ】</h4>
 <div class="outline-text-4" id="text-10-18-2">
 <ul class="org-ul">
 <li>iPhone の Appストアの、無料でインストールできる Microsoft PowerPoint での音声</li>
@@ -1798,8 +1810,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org78da62b" class="outline-4">
-<h4 id="org78da62b"><span class="section-number-4">10.18.3</span> 【iOS版 PowerPoint は WAV 音声は再生不可？】</h4>
+<div id="outline-container-orgd2d4fd3" class="outline-4">
+<h4 id="orgd2d4fd3"><span class="section-number-4">10.18.3</span> 【iOS版 PowerPoint は WAV 音声は再生不可？】</h4>
 <div class="outline-text-4" id="text-10-18-3">
 <ul class="org-ul">
 <li>Microsoftのサポート情報 <a href="https://support.microsoft.com/en-gb/office/can-i-add-audio-to-a-powerpoint-presentation-on-a-mobile-device-76a88d09-96b2-465c-a0ad-036a24940d40#:~:text=On%20iOS%3A%20No,are%20already%20in%20PowerPoint%20presentations.">Can I add audio to a PowerPoint presentation on a mobile device?</a>
@@ -1827,8 +1839,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org8f2675d" class="outline-4">
-<h4 id="org8f2675d"><span class="section-number-4">10.18.4</span> 【クラウドストレージとストリーミングの問題】</h4>
+<div id="outline-container-orgb8e7335" class="outline-4">
+<h4 id="orgb8e7335"><span class="section-number-4">10.18.4</span> 【クラウドストレージとストリーミングの問題】</h4>
 <div class="outline-text-4" id="text-10-18-4">
 <ul class="org-ul">
 <li>注意点として、アップロードされた PowerPoint ファイルをダウンロードをせずに
@@ -1836,7 +1848,7 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 <li><p>
 「<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&amp;item_id=198673&amp;file_id=1&amp;file_no=1">そして誰もいなくなる：学生に嫌がられる動画・音声資料 (IPSJ-SSS2019051.pdf)</a>
 </p>
-<pre class="example">
+<pre class="example" id="orgf11af8a">
     「スマホでは通常ストリーミングで (音声が入っているファイルも音声が再生されない )
     PowerPoint Online により開くことが標準的な操作であり,
     たとえ無料でも BYOD でのスマホに標準では入っていなく,
@@ -1847,8 +1859,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-orgda0d924" class="outline-4">
-<h4 id="orgda0d924"><span class="section-number-4">10.18.5</span> 【困っている人は多そう】</h4>
+<div id="outline-container-org0c925d8" class="outline-4">
+<h4 id="org0c925d8"><span class="section-number-4">10.18.5</span> 【困っている人は多そう】</h4>
 <div class="outline-text-4" id="text-10-18-5">
 <ul class="org-ul">
 <li>同じような症状で未解決
@@ -1862,8 +1874,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-org17ed18f" class="outline-4">
-<h4 id="org17ed18f"><span class="section-number-4">10.18.6</span> 【その他もろもろ】</h4>
+<div id="outline-container-orge3e326e" class="outline-4">
+<h4 id="orge3e326e"><span class="section-number-4">10.18.6</span> 【その他もろもろ】</h4>
 <div class="outline-text-4" id="text-10-18-6">
 <ul class="org-ul">
 <li><a href="https://kokonats.com/ipad-power-point-technical-issue">https://kokonats.com/ipad-power-point-technical-issue</a> には、 iPad での PowerPoint 自体が音声ミュートされている、と書いてある
@@ -1878,8 +1890,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 
 
-<div id="outline-container-org460d1bb" class="outline-3">
-<h3 id="org460d1bb"><span class="section-number-3">10.19</span> 教材の音声ファイルが再生できない</h3>
+<div id="outline-container-org01c5e8c" class="outline-3">
+<h3 id="org01c5e8c"><span class="section-number-3">10.19</span> 教材の音声ファイルが再生できない</h3>
 <div class="outline-text-3" id="text-10-19">
 <ul class="org-ul">
 <li>質問：教材の音声ファイルが再生できない</li>
@@ -1900,8 +1912,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org4ca3669" class="outline-3">
-<h3 id="org4ca3669"><span class="section-number-3">10.20</span> 授業の動画再生について</h3>
+<div id="outline-container-orgd28346f" class="outline-3">
+<h3 id="orgd28346f"><span class="section-number-3">10.20</span> 授業の動画再生について</h3>
 <div class="outline-text-3" id="text-10-20">
 <ul class="org-ul">
 <li>質問：授業の動画再生が途切れる</li>
@@ -1937,8 +1949,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org62641bd" class="outline-3">
-<h3 id="org62641bd"><span class="section-number-3">10.21</span> 掲示板に間違って作ったスレッドを、削除したい</h3>
+<div id="outline-container-org6ef6a68" class="outline-3">
+<h3 id="org6ef6a68"><span class="section-number-3">10.21</span> 掲示板に間違って作ったスレッドを、削除したい</h3>
 <div class="outline-text-3" id="text-10-21">
 <ul class="org-ul">
 <li>質問：掲示板に間違って作ったスレッドを、削除したい</li>
@@ -1952,8 +1964,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org5d3a0f8" class="outline-3">
-<h3 id="org5d3a0f8"><span class="section-number-3">10.22</span> 登録していた授業が消えた</h3>
+<div id="outline-container-org3833401" class="outline-3">
+<h3 id="org3833401"><span class="section-number-3">10.22</span> 登録していた授業が消えた</h3>
 <div class="outline-text-3" id="text-10-22">
 <ul class="org-ul">
 <li>質問：以前表示されていて、課題の提出も出来ていたコースから、自分の登録が解除されていた</li>
@@ -1969,8 +1981,8 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-orgc4f0165" class="outline-3">
-<h3 id="orgc4f0165"><span class="section-number-3">10.23</span> 新しい Blackboard に入るためのメールアドレスが分からない</h3>
+<div id="outline-container-org221ed61" class="outline-3">
+<h3 id="org221ed61"><span class="section-number-3">10.23</span> 新しい Blackboard に入るためのメールアドレスが分からない</h3>
 <div class="outline-text-3" id="text-10-23">
 <ul class="org-ul">
 <li>質問：新しい Blackboard に入るためのメールアドレスが分からない
@@ -1981,7 +1993,7 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 <li><a href="https://www.chs.nihon-u.ac.jp/faq4/">https://www.chs.nihon-u.ac.jp/faq4/</a></li>
 </ul>
 
-<pre class="example">
+<pre class="example" id="orga092372">
 【文理学部ホームページ】
 →「お問い合わせ」
 →「[Q&amp;A] 授業に関するよくある問い合わせ【教務課】」
@@ -1999,14 +2011,14 @@ BBCUでもサポート対象となっておりますので，バージョンを�
 </div>
 </div>
 
-<div id="outline-container-org651a202" class="outline-3">
-<h3 id="org651a202"><span class="section-number-3">10.24</span> 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</h3>
+<div id="outline-container-orgb582642" class="outline-3">
+<h3 id="orgb582642"><span class="section-number-3">10.24</span> 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</h3>
 <div class="outline-text-3" id="text-10-24">
 <ul class="org-ul">
 <li>質問：新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</li>
 </ul>
 
-<pre class="example">
+<pre class="example" id="orgef597f2">
 選択されたユーザー アカウントは、テナント '日本大学文理学部' に存在しないため、
 そのテナントのアプリケーション
 'https://nuchs.blackboard.com/auth-saml/saml/SSO/entity-id/SAML_AD' にアクセスできません。
@@ -2083,8 +2095,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 
 
-<div id="outline-container-org594f7ce" class="outline-3">
-<h3 id="org594f7ce"><span class="section-number-3">10.25</span> 掲示板にある、購読とはどのような機能か?</h3>
+<div id="outline-container-orga9a2c43" class="outline-3">
+<h3 id="orga9a2c43"><span class="section-number-3">10.25</span> 掲示板にある、購読とはどのような機能か?</h3>
 <div class="outline-text-3" id="text-10-25">
 <ul class="org-ul">
 <li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Interact/Discussions/Discussion_FAQs">https://help.blackboard.com/ja-jp/Learn/Student/Interact/Discussions/Discussion_FAQs</a></li>
@@ -2099,8 +2111,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-org36f17d9" class="outline-3">
-<h3 id="org36f17d9"><span class="section-number-3">10.26</span> 過去に登録したコースを消去したい</h3>
+<div id="outline-container-org36636de" class="outline-3">
+<h3 id="org36636de"><span class="section-number-3">10.26</span> 過去に登録したコースを消去したい</h3>
 <div class="outline-text-3" id="text-10-26">
 <ul class="org-ul">
 <li>Blackboard でのコース解除は、ユーザ側からでは無理</li>
@@ -2108,8 +2120,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-orgaa81944" class="outline-3">
-<h3 id="orgaa81944"><span class="section-number-3">10.27</span> スマホの Blackboard アプリで、表示するコースを選ぶ</h3>
+<div id="outline-container-orgfbfebf1" class="outline-3">
+<h3 id="orgfbfebf1"><span class="section-number-3">10.27</span> スマホの Blackboard アプリで、表示するコースを選ぶ</h3>
 <div class="outline-text-3" id="text-10-27">
 <ul class="org-ul">
 <li>画面上で選択できる</li>
@@ -2118,8 +2130,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-org745d667" class="outline-3">
-<h3 id="org745d667"><span class="section-number-3">10.28</span> Google Chrome ブラウザでの利用時に、表示リストを減らしたい</h3>
+<div id="outline-container-org7757c06" class="outline-3">
+<h3 id="org7757c06"><span class="section-number-3">10.28</span> Google Chrome ブラウザでの利用時に、表示リストを減らしたい</h3>
 <div class="outline-text-3" id="text-10-28">
 <ul class="org-ul">
 <li>「コースをリストで非表示にする」
@@ -2139,12 +2151,12 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 
 
-<div id="outline-container-org4aed9cf" class="outline-2">
-<h2 id="org4aed9cf"><span class="section-number-2">11</span> Blackboard 掲示板</h2>
+<div id="outline-container-org64e896e" class="outline-2">
+<h2 id="org64e896e"><span class="section-number-2">11</span> Blackboard 掲示板</h2>
 <div class="outline-text-2" id="text-11">
 </div>
-<div id="outline-container-org2416c9d" class="outline-3">
-<h3 id="org2416c9d"><span class="section-number-3">11.1</span> Blackboard の掲示板で検索をしたい</h3>
+<div id="outline-container-org53a3cd7" class="outline-3">
+<h3 id="org53a3cd7"><span class="section-number-3">11.1</span> Blackboard の掲示板で検索をしたい</h3>
 <div class="outline-text-3" id="text-11-1">
 <ul class="org-ul">
 <li>Blackboard 掲示板の画面右上で「検索」が出来る
@@ -2156,12 +2168,12 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-org8a0ff9b" class="outline-2">
-<h2 id="org8a0ff9b"><span class="section-number-2">12</span> 語学</h2>
+<div id="outline-container-orgc246631" class="outline-2">
+<h2 id="orgc246631"><span class="section-number-2">12</span> 語学</h2>
 <div class="outline-text-2" id="text-12">
 </div>
-<div id="outline-container-org305d95d" class="outline-3">
-<h3 id="org305d95d"><span class="section-number-3">12.1</span> 英語の eラーニング (neo) にログインできない</h3>
+<div id="outline-container-org50093e5" class="outline-3">
+<h3 id="org50093e5"><span class="section-number-3">12.1</span> 英語の eラーニング (neo) にログインできない</h3>
 <div class="outline-text-3" id="text-12-1">
 <ul class="org-ul">
 <li>sアカウントでログイン
@@ -2177,8 +2189,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-org7a4fa3b" class="outline-3">
-<h3 id="org7a4fa3b"><span class="section-number-3">12.2</span> sアカウントとは何か?</h3>
+<div id="outline-container-org8533014" class="outline-3">
+<h3 id="org8533014"><span class="section-number-3">12.2</span> sアカウントとは何か?</h3>
 <div class="outline-text-3" id="text-12-2">
 <ul class="org-ul">
 <li>質問： <b>sアカウント</b> とは、アルファベット一文字から始まる教育用 <b>stu メールアドレス</b> のことか?</li>
@@ -2199,8 +2211,8 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 </div>
 
-<div id="outline-container-orgd741ef2" class="outline-3">
-<h3 id="orgd741ef2"><span class="section-number-3">12.3</span> 英語のクラス分けが分からない</h3>
+<div id="outline-container-org2c3708a" class="outline-3">
+<h3 id="org2c3708a"><span class="section-number-3">12.3</span> 英語のクラス分けが分からない</h3>
 <div class="outline-text-3" id="text-12-3">
 <ul class="org-ul">
 <li>「ガイダンス資料」参照
@@ -2236,12 +2248,12 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 
 
-<div id="outline-container-orgdb346b1" class="outline-2">
-<h2 id="orgdb346b1"><span class="section-number-2">13</span> Microsoft Office365</h2>
+<div id="outline-container-org2b24b23" class="outline-2">
+<h2 id="org2b24b23"><span class="section-number-2">13</span> Microsoft Office365</h2>
 <div class="outline-text-2" id="text-13">
 </div>
-<div id="outline-container-orgeb06947" class="outline-3">
-<h3 id="orgeb06947"><span class="section-number-3">13.1</span> Microsoft Office365 のインストールが分からない</h3>
+<div id="outline-container-org90e8f8c" class="outline-3">
+<h3 id="org90e8f8c"><span class="section-number-3">13.1</span> Microsoft Office365 のインストールが分からない</h3>
 <div class="outline-text-3" id="text-13-1">
 <ol class="org-ol">
 <li>PC/Mac に Microsoft Office 製品をダウンロードして利用したい
@@ -2283,16 +2295,16 @@ Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではな�
 </div>
 
 
-<div id="outline-container-org66de987" class="outline-3">
-<h3 id="org66de987"><span class="section-number-3">13.2</span> 文理学部では Microsoft Office365 は2種類</h3>
+<div id="outline-container-org3c455e6" class="outline-3">
+<h3 id="org3c455e6"><span class="section-number-3">13.2</span> 文理学部では Microsoft Office365 は2種類</h3>
 <div class="outline-text-3" id="text-13-2">
 <p>
 文理学部の学生は、2種類の Office365 を利用可能
 </p>
 </div>
 
-<div id="outline-container-orgbf3ff37" class="outline-4">
-<h4 id="orgbf3ff37"><span class="section-number-4">13.2.1</span> 【文理学部】</h4>
+<div id="outline-container-orgb40d9a3" class="outline-4">
+<h4 id="orgb40d9a3"><span class="section-number-4">13.2.1</span> 【文理学部】</h4>
 <div class="outline-text-4" id="text-13-2-1">
 <ul class="org-ul">
 <li>PCにインストールをせず、ブラウザ上の Office365 のみ利用</li>
@@ -2318,8 +2330,8 @@ stu メールアドレス名義の Office365 アカウントを使うのが便�
 </div>
 
 
-<div id="outline-container-org03c4b12" class="outline-4">
-<h4 id="org03c4b12"><span class="section-number-4">13.2.2</span> 【日本大学本部】</h4>
+<div id="outline-container-org5b00d54" class="outline-4">
+<h4 id="org5b00d54"><span class="section-number-4">13.2.2</span> 【日本大学本部】</h4>
 <div class="outline-text-4" id="text-13-2-2">
 <ul class="org-ul">
 <li>PC に Office365 をインストール出来ないと困る作業がある場合</li>
@@ -2334,8 +2346,8 @@ stu メールアドレス名義の Office365 アカウントを使うのが便�
 </div>
 </div>
 
-<div id="outline-container-orgc0f71e8" class="outline-4">
-<h4 id="orgc0f71e8"><span class="section-number-4">13.2.3</span> 閲覧権限、アクセス制限でのエラーに注意</h4>
+<div id="outline-container-orgcdd764c" class="outline-4">
+<h4 id="orgcdd764c"><span class="section-number-4">13.2.3</span> 閲覧権限、アクセス制限でのエラーに注意</h4>
 <div class="outline-text-4" id="text-13-2-3">
 <ul class="org-ul">
 <li>アクセス制限のため閲覧できない場合、一度ログアウトして、もう片方のアカウントでログインし直す必要がある
@@ -2350,8 +2362,8 @@ stu メールアドレス名義の Office365 アカウントを使うのが便�
 
 
 
-<div id="outline-container-org519e512" class="outline-3">
-<h3 id="org519e512"><span class="section-number-3">13.3</span> 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</h3>
+<div id="outline-container-org4c41931" class="outline-3">
+<h3 id="org4c41931"><span class="section-number-3">13.3</span> 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</h3>
 <div class="outline-text-3" id="text-13-3">
 <ul class="org-ul">
 <li>手っ取り早くブラウザ上で文理学部の Office365 を使う場合、下記情報に集約される
@@ -2361,7 +2373,7 @@ stu メールアドレス名義の Office365 アカウントを使うのが便�
 </ul></li>
 </ul>
 
-<pre class="example">
+<pre class="example" id="org81ff551">
 2017.04.25 文理学部提供のMicrosoft Office 365利用開始について
 文理学部提供のMicrosoft Office 365利用開始について
 文理学部では，平成２９年４月より，教育・研究環境向上を目的として，Microsoft Office 365のサービスを開始します。
@@ -2387,12 +2399,12 @@ https://mail.office365.com/
 
 
 
-<div id="outline-container-org619bc41" class="outline-2">
-<h2 id="org619bc41"><span class="section-number-2">14</span> Webex</h2>
+<div id="outline-container-org817a52b" class="outline-2">
+<h2 id="org817a52b"><span class="section-number-2">14</span> Webex</h2>
 <div class="outline-text-2" id="text-14">
 </div>
-<div id="outline-container-orgaf060c2" class="outline-3">
-<h3 id="orgaf060c2"><span class="section-number-3">14.1</span> Webex がわからない</h3>
+<div id="outline-container-orgf315efe" class="outline-3">
+<h3 id="orgf315efe"><span class="section-number-3">14.1</span> Webex がわからない</h3>
 <div class="outline-text-3" id="text-14-1">
 <ul class="org-ul">
 <li>webex へのログインの際に必要となるメールアドレスは、授業用メールアドレスの stuメールアドレスを使えば良いか</li>
@@ -2405,17 +2417,50 @@ https://mail.office365.com/
 </ul>
 </div>
 </div>
+
+<div id="outline-container-org2f2fccd" class="outline-3">
+<h3 id="org2f2fccd"><span class="section-number-3">14.2</span> (教職員) Webex でミーティングを開始する</h3>
+<div class="outline-text-3" id="text-14-2">
+<ul class="org-ul">
+<li>iPhone / iPad の Webex では、参加はできますが、ミーティングの開始ができないようです</li>
+<li>オープンキャンパスなどの業務で使う場合、 PC/Mac を利用する必要があります</li>
+</ul>
+</div>
+</div>
 </div>
 
 
-
-<div id="outline-container-orgdec5b07" class="outline-2">
-<h2 id="orgdec5b07"><span class="section-number-2">15</span> Zoom</h2>
+<div id="outline-container-orgf0db6b9" class="outline-2">
+<h2 id="orgf0db6b9"><span class="section-number-2">15</span> Zoom</h2>
 <div class="outline-text-2" id="text-15">
 </div>
-<div id="outline-container-org6bd995e" class="outline-3">
-<h3 id="org6bd995e"><span class="section-number-3">15.1</span> Surface GO (Microsoft Windows S) に Zoom をインストールできない</h3>
+<div id="outline-container-org714f749" class="outline-3">
+<h3 id="org714f749"><span class="section-number-3">15.1</span> Zoom 利用での注意</h3>
 <div class="outline-text-3" id="text-15-1">
+<ul class="org-ul">
+<li>2021年4月まで
+<ul class="org-ul">
+<li>文理学部の stuメールアドレスによる Zoom アカウント</li>
+<li>教員と学生が利用できます</li>
+<li>学科事務室職員は、教員と同等権限では利用ができません
+<ul class="org-ul">
+<li>共同ホストなど、高度なサポートや対応は難しい</li>
+</ul></li>
+</ul></li>
+
+<li>2021年5月以降
+<ul class="org-ul">
+<li>日本大学本部の NU-Apps/NU-AppsG による Zoom アカウント</li>
+<li>学科事務室職員も Zoom が利用できるようになります</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org37e2c05" class="outline-3">
+<h3 id="org37e2c05"><span class="section-number-3">15.2</span> Surface GO (Microsoft Windows S) に Zoom をインストールできない</h3>
+<div class="outline-text-3" id="text-15-2">
 <ul class="org-ul">
 <li>Windows S に Zoom をインストールできない</li>
 
@@ -2438,12 +2483,12 @@ https://mail.office365.com/
 
 
 
-<div id="outline-container-org59d38ce" class="outline-2">
-<h2 id="org59d38ce"><span class="section-number-2">16</span> Blackboard Collaborate Ultra</h2>
+<div id="outline-container-org5711109" class="outline-2">
+<h2 id="org5711109"><span class="section-number-2">16</span> Blackboard Collaborate Ultra</h2>
 <div class="outline-text-2" id="text-16">
 </div>
-<div id="outline-container-org27ffc85" class="outline-3">
-<h3 id="org27ffc85"><span class="section-number-3">16.1</span> Blackboard Collaborate Ultra について</h3>
+<div id="outline-container-orgf50d1ca" class="outline-3">
+<h3 id="orgf50d1ca"><span class="section-number-3">16.1</span> Blackboard Collaborate Ultra について</h3>
 <div class="outline-text-3" id="text-16-1">
 <p>
 Blackboard Collaborate Ultra の授業に入ったが、授業が始まっていない
@@ -2460,12 +2505,12 @@ Blackboard Collaborate Ultra の授業に入ったが、授業が始まってい
 
 
 
-<div id="outline-container-orgbd133e8" class="outline-2">
-<h2 id="orgbd133e8"><span class="section-number-2">17</span> 授業情報</h2>
+<div id="outline-container-org608368b" class="outline-2">
+<h2 id="org608368b"><span class="section-number-2">17</span> 授業情報</h2>
 <div class="outline-text-2" id="text-17">
 </div>
-<div id="outline-container-org341e292" class="outline-3">
-<h3 id="org341e292"><span class="section-number-3">17.1</span> Blackboard でクラウド移行が出来ていない科目</h3>
+<div id="outline-container-orgdc48ce3" class="outline-3">
+<h3 id="orgdc48ce3"><span class="section-number-3">17.1</span> Blackboard でクラウド移行が出来ていない科目</h3>
 <div class="outline-text-3" id="text-17-1">
 <ul class="org-ul">
 <li>2020年度前期： 新しい Blackboard へ移行した科目、従来の Blackboard を利用する科目
@@ -2483,8 +2528,8 @@ Blackboard Collaborate Ultra の授業に入ったが、授業が始まってい
 </div>
 </div>
 
-<div id="outline-container-org880c25d" class="outline-3">
-<h3 id="org880c25d"><span class="section-number-3">17.2</span> 夏期集中講義の実施日時・形態が分からない</h3>
+<div id="outline-container-orgf142543" class="outline-3">
+<h3 id="orgf142543"><span class="section-number-3">17.2</span> 夏期集中講義の実施日時・形態が分からない</h3>
 <div class="outline-text-3" id="text-17-2">
 <ul class="org-ul">
 <li>夏期集中講義の実施日時・形態が分からない</li>
@@ -2498,8 +2543,8 @@ Blackboard Collaborate Ultra の授業に入ったが、授業が始まってい
 </div>
 </div>
 
-<div id="outline-container-org60fb84a" class="outline-3">
-<h3 id="org60fb84a"><span class="section-number-3">17.3</span> オンラインで行われる集中講義の情報を知りたい</h3>
+<div id="outline-container-org80311d2" class="outline-3">
+<h3 id="org80311d2"><span class="section-number-3">17.3</span> オンラインで行われる集中講義の情報を知りたい</h3>
 <div class="outline-text-3" id="text-17-3">
 <ul class="org-ul">
 <li>オンラインで行われる集中講義の情報を知りたい</li>
@@ -2513,8 +2558,8 @@ Blackboard Collaborate Ultra の授業に入ったが、授業が始まってい
 </div>
 
 
-<div id="outline-container-orgf60304b" class="outline-3">
-<h3 id="orgf60304b"><span class="section-number-3">17.4</span> 夏期集中の授業の実施日程が分からない</h3>
+<div id="outline-container-orgf0c4c08" class="outline-3">
+<h3 id="orgf0c4c08"><span class="section-number-3">17.4</span> 夏期集中の授業の実施日程が分からない</h3>
 <div class="outline-text-3" id="text-17-4">
 <ul class="org-ul">
 <li>教員のメールアドレスが分からず、連絡がとれない</li>
@@ -2527,12 +2572,12 @@ Blackboard Collaborate Ultra の授業に入ったが、授業が始まってい
 </div>
 </div>
 
-<div id="outline-container-orgf12c568" class="outline-2">
-<h2 id="orgf12c568"><span class="section-number-2">18</span> NU-AppsG / Google Classroom</h2>
+<div id="outline-container-org02fff8c" class="outline-2">
+<h2 id="org02fff8c"><span class="section-number-2">18</span> NU-AppsG / Google Classroom</h2>
 <div class="outline-text-2" id="text-18">
 </div>
-<div id="outline-container-orgc543687" class="outline-3">
-<h3 id="orgc543687"><span class="section-number-3">18.1</span> NU-AppsG とは何ですか?</h3>
+<div id="outline-container-orge648ade" class="outline-3">
+<h3 id="orge648ade"><span class="section-number-3">18.1</span> NU-AppsG とは何ですか?</h3>
 <div class="outline-text-3" id="text-18-1">
 <p>
 ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
@@ -2561,8 +2606,8 @@ ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
 </div>
 </div>
 
-<div id="outline-container-org72a7c3d" class="outline-3">
-<h3 id="org72a7c3d"><span class="section-number-3">18.2</span> Google Classroom にクラスコードを入力しても、エラーで参加できない</h3>
+<div id="outline-container-org46b880b" class="outline-3">
+<h3 id="org46b880b"><span class="section-number-3">18.2</span> Google Classroom にクラスコードを入力しても、エラーで参加できない</h3>
 <div class="outline-text-3" id="text-18-2">
 <ul class="org-ul">
 <li>日本大学の Google Classroom には、個人の Google アカウントでは参加できない</li>
@@ -2575,8 +2620,8 @@ ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
 </div>
 
 
-<div id="outline-container-org221afd7" class="outline-3">
-<h3 id="org221afd7"><span class="section-number-3">18.3</span> NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</h3>
+<div id="outline-container-org0631467" class="outline-3">
+<h3 id="org0631467"><span class="section-number-3">18.3</span> NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</h3>
 <div class="outline-text-3" id="text-18-3">
 <ul class="org-ul">
 <li>NU-AppsG パスワード再発行
@@ -2586,8 +2631,8 @@ ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
 </div>
 </div>
 
-<div id="outline-container-org3b57af8" class="outline-3">
-<h3 id="org3b57af8"><span class="section-number-3">18.4</span> Google Classroom の授業で、参加の方法が分からない</h3>
+<div id="outline-container-orgf1dd983" class="outline-3">
+<h3 id="orgf1dd983"><span class="section-number-3">18.4</span> Google Classroom の授業で、参加の方法が分からない</h3>
 <div class="outline-text-3" id="text-18-4">
 <ul class="org-ul">
 <li>まず、シラバスを確認</li>
@@ -2635,8 +2680,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 
 
-<div id="outline-container-orgcef1f52" class="outline-3">
-<h3 id="orgcef1f52"><span class="section-number-3">18.5</span> Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</h3>
+<div id="outline-container-org4c3ef84" class="outline-3">
+<h3 id="org4c3ef84"><span class="section-number-3">18.5</span> Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</h3>
 <div class="outline-text-3" id="text-18-5">
 <ul class="org-ul">
 <li>Google Classroom で、他の学生に見られずに、教員へ連絡をとる方法の一つが、課題に対して書き込める「限定公開コメント」</li>
@@ -2667,8 +2712,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-org6006ad8" class="outline-3">
-<h3 id="org6006ad8"><span class="section-number-3">18.6</span> Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</h3>
+<div id="outline-container-orgfc84e36" class="outline-3">
+<h3 id="orgfc84e36"><span class="section-number-3">18.6</span> Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</h3>
 <div class="outline-text-3" id="text-18-6">
 <ul class="org-ul">
 <li>Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい
@@ -2689,8 +2734,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 
 
-<div id="outline-container-org6d52d59" class="outline-3">
-<h3 id="org6d52d59"><span class="section-number-3">18.7</span> Google Classroom で、教員にメールが送れない</h3>
+<div id="outline-container-orga510ed7" class="outline-3">
+<h3 id="orga510ed7"><span class="section-number-3">18.7</span> Google Classroom で、教員にメールが送れない</h3>
 <div class="outline-text-3" id="text-18-7">
 <ul class="org-ul">
 <li>Google Classroom の使い方については、 YouTube でも情報が豊富でインフラとしての強みがある</li>
@@ -2711,8 +2756,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 
 
-<div id="outline-container-orgf110b4f" class="outline-3">
-<h3 id="orgf110b4f"><span class="section-number-3">18.8</span> 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</h3>
+<div id="outline-container-orgeb95163" class="outline-3">
+<h3 id="orgeb95163"><span class="section-number-3">18.8</span> 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</h3>
 <div class="outline-text-3" id="text-18-8">
 <ul class="org-ul">
 <li>教員が NU-Apps ドメイン、学生が NU-AppsG ドメインで、アカウントが別扱いということが影響</li>
@@ -2723,8 +2768,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-org18ab7af" class="outline-3">
-<h3 id="org18ab7af"><span class="section-number-3">18.9</span> Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</h3>
+<div id="outline-container-orga1d63b1" class="outline-3">
+<h3 id="orga1d63b1"><span class="section-number-3">18.9</span> Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</h3>
 <div class="outline-text-3" id="text-18-9">
 <ul class="org-ul">
 <li><a href="https://support.google.com/edu/classroom/answer/6315899?co=GENIE.Platform%3DDesktop&amp;hl=ja">生徒向けのトラブルシューティング - パソコン - Classroom ヘルプ</a></li>
@@ -2749,8 +2794,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-orgf15aa02" class="outline-3">
-<h3 id="orgf15aa02"><span class="section-number-3">18.10</span> NU-AppsG にログインできません → 事前にログインしておいて下さい</h3>
+<div id="outline-container-org84174ad" class="outline-3">
+<h3 id="org84174ad"><span class="section-number-3">18.10</span> NU-AppsG にログインできません → 事前にログインしておいて下さい</h3>
 <div class="outline-text-3" id="text-18-10">
 <ul class="org-ul">
 <li>NU-AppsG にログインできません → 事前にログインしておいて下さい</li>
@@ -2786,8 +2831,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-orge26a497" class="outline-3">
-<h3 id="orge26a497"><span class="section-number-3">18.11</span> Google Classroom クラスへの登録を解除する</h3>
+<div id="outline-container-org4d67b08" class="outline-3">
+<h3 id="org4d67b08"><span class="section-number-3">18.11</span> Google Classroom クラスへの登録を解除する</h3>
 <div class="outline-text-3" id="text-18-11">
 <ul class="org-ul">
 <li><a href="https://support.google.com/edu/classroom/answer/6069981?co=GENIE.Platform%3DDesktop&amp;hl=ja">クラスへの登録を解除する</a>
@@ -2799,8 +2844,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-org11c0cb8" class="outline-3">
-<h3 id="org11c0cb8"><span class="section-number-3">18.12</span> 研究生の NU-AppsG</h3>
+<div id="outline-container-org61b4c22" class="outline-3">
+<h3 id="org61b4c22"><span class="section-number-3">18.12</span> 研究生の NU-AppsG</h3>
 <div class="outline-text-3" id="text-18-12">
 <ul class="org-ul">
 <li>文理学部では、 NU-AppsG アカウントは研究生に未発行、必要に応じて申請</li>
@@ -2809,12 +2854,12 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-orgf962826" class="outline-2">
-<h2 id="orgf962826"><span class="section-number-2">19</span> その他</h2>
+<div id="outline-container-orga6892cc" class="outline-2">
+<h2 id="orga6892cc"><span class="section-number-2">19</span> その他</h2>
 <div class="outline-text-2" id="text-19">
 </div>
-<div id="outline-container-org8d93005" class="outline-3">
-<h3 id="org8d93005"><span class="section-number-3">19.1</span> 教科書が届かない</h3>
+<div id="outline-container-orga89b74d" class="outline-3">
+<h3 id="orga89b74d"><span class="section-number-3">19.1</span> 教科書が届かない</h3>
 <div class="outline-text-3" id="text-19-1">
 <ul class="org-ul">
 <li>2020年5月5日に教科書を注文して1週間経過したが、届かない</li>
@@ -2826,8 +2871,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 </div>
 </div>
 
-<div id="outline-container-org44073e7" class="outline-3">
-<h3 id="org44073e7"><span class="section-number-3">19.2</span> オンデマンド型の授業では、出席確認をするか</h3>
+<div id="outline-container-org4c88def" class="outline-3">
+<h3 id="org4c88def"><span class="section-number-3">19.2</span> オンデマンド型の授業では、出席確認をするか</h3>
 <div class="outline-text-3" id="text-19-2">
 <ul class="org-ul">
 <li>オンデマンド型の授業では、出席確認をするか</li>
@@ -2847,8 +2892,8 @@ Google Chromeブラウザから Google Classroom へログインすれば、成�
 <div id="postamble" class="status">
 <p class="date">&#26085;&#20184;: \DTMnow</p>
 <p class="author">&#33879;&#32773;: 菅野 剛</p>
-<p class="date">Created: 2020-09-15 Tue 10:50</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2021-01-02 Sat 13:54</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
