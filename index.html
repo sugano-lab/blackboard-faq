@@ -1,2864 +1,432 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<!-- 2021-01-02 Sat 13:10 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>日本大学文理学部社会学科 Blackboard FAQ 非公式</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="菅野 剛">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
-<link rel="stylesheet" type="text/css" href="sugano-styles-dark.css">
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
-</head>
-<body>
-<div id="content">
-<header>
-<h1 class="title">日本大学文理学部社会学科 Blackboard FAQ 非公式</h1>
-</header><nav id="table-of-contents">
-<h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgafe42c1">概要</a>
-<ul>
-<li><a href="#org4a588c1">概要</a></li>
-<li><a href="#org45e9465">注意</a></li>
-<li><a href="#org8808d10">キーワード指定でページ内検索</a></li>
-</ul>
-</li>
-<li><a href="#orgbf24bdf">1. 個別の授業</a></li>
-<li><a href="#org2471c96">2. Blackboard へのログイン</a>
-<ul>
-<li><a href="#org0638530">2.1. ログイン</a></li>
-</ul>
-</li>
-<li><a href="#org0afe539">3. Blackboard のコース</a>
-<ul>
-<li><a href="#org3437989">3.1. コースの検索</a></li>
-<li><a href="#orga2c8eaa">3.2. コースの登録</a></li>
-<li><a href="#org9dd55b6">3.3. コースの表示</a></li>
-<li><a href="#orgb11c878">3.4. コースの利用</a></li>
-<li><a href="#org88c1b8b">3.5. コースの解除</a></li>
-</ul>
-</li>
-<li><a href="#org6501bde">4. Blackboard の課題</a>
-<ul>
-<li><a href="#org66768ed">4.1. 課題の提出</a></li>
-</ul>
-</li>
-<li><a href="#org771acb2">5. Blackboard の Eメール</a>
-<ul>
-<li><a href="#orgfceef3a">5.1. Eメール</a></li>
-</ul>
-</li>
-<li><a href="#orgc42bc61">6. Blackboard の掲示板</a>
-<ul>
-<li><a href="#orgc7cb36e">6.1. 掲示板の編集</a></li>
-</ul>
-</li>
-<li><a href="#orgf6b5744">7. Blackboard の教材</a>
-<ul>
-<li><a href="#org661370c">7.1. 教材の閲覧・視聴・ダウンロード</a></li>
-</ul>
-</li>
-<li><a href="#org07fb091">8. その他</a>
-<ul>
-<li><a href="#org47469f2">8.1. 個別の授業への問い合わせ、対応の要請</a></li>
-</ul>
-</li>
-<li><a href="#org7146bfb">9. メールとアカウント</a>
-<ul>
-<li><a href="#orgeba51a8">9.1. stu メールアドレスがわからない</a></li>
-<li><a href="#orgb1e72ff">9.2. 文理学部のメールがわからない</a></li>
-<li><a href="#org05f3bf7">9.3. メールで分からないことが多い</a></li>
-<li><a href="#org37d61e5">9.4. NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</a></li>
-<li><a href="#org8d344e5">9.5. stu メール / Microsoft Office365 Web利用 / Zoom / Webex</a></li>
-<li><a href="#org0287409">9.6. Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</a></li>
-<li><a href="#org04655e9">9.7. tアドレス</a></li>
-<li><a href="#org594fc9a">9.8. 教育 Web Mail (Active!Mail) とは何か?</a></li>
-<li><a href="#org20c5879">9.9. 教員に送信したEメールの返信をチェックしたい</a></li>
-<li><a href="#org2c704b0">9.10. ツールの eメールに質問を送った場合、返信をどこで確認するのか?</a></li>
-<li><a href="#orgd4f4409">9.11. 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</a></li>
-</ul>
-</li>
-<li><a href="#org16cc8a0">10. Blackboard</a>
-<ul>
-<li><a href="#org842e286">10.1. 課題についての質問を Bb ツールのメール機能で送信したが返事がない</a></li>
-<li><a href="#org2b03dfb">10.2. PC からファイル添付することができない</a></li>
-<li><a href="#org8683e6f">10.3. 課題が出されているが、提出先がない</a></li>
-<li><a href="#org4315c2c">10.4. 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</a></li>
-<li><a href="#orgd758693">10.5. 課題の提出をやり直したい / 再提出をしたい</a></li>
-<li><a href="#org831b2c2">10.6. 課題提出で失敗</a></li>
-<li><a href="#org271001d">10.7. 課題提出ができなくなった</a></li>
-<li><a href="#org127c073">10.8. 教材の添付ファイルがダウンロードできない</a></li>
-<li><a href="#org969f185">10.9. 課題提出でのエラー</a></li>
-<li><a href="#orgeeeb491">10.10. スマートフォンで課題を提出しても、反映されない</a></li>
-<li><a href="#orgdb3ef89">10.11. 期限切れの課題を提出したい</a></li>
-<li><a href="#org352b485">10.12. Blackboard で提出した課題の内容の確認をしたい</a></li>
-<li><a href="#orgf46c09b">10.13. 長文を記入して送信を行うと、作業内容が全て消えた</a></li>
-<li><a href="#org8bf89a0">10.14. 「この Microsoft Edge は推奨されません」</a></li>
-<li><a href="#orgd5b6fb7">10.15. Microsoft Word 提出の際の行間の余白について</a></li>
-<li><a href="#org49e4426">10.16. PC で授業の動画を見ることができなくなった</a></li>
-<li><a href="#org8e1a0e1">10.17. Word での提出の仕方がわからない</a></li>
-<li><a href="#org9a84d8b">10.18. 音声付きPowerPointスライドの閲覧について</a></li>
-<li><a href="#org6ad39c4">10.19. 教材の音声ファイルが再生できない</a></li>
-<li><a href="#org09d58b3">10.20. 授業の動画再生について</a></li>
-<li><a href="#orgf5b3a3b">10.21. 掲示板に間違って作ったスレッドを、削除したい</a></li>
-<li><a href="#org88c5a24">10.22. 登録していた授業が消えた</a></li>
-<li><a href="#org9710517">10.23. 新しい Blackboard に入るためのメールアドレスが分からない</a></li>
-<li><a href="#org83a1d52">10.24. 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</a></li>
-<li><a href="#orgf23cfbb">10.25. 掲示板にある、購読とはどのような機能か?</a></li>
-<li><a href="#org7693e30">10.26. 過去に登録したコースを消去したい</a></li>
-<li><a href="#orgd46b2e4">10.27. スマホの Blackboard アプリで、表示するコースを選ぶ</a></li>
-<li><a href="#orgb797910">10.28. Google Chrome ブラウザでの利用時に、表示リストを減らしたい</a></li>
-</ul>
-</li>
-<li><a href="#orgfc4a011">11. Blackboard 掲示板</a>
-<ul>
-<li><a href="#orgf609d58">11.1. Blackboard の掲示板で検索をしたい</a></li>
-</ul>
-</li>
-<li><a href="#org0e10019">12. 語学</a>
-<ul>
-<li><a href="#orgf020813">12.1. 英語の eラーニング (neo) にログインできない</a></li>
-<li><a href="#org896c3d1">12.2. sアカウントとは何か?</a></li>
-<li><a href="#org2a209ac">12.3. 英語のクラス分けが分からない</a></li>
-</ul>
-</li>
-<li><a href="#org7aeca61">13. Microsoft Office365</a>
-<ul>
-<li><a href="#org63ef711">13.1. Microsoft Office365 のインストールが分からない</a></li>
-<li><a href="#org9cb69a7">13.2. 文理学部では Microsoft Office365 は2種類</a></li>
-<li><a href="#orgce71429">13.3. 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</a></li>
-</ul>
-</li>
-<li><a href="#org53ec64e">14. Webex</a>
-<ul>
-<li><a href="#orgfe074d2">14.1. Webex がわからない</a></li>
-</ul>
-</li>
-<li><a href="#org0487e66">15. Zoom</a>
-<ul>
-<li><a href="#orgf9c8757">15.1. Surface GO (Microsoft Windows S) に Zoom をインストールできない</a></li>
-</ul>
-</li>
-<li><a href="#orgd65caba">16. Blackboard Collaborate Ultra</a>
-<ul>
-<li><a href="#orgdc488ec">16.1. Blackboard Collaborate Ultra について</a></li>
-</ul>
-</li>
-<li><a href="#orgc15eb18">17. 授業情報</a>
-<ul>
-<li><a href="#org7d91921">17.1. Blackboard でクラウド移行が出来ていない科目</a></li>
-<li><a href="#org00ccea8">17.2. 夏期集中講義の実施日時・形態が分からない</a></li>
-<li><a href="#orgb3102f3">17.3. オンラインで行われる集中講義の情報を知りたい</a></li>
-<li><a href="#org79332f1">17.4. 夏期集中の授業の実施日程が分からない</a></li>
-</ul>
-</li>
-<li><a href="#orgd0250ac">18. NU-AppsG / Google Classroom</a>
-<ul>
-<li><a href="#orgbbe9b1c">18.1. NU-AppsG とは何ですか?</a></li>
-<li><a href="#org5f35889">18.2. Google Classroom にクラスコードを入力しても、エラーで参加できない</a></li>
-<li><a href="#org7efa637">18.3. NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</a></li>
-<li><a href="#org644b3de">18.4. Google Classroom の授業で、参加の方法が分からない</a></li>
-<li><a href="#org7443aab">18.5. Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</a></li>
-<li><a href="#orgcd96d32">18.6. Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</a></li>
-<li><a href="#org8ec7b79">18.7. Google Classroom で、教員にメールが送れない</a></li>
-<li><a href="#orge541e3b">18.8. 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</a></li>
-<li><a href="#org04466f4">18.9. Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</a></li>
-<li><a href="#org0a69524">18.10. NU-AppsG にログインできません → 事前にログインしておいて下さい</a></li>
-<li><a href="#orge112343">18.11. Google Classroom クラスへの登録を解除する</a></li>
-<li><a href="#org9af7937">18.12. 研究生の NU-AppsG</a></li>
-</ul>
-</li>
-<li><a href="#org58c4dfe">19. その他</a>
-<ul>
-<li><a href="#org25d5ffa">19.1. 教科書が届かない</a></li>
-<li><a href="#org9dce465">19.2. オンデマンド型の授業では、出席確認をするか</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-
-<div id="outline-container-orgafe42c1" class="outline-2">
-<h2 id="orgafe42c1">概要</h2>
-<div class="outline-text-2" id="text-orgafe42c1">
-</div>
-
-<div id="outline-container-org4a588c1" class="outline-3">
-<h3 id="org4a588c1">概要</h3>
-<div class="outline-text-3" id="text-org4a588c1">
-<ul class="org-ul">
-<li>リンクはトップページ <a href="https://sugano-lab.github.io/blackboard-faq/">https://sugano-lab.github.io/blackboard-faq/</a> にして下さい。更新頻度は低いです。
-<ul class="org-ul">
-<li>1ページで全てを閲覧： <a href="https://sugano-lab.github.io/blackboard-faq/blackboard-faq-all.html">https://sugano-lab.github.io/blackboard-faq/blackboard-faq-all.html</a></li>
-<li>PDFで閲覧： <a href="https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf">https://sugano-lab.github.io/blackboard-faq/blackboard-faq.pdf</a></li>
-</ul></li>
-<li>遠隔授業実施に伴う、 Blackboard 等でのお問い合わせと回答に関するメモ (未整理・重複あり)
-<ul class="org-ul">
-<li><a href="https://www.chs.nihon-u.ac.jp/">文理学部HP</a> / <a href="https://comits2.educ.chs.nihon-u.ac.jp/uniprove_pt/UnLoginAction">COMITS2</a> / 学内文書による通達 / <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/launcher?type=Course&amp;id=_2302_1&amp;url=">Blackboard 20204702 : 遠隔授業サポート（社会学科）</a> / <a href="http://dep.chs.nihon-u.ac.jp/sociology/index.htm">社会学科HP</a> / <a href="http://dep.chs.nihon-u.ac.jp/sociology/form.html">社会学科メールお問い合わせフォーム</a> / <a href="https://sites.google.com/a/nihon-u.ac.jp/nusocio/home">nusocio 日本大学文理学部社会学科【新年度情報】</a> / 電話による対応 等にまたがる情報</li>
-</ul></li>
-
-<li>内容について正確さの保証はありません
-<ol class="org-ol">
-<li>作成者は、 Blackboard、 Microsoft Windows 、 Word をあまり使いません</li>
-<li>匿名のお問い合せが多く、フィードバックも得られないため、解決したのかどうか不明です</li>
-</ol></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org45e9465" class="outline-3">
-<h3 id="org45e9465">注意</h3>
-<div class="outline-text-3" id="text-org45e9465">
-
-<figure id="orgbc2bc4c">
-<img src="figures/blackboard-faq-dot-01.png" alt="blackboard-faq-dot-01.png" width="480">
-
-<figcaption><span class="figure-number">&#22259;1:  </span>遠隔授業での質問</figcaption>
-</figure>
-
-
-
-
-
-<ul class="org-ul">
-<li>遠隔授業についての質問は、基本的には、授業担当の教員が対応
-<ol class="org-ol">
-<li>授業の <b>シラバス</b> 、Comits2、学部HP を確認
-<ul class="org-ul">
-<li>授業の <b>シラバスを確認</b> を必ずしましょう</li>
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/">https://syllabus.chs.nihon-u.ac.jp/</a></li>
-<li>シラバスを確認すれば、簡単に解決することも多いです</li>
-</ul></li>
-
-<li>Blackboard <b>連絡事項</b>
-<ul class="org-ul">
-<li>受講授業の Blackboard のコースで、 <b>連絡事項</b> を確認しましょう</li>
-<li><a href="https://nuchs.blackboard.com/">https://nuchs.blackboard.com/</a></li>
-</ul></li>
-
-<li>Blackboard <b>掲示板</b> 
-<ul class="org-ul">
-<li>Blackboard <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> で <b>検索</b> し、過去の回答を参考にして下さい</li>
-<li>2020年度前期の問いあわせと対応については、この Webページにもまとめました (2020年度後期は未反映)</li>
-<li><b>ページ内検索</b> をすれば、過去の情報を再利用・活用できます</li>
-</ul></li>
-
-<li><a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> へ書き込みをしてみてください
-<ul class="org-ul">
-<li>解決しない場合、 <a href="https://nuchs.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2302_1&amp;cmp_tab_id=_4690_1&amp;mode=view">遠隔授業サポート（社会学科）</a> の <b>掲示板</b> へ書き込みをしてみてください</li>
-<li>Eメールによるお問い合わせは、御遠慮ください (情報共有・作業連携が進まない、責任の所在が不明)</li>
-<li><b>掲示板</b> には、記名でも匿名でも、書き込みができます</li>
-<li>問い合わせをする場合、 <b>状況判断と解決に必要な具体的情報を含める</b> こと</li>
-<li>知っていること、解決できることは、 <b>学生同士で回答</b> し、助けあって下さい</li>
-<li>解決した / 解決しなかったなどのフィードバックも、重要な貢献です</li>
-</ul></li>
-
-<li>解決しない場合、授業の Blackboard のEメールで授業担当教員へ問い合わせをしてみてください
-<ul class="org-ul">
-<li>Google Classroom の場合、コメント、限定公開コメント、Googleフォーム等で授業担当教員へ問い合わせ</li>
-</ul></li>
-</ol></li>
-
-<li>文理学部内の他学科でも、同様の問い合わせと対応が発生していると思われるので、他学科での <b>問い合わせや回答の情報を共有</b> する枠組みが望ましい</li>
-
-<li>社会学科と別の総合教育科目への問い合わせや、語学科目への問い合わせ、管轄外の総合教育科目についての他学科学生からの電話問い合わせについては、改善・効率化の余地がある</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org8808d10" class="outline-3">
-<h3 id="org8808d10">キーワード指定でページ内検索</h3>
-<div class="outline-text-3" id="text-org8808d10">
-<ul class="org-ul">
-<li>Webページ内全て確認するのは大変。キーワード指定で <b>ページ内検索</b> 。
-<ul class="org-ul">
-<li>Google Chrome ブラウザ： <a href="https://support.google.com/chromebook/answer/95440?co=GENIE.Platform%3DDesktop&amp;hl=ja">Chrome でウェブを検索する - パソコン - Chromebook ヘルプ</a></li>
-<li>iPhone Safari ：<a href="https://support.apple.com/ja-jp/guide/iphone/iph6297b394b/ios">iPhoneでSafariを使用してWebサイトを検索する - Apple サポート</a> の最後辺りの「ページ内を検索する」(ページで特定の語句を検索できます。) を参照</li>
-<li>アンドロイド Chrome アプリ： <a href="https://support.google.com/chrome/answer/95440?co=GENIE.Platform%3DAndroid&amp;hl=ja">Chrome でウェブを検索する - Android - Google Chrome ヘルプ</a> の「ウェブページ内を検索する」を参照</li>
-<li>Windows ： Webブラウザで【Ctrl】を押しながら【F】キーを押し、キーワードを入力</li>
-<li>Mac ： Webブラウザで【command】キーを押しながら【F】キーを押し、キーワードを入力</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgbf24bdf" class="outline-2">
-<h2 id="orgbf24bdf"><span class="section-number-2">1</span> 個別の授業</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-個別の授業についての対応情報・記録は、この Webページでの掲載は控えさせて頂きます
-</p>
-
-<ol class="org-ol">
-<li>個別授業への問い合わせ → 授業担当教員へ掲示板や Eメールで問い合わせ、授業担当教員が各自で対応</li>
-
-<li>総合教育科目への問い合わせ → 担当の幹事学科へ問い合わせ
-<ol class="org-ol">
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/op/list1_1.html">総合教育科目 総合I群 シラバス</a></li>
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/op/list1_2.html">総合教育科目 総合II群 シラバス</a></li>
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/op/list1_3.html">総合教育科目 総合III群 シラバス</a></li>
-</ol></li>
-
-<li>語学科目への問い合わせ → 日本大学文理学部外国語教育センターへ問い合わせ
-<ul class="org-ul">
-<li><a href="https://www.chs.nihon-u.ac.jp/contact/flec_form/">日本大学文理学部 | 日本大学文理学部外国語教育センター（お問い合わせ）</a></li>
-</ul></li>
-</ol>
-</div>
-</div>
-
-
-
-
-<div id="outline-container-org2471c96" class="outline-2">
-<h2 id="org2471c96"><span class="section-number-2">2</span> Blackboard へのログイン</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-org0638530" class="outline-3">
-<h3 id="org0638530"><span class="section-number-3">2.1</span> ログイン</h3>
-<div class="outline-text-3" id="text-2-1">
-</div>
-<div id="outline-container-org7e8595a" class="outline-4">
-<h4 id="org7e8595a"><span class="section-number-4">2.1.1</span> どの Webページからログインをするのでしょうか？</h4>
-<div class="outline-text-4" id="text-2-1-1">
-<ul class="org-ul">
-<li>文理学部の Blackboard は、 Amazon AWS を利用するクラウド環境へ移行しました。
-<ul class="org-ul">
-<li><a href="https://nuchs.blackboard.com/">https://nuchs.blackboard.com/</a></li>
-</ul></li>
-
-<li>文理学部の以前の Blackboard も、自分の Eメール確認用途などで利用します。
-<ul class="org-ul">
-<li><a href="https://minerva3.educ.chs.nihon-u.ac.jp/">https://minerva3.educ.chs.nihon-u.ac.jp/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgfb648d5" class="outline-4">
-<h4 id="orgfb648d5"><span class="section-number-4">2.1.2</span> ログインのアカウントとパスワードがわかりせん</h4>
-<div class="outline-text-4" id="text-2-1-2">
-<ul class="org-ul">
-<li>ログインするには、文理学部の Microsoft Office365 Outlook メールアドレスが必要です。</li>
-<li>Microsoft Office365 Outlook メールは、 <a href="https://mail.office365.com/">https://mail.office365.com/</a> からログインして利用する、文理学部のメールで、xxx[at]stu.chs.nihon-u.ac.jpです。</li>
-<li>日本大学本部の NU-AppsG メールxxx[at]g.nihon-u.ac.jpでは、 Blackboard にログインできませんので、ご注意下さい。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org0201f02" class="outline-4">
-<h4 id="org0201f02"><span class="section-number-4">2.1.3</span> ログインすると、エラー表示</h4>
-<div class="outline-text-4" id="text-2-1-3">
-<ul class="org-ul">
-<li>Windows の Internet Explorer など古い Webブラウザを利用すると、ログインでエラーになります。</li>
-<li>推奨ブラウザである Google Chrome の最新バージョンをインストールし、利用してみて下さい。
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org0afe539" class="outline-2">
-<h2 id="org0afe539"><span class="section-number-2">3</span> Blackboard のコース</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-org3437989" class="outline-3">
-<h3 id="org3437989"><span class="section-number-3">3.1</span> コースの検索</h3>
-<div class="outline-text-3" id="text-3-1">
-</div>
-<div id="outline-container-orgd765fe7" class="outline-4">
-<h4 id="orgd765fe7"><span class="section-number-4">3.1.1</span> 履修する授業のコースを検索しても、見つからない</h4>
-<div class="outline-text-4" id="text-3-1-1">
-<ul class="org-ul">
-<li>稀に、 Blackboard でのコース名が、シラバス上の授業科目名の表記と、若干異なることがあります。</li>
-<li>シラバスで授業科目名、担当教員名を調べ、それらの一部をキーワードとして、検索を行ってみてください。</li>
-<li>検索は、ちょっとコツがいる感じです。</li>
-<li>いろいろ試してみて見てください。</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orga2c8eaa" class="outline-3">
-<h3 id="orga2c8eaa"><span class="section-number-3">3.2</span> コースの登録</h3>
-<div class="outline-text-3" id="text-3-2">
-</div>
-<div id="outline-container-org5029e67" class="outline-4">
-<h4 id="org5029e67"><span class="section-number-4">3.2.1</span> 履修する授業のコースを見つけたが、登録できない</h4>
-<div class="outline-text-4" id="text-3-2-1">
-<ul class="org-ul">
-<li>教員側が、何らかの事情で、まだ登録可能にしていないことが可能性として考えられます。</li>
-<li>登録が出来るはずの時期なのに、登録ができない場合は、学科事務室経由で、授業担当教員に連絡をとることになります。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgf961be8" class="outline-4">
-<h4 id="orgf961be8"><span class="section-number-4">3.2.2</span> 履修する授業のコースに登録したのですが、教材がなく、授業に参加できない</h4>
-<div class="outline-text-4" id="text-3-2-2">
-<ul class="org-ul">
-<li>履修する授業の、前年度 (2019年度等) のコースなどに登録をしていないか、確認をして下さい。</li>
-<li>ややこしいのですが、 Blackboard では、同じ名前の過去の授業も見えてしまい、間違って登録してしまうことがあります。</li>
-<li>同じ名前で、 2020年度のコースであることを確認して、登録をして下さい。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orga4186f4" class="outline-4">
-<h4 id="orga4186f4"><span class="section-number-4">3.2.3</span> 履修する授業のコースから、いつの間にか登録解除されていた</h4>
-<div class="outline-text-4" id="text-3-2-3">
-<ul class="org-ul">
-<li>授業によっては、受講者を何らかの基準で選別するということがあるかもしれませんが、連絡などがある筈です。</li>
-<li>ごく稀に、教員を操作ミスをして、誤って学生の登録を解除してしまうことが実際にあります。</li>
-<li>その場合、自己登録をしてください。</li>
-<li>また、登録解除前の、過去の課題や成績評価の記録が残っているかどうか、教員に連絡をしておく方が良いと思います。</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org9dd55b6" class="outline-3">
-<h3 id="org9dd55b6"><span class="section-number-3">3.3</span> コースの表示</h3>
-<div class="outline-text-3" id="text-3-3">
-</div>
-<div id="outline-container-org7725bec" class="outline-4">
-<h4 id="org7725bec"><span class="section-number-4">3.3.1</span> スマホで、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
-<div class="outline-text-4" id="text-3-3-1">
-<ul class="org-ul">
-<li>Blackboard のコースの登録解除は、教員にしか出来ません。</li>
-<li>スマホの Blackboard アプリでは、表示するコースを選べます。</li>
-<li>画面上の設定で、試してみて下さい。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orga8780a2" class="outline-4">
-<h4 id="orga8780a2"><span class="section-number-4">3.3.2</span> PC / Mac で、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</h4>
-<div class="outline-text-4" id="text-3-3-2">
-<ul class="org-ul">
-<li>PC/Mac での Blackboard でも、表示を選択できます。</li>
-<li>注意：Blackboard のフル機能を利用するには PC/Mac で Google Chrome ブラウザ 等が推奨環境です。</li>
-</ul>
-</div>
-
-<ol class="org-ol">
-<li><a id="orgbdb8a08"></a>「コースをリストで非表示にする」<br>
-<div class="outline-text-5" id="text-3-3-2-1">
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses">https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses</a></li>
-
-<li>Blackboardにログイン後、画面右半分の「▼コース」があります。</li>
-<li>「▼コース」の右端の、設定（歯車）アイコンをクリックします。</li>
-<li>すると、「コースのパーソナライズ」画面になり、自分のコースが一覧表示されます。</li>
-<li>不要なコースのクリックを外し、最後に「送信」します。</li>
-<li>ただし、表示を少なく出来るだけで、コースの登録解除ではないことに注意して下さい。</li>
-<li>間違って登録してしまったコースから、学生自身による登録解除は無理なので、教員に依頼することになります。</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-
-
-
-<div id="outline-container-orgb11c878" class="outline-3">
-<h3 id="orgb11c878"><span class="section-number-3">3.4</span> コースの利用</h3>
-<div class="outline-text-3" id="text-3-4">
-</div>
-<div id="outline-container-org2dbb574" class="outline-4">
-<h4 id="org2dbb574"><span class="section-number-4">3.4.1</span> 教材・資料は、いつまで利用できますか</h4>
-<div class="outline-text-4" id="text-3-4-1">
-<ul class="org-ul">
-<li>履修した授業の Blackboard のコースの教材・資料は、 <b>年度ごとに削除</b> されるとのことです。</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org88c1b8b" class="outline-3">
-<h3 id="org88c1b8b"><span class="section-number-3">3.5</span> コースの解除</h3>
-<div class="outline-text-3" id="text-3-5">
-</div>
-<div id="outline-container-org8d03d9c" class="outline-4">
-<h4 id="org8d03d9c"><span class="section-number-4">3.5.1</span> 履修をしない授業のコースに、間違って自己登録をしてしまった / コースから解除したい</h4>
-<div class="outline-text-4" id="text-3-5-1">
-<ul class="org-ul">
-<li>Blackboard の授業のコースから、学生自身による解除は、できません。</li>
-<li>コースの教員に連絡して、解除を依頼する必要があります。</li>
-<li>対応は教員次第です。</li>
-<li>学部や教務課にお問い合わせ頂いても、 Blackboard のコースの管理・登録・解除は、担当教員にしか操作権限がありません。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgabbc7e3" class="outline-4">
-<h4 id="orgabbc7e3"><span class="section-number-4">3.5.2</span> 過去に受講し、現在は不要である授業のコースを解除したい</h4>
-<div class="outline-text-4" id="text-3-5-2">
-<ul class="org-ul">
-<li>Blackboard で、自分にとって不必要なコースから解除したい場合、学生側からは無理です。</li>
-<li>不要なコースの教員に、登録の解除を依頼することが対策として考えられますが、対応は、教員次第になります。</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-org6501bde" class="outline-2">
-<h2 id="org6501bde"><span class="section-number-2">4</span> Blackboard の課題</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-<div id="outline-container-org66768ed" class="outline-3">
-<h3 id="org66768ed"><span class="section-number-3">4.1</span> 課題の提出</h3>
-<div class="outline-text-3" id="text-4-1">
-</div>
-<div id="outline-container-orgad1a649" class="outline-4">
-<h4 id="orgad1a649"><span class="section-number-4">4.1.1</span> 課題を提出するとエラー / 課題の提出ができない</h4>
-<div class="outline-text-4" id="text-4-1-1">
-<ul class="org-ul">
-<li>PC / Mac で、 Google Chrome ブラウザの最新バージョンをインストールして、使ってみて下さい。
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-</ul></li>
-
-<li>また、 PC/ Mac を再起動すると改善する場合もあるかもしれません。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org77c376b" class="outline-4">
-<h4 id="org77c376b"><span class="section-number-4">4.1.2</span> 今まで PC で課題の提出ができていたが、提出できなくなった</h4>
-<div class="outline-text-4" id="text-4-1-2">
-<ul class="org-ul">
-<li>PC / Mac で、 Google Chrome ブラウザの最新バージョンをインストールして、使ってみて下さい。
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org64655b0" class="outline-4">
-<h4 id="org64655b0"><span class="section-number-4">4.1.3</span> 間違って課題を提出してしまった / 再提出をしたい</h4>
-<div class="outline-text-4" id="text-4-1-3">
-<ul class="org-ul">
-<li>Blackboard の課題提出のデフォルト設定が1回の場合、そのままの設定の授業も多いかもしれません。</li>
-<li>提出が一度となっているコースの設定では、再提出はできないようです。</li>
-<li>教員側で、手動で、課題の提出を複数回に設定している場合、再提出が出来るようです。</li>
-</ul>
-
-<p>
-<a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a>
-</p>
-
-<ul class="org-ul">
-<li>「教員が複数回の送信を許可していない場合、課題は一度しか送信できません。［提出］を選択する前に、必要なファイルがすべて添付されていることを確認してください。」</li>
-
-<li>教員が設定を変更しない限り、再提出はできないようです。</li>
-<li>再提出が出来ない場合、その授業の掲示板か、Eメールで、教員に連絡をすることになると思います。</li>
-
-<li>課題の再提出については、例えば富山大学の説明で、
-<a href="http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html">http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html</a>
-上記 webページの中の 「6.3　課題の再提出」という箇所に説明があります。</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgcfdb8f0" class="outline-4">
-<h4 id="orgcfdb8f0"><span class="section-number-4">4.1.4</span> 課題を提出したが、提出内容が空になってしまった</h4>
-<div class="outline-text-4" id="text-4-1-4">
-<ul class="org-ul">
-<li>編集中で開いていたままの状態で Wordドキュメントなどを添付すると、失敗することがあるようです。</li>
-<li>Blackboard ログインで利用する文理学部の Microsoft Office365 アカウントは、Webブラウザ上での利用です。</li>
-<li>Webブラウザ上で動作する Word のウィンドウを開いたままにせず、保存をして閉じてから、添付をしてください。</li>
-
-<li>また、文理学部の Blackboard では、課題の提出は一度のみというのがデフォルトの設定のようです。</li>
-<li>このため、教員側が意識的に設定をし直さない限り、再提出はできないようになっています。</li>
-<li>教員に連絡をしてください。
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a></li>
-</ul></li>
-
-<li>「教員が複数回の送信を許可していない場合、課題は一度しか送信できません。
-［提出］を選択する前に、必要なファイルがすべて添付されていることを確認してください。」</li>
-
-<li>教員が設定を変更しない限り、再提出はできないようです。</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org8a23d2f" class="outline-4">
-<h4 id="org8a23d2f"><span class="section-number-4">4.1.5</span> 期限が過ぎた課題の提出をしたい</h4>
-<div class="outline-text-4" id="text-4-1-5">
-<ul class="org-ul">
-<li><p>
-課題の提出 | Blackboardヘルプ によると、
-</p>
-<ul class="org-ul">
-<li>「教員により、答案の提出が1回に制限されている場合は、提出後に作業を編集することはできません。
-教員が複数回の答案の提出を許可しており、期日を過ぎてから提出する場合は、その答案には期限遅れのマークが付きます。
-期日前に提出した答案には、期限遅れのマークは付きません。」</li>
-</ul>
-<p>
-とのことです。
-</p></li>
-<li>教員の設定次第で提出はできますが、どのような評価を行うかは、授業や教員によって対応が異なると思います。</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org771acb2" class="outline-2">
-<h2 id="org771acb2"><span class="section-number-2">5</span> Blackboard の Eメール</h2>
-<div class="outline-text-2" id="text-5">
-</div>
-<div id="outline-container-orgfceef3a" class="outline-3">
-<h3 id="orgfceef3a"><span class="section-number-3">5.1</span> Eメール</h3>
-<div class="outline-text-3" id="text-5-1">
-</div>
-<div id="outline-container-org1d5ec84" class="outline-4">
-<h4 id="org1d5ec84"><span class="section-number-4">5.1.1</span> 教員に Eメールで連絡をする方法がわからない</h4>
-<div class="outline-text-4" id="text-5-1-1">
-<ul class="org-ul">
-<li>受講している授業の Blackboard でコースの画面で、メニューで「ツール」→「Ｅメールの送信」から送信相手を選んで、メールを送れます。</li>
-<li>ただ、それぞれの教員がメールをチェックしている頻度はまちまちですので、すぐに返事があるとは限りません。</li>
-<li>また、授業と教員によっては、 Eメールによる連絡が出来ない設定の場合もありえます。</li>
-<li>その場合は、他の連絡手段が確保されている筈です。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org753c314" class="outline-4">
-<h4 id="org753c314"><span class="section-number-4">5.1.2</span> 教員に連絡をとる方法を知りたい</h4>
-<div class="outline-text-4" id="text-5-1-2">
-<ul class="org-ul">
-<li>授業によって、利用可能な選択肢が異なります。</li>
-<li>Eメール、掲示板などが多いと思います。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org416d6a4" class="outline-4">
-<h4 id="org416d6a4"><span class="section-number-4">5.1.3</span> 教員に Eメールを送信する方法がわからない</h4>
-<div class="outline-text-4" id="text-5-1-3">
-<ul class="org-ul">
-<li>その授業の教員が、 Blackboard のコースで Eメール機能を有効にしていれば、 Eメールで連絡ができます。</li>
-<li>しかし、教員が Eメール機能を有効にしていないと、その授業では Eメールによる連絡が明示的にはできません。</li>
-<li>もし有効である場合は、 Blackboard の画面で、 [ツール] → [Eメールの送信] をクリックし、送信できます。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org1d652ae" class="outline-4">
-<h4 id="org1d652ae"><span class="section-number-4">5.1.4</span> 教員に Eメールを送ったが、返事が来ない</h4>
-<div class="outline-text-4" id="text-5-1-4">
-<ul class="org-ul">
-<li>教員次第です。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org2ade0aa" class="outline-4">
-<h4 id="org2ade0aa"><span class="section-number-4">5.1.5</span> Eメールの送受信すると、文字化けをしてしまい、全く読めない</h4>
-<div class="outline-text-4" id="text-5-1-5">
-<ul class="org-ul">
-<li>すみません、この問題は解決できていません。</li>
-<li>暫定措置として、他のメールアドレスを使い、とりあえずの連絡を試みてください（個人の Gmail や日本大学版 Gmail の NU-AppsG など）。</li>
-<li>PC/Mac やスマホ、他の Webブラウザなどいろいろ試してみて下さい。</li>
-
-<li>Blackboard から学生が Eメールを送る場合、文理学部 Office365 Outlook Webメール となります。</li>
-<li>Office365 Outlook Webメール 同士のやり取りで、互いに文字化けが発生して読めないケースに遭遇していますが、未解決です。</li>
-
-<li>利用している OS や webブラウザの種類とバージョンの違い、送信者や受信者の文字エンコーディングなどの環境設定、色々原因が考えられます。</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-orgc42bc61" class="outline-2">
-<h2 id="orgc42bc61"><span class="section-number-2">6</span> Blackboard の掲示板</h2>
-<div class="outline-text-2" id="text-6">
-</div>
-<div id="outline-container-orgc7cb36e" class="outline-3">
-<h3 id="orgc7cb36e"><span class="section-number-3">6.1</span> 掲示板の編集</h3>
-<div class="outline-text-3" id="text-6-1">
-</div>
-<div id="outline-container-orgcdead5a" class="outline-4">
-<h4 id="orgcdead5a"><span class="section-number-4">6.1.1</span> 掲示板で、匿名で記入するつもりが、誤って記名で記入をしてしまった / 匿名に修正をしたい</h4>
-<div class="outline-text-4" id="text-6-1-1">
-<ul class="org-ul">
-<li>Blackboard の掲示板では、学生のアカウントの場合、自分で記入したタイトル、内容の修正は、一切できません。</li>
-<li>学生ロールでは、修正も削除も何も出来ず、大変に不便な思いをします。</li>
-<li>Blackboard へのアクセスが集中している時期には、書き込んでいる最中に内容が送信されてしまい、尻切れトンボの意味不明な書き込みを学生ロールで何度もしてしまいました。</li>
-<li>書き込んだ内容の修正や削除は、教員や TA に依頼をして、記入を、一度削除してもらうようにしてください。</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org38c68c5" class="outline-4">
-<h4 id="org38c68c5"><span class="section-number-4">6.1.2</span> 掲示板で、記入したタイトルや文章を削除・編集したい</h4>
-<div class="outline-text-4" id="text-6-1-2">
-<ul class="org-ul">
-<li>学生のアカウントでは、修正はできません。</li>
-<li>教員や TA に依頼をして、記入の削除や編集をしてもらうようにしてください。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd3646ca" class="outline-4">
-<h4 id="orgd3646ca"><span class="section-number-4">6.1.3</span> ログインの方法がわからない</h4>
-<div class="outline-text-4" id="text-6-1-3">
-<ul class="org-ul">
-<li>文理学部の Blackboard は、これまでの学内サーバから Amazon AWS を利用するクラウド環境の Blackboard へ移行しました。</li>
-<li>アクセス先が変わりました。</li>
-<li>また、ログインのアカウントも、文理学部 Office365 Outlook Webメールのアドレスに変わりました。</li>
-<li>パスワードは共通です。</li>
-<li>日本大学本部の Google アカウント NU-AppsG 兼 Office365 アカウントでは、文理学部の Blackboard にはログインできませんので、ご注意ください。</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgf6b5744" class="outline-2">
-<h2 id="orgf6b5744"><span class="section-number-2">7</span> Blackboard の教材</h2>
-<div class="outline-text-2" id="text-7">
-</div>
-<div id="outline-container-org661370c" class="outline-3">
-<h3 id="org661370c"><span class="section-number-3">7.1</span> 教材の閲覧・視聴・ダウンロード</h3>
-<div class="outline-text-3" id="text-7-1">
-</div>
-<div id="outline-container-org1a1268b" class="outline-4">
-<h4 id="org1a1268b"><span class="section-number-4">7.1.1</span> 教材の動画が視聴できない</h4>
-<div class="outline-text-4" id="text-7-1-1">
-<ul class="org-ul">
-<li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
-<li>Google Chrome の最新バージョンが無難だと思います。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org30b4c2f" class="outline-4">
-<h4 id="org30b4c2f"><span class="section-number-4">7.1.2</span> 音声付き PowerPoint の音声が再生できない</h4>
-<div class="outline-text-4" id="text-7-1-2">
-<ul class="org-ul">
-<li>音声付き PowerPoint の資料は、互換性の点で注意が必要かもしれません。 Blackboard に限らない問題と思われます。</li>
-<li>音声付き PowerPoint を作成する際の、音声の保存フォーマットが WAV 形式の場合、 iPhone や iPad 等の iOS デバイスで音声が再生できない場合がある、ようです。</li>
-<li>iOS 側も、 Keynote や iOS 版 PowetPoint など、どのアプリを使うかによっても異なってくると思われます。</li>
-<li>教材作成時の Windows や Office のバージョンにも依存するかもしれません。</li>
-<li>音声付き PowerPoint は、 Windows PC の利用が確実と思われます。</li>
-<li>問い合わせをされる学生さん方は、問い合わせをするだけのことが多く、試した結果についてのフィードバックをあまり頂けていません。詳細は不明です。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org29dddd6" class="outline-4">
-<h4 id="org29dddd6"><span class="section-number-4">7.1.3</span> 教材の資料がダウンロードできない</h4>
-<div class="outline-text-4" id="text-7-1-3">
-<ul class="org-ul">
-<li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
-<li>Google Chrome の最新バージョンが無難だと思います。</li>
-<li>PC/Mac やスマホの電源を切り、再起動してみると改善する可能性もあります。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd7d185a" class="outline-4">
-<h4 id="orgd7d185a"><span class="section-number-4">7.1.4</span> 教材の資料がダウンロードできていたのに、できなくなった</h4>
-<div class="outline-text-4" id="text-7-1-4">
-<ul class="org-ul">
-<li>Blackboard の推奨利用環境のブラウザを使ってみてください。</li>
-<li>Google Chrome の最新バージョンが無難だと思います。</li>
-<li>PC/Mac やスマホの電源を切り、再起動してみると改善する可能性もあります。</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org07fb091" class="outline-2">
-<h2 id="org07fb091"><span class="section-number-2">8</span> その他</h2>
-<div class="outline-text-2" id="text-8">
-</div>
-<div id="outline-container-org47469f2" class="outline-3">
-<h3 id="org47469f2"><span class="section-number-3">8.1</span> 個別の授業への問い合わせ、対応の要請</h3>
-<div class="outline-text-3" id="text-8-1">
-</div>
-<div id="outline-container-org3946ec2" class="outline-4">
-<h4 id="org3946ec2"><span class="section-number-4">8.1.1</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
-<div class="outline-text-4" id="text-8-1-1">
-<ul class="org-ul">
-<li>大学の授業は、それぞれの授業の担当教員の責任で行っております。</li>
-<li>お困りの個別・特殊事例については、授業の担当教員にご連絡・御相談・御依頼をお願い致します。</li>
-<li>シラバス、 Blackboard の ［連絡事項］ の最新情報等も、よくご確認ください。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd4dc8a4" class="outline-4">
-<h4 id="orgd4dc8a4"><span class="section-number-4">8.1.2</span> ◯◯ 先生の △△ という授業が、×× なのですが</h4>
-<div class="outline-text-4" id="text-8-1-2">
-<ul class="org-ul">
-<li>シラバスで、その授業が総合教育科目かどうかを調べて下さい。</li>
-<li><a href="https://syllabus.chs.nihon-u.ac.jp/">https://syllabus.chs.nihon-u.ac.jp/</a></li>
-<li>幹事学科が社会学科ではなく他学科の場合、社会学科ではその教員への連絡先がすぐには分かりません。</li>
-<li>また、幹事学科の学科事務室を経由して連絡をするにしても、時間がかかることに注意して下さい。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org3668e95" class="outline-4">
-<h4 id="org3668e95"><span class="section-number-4">8.1.3</span> その他</h4>
-<div class="outline-text-4" id="text-8-1-3">
-<ul class="org-ul">
-<li>授業内容の更新が見当たらない</li>
-<li>Blackboard から Google Classroom への LMS 変更となったが、学生が掲示板を見ておらず、授業が実施されていないと思いこんでしまう</li>
-<li>課題の締切設定の通達が行き届いていない</li>
-<li>音声付き PowerPoint で、音声が聞こえない</li>
-<li>配布資料の PowerPoint や Word の資料で、表示のレイアウトが崩れていて読めない</li>
-<li>その他諸々</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-org7146bfb" class="outline-2">
-<h2 id="org7146bfb"><span class="section-number-2">9</span> メールとアカウント</h2>
-<div class="outline-text-2" id="text-9">
-</div>
-<div id="outline-container-orgeba51a8" class="outline-3">
-<h3 id="orgeba51a8"><span class="section-number-3">9.1</span> stu メールアドレスがわからない</h3>
-<div class="outline-text-3" id="text-9-1">
-<ul class="org-ul">
-<li>***@stu.chs.nihon-u.ac.jp」アドレスの確認方法</li>
-<li><a href="https://www.chs.nihon-u.ac.jp/faq4/">https://www.chs.nihon-u.ac.jp/faq4/</a>
-<ul class="org-ul">
-<li>【文理学部ホームページ】</li>
-<li>→「お問い合わせ」</li>
-<li>→「[Q&amp;A] 授業に関するよくある問い合わせ【教務課】」</li>
-<li>→「@stu.chs.nihon-u.ac.jp」メールアドレスが分かりません。【5/13】」</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgb1e72ff" class="outline-3">
-<h3 id="orgb1e72ff"><span class="section-number-3">9.2</span> 文理学部のメールがわからない</h3>
-<div class="outline-text-3" id="text-9-2">
-<ul class="org-ul">
-<li>文理学部のメールがわからない
-<ul class="org-ul">
-<li>新しい Blackboard に移行すると聞いたが、文理学部のメールがわからない</li>
-</ul></li>
-
-<li>文理学部では、履修登録と共通で使いやすい Blackboard が、遠隔授業の標準
-<ul class="org-ul">
-<li>xxx@stu.chs.nihon-u.ac.jp アドレスは、これらと関連した文理学部で発行しているメールアドレス</li>
-<li><a href="https://mail.office365.com/">https://mail.office365.com/</a> からログインし、メールを利用する</li>
-</ul></li>
-
-<li>*番号@stu.chs.nihon-u.ac.jp は、Microsoft Office365 の Outlook でメールが使え、新しいクラウド版 Blackboard へのログインで使われる
-<ul class="org-ul">
-<li>Blackboard の掲示板で、左上のメニューで「ツール」から「Eメールの送信」を選ぶと、メールを送信できる</li>
-<li>その際に、自分のメールアドレス ***@stu.chs.nihon-u.ac.jp も確認できる</li>
-<li>アドレスが分かれば、 <a href="https://mail.office365.com/">https://mail.office365.com/</a> へアクセスし、そのメールアドレス ***@stu.chs.nihon-u.ac.jp と、Blackboard などで使う同じパスワードで、メールの送受信が出来る</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org05f3bf7" class="outline-3">
-<h3 id="org05f3bf7"><span class="section-number-3">9.3</span> メールで分からないことが多い</h3>
-<div class="outline-text-3" id="text-9-3">
-<ul class="org-ul">
-<li>学校から NU-AppsG のアカウントに関する情報が送られてきたが、オンライン受講で必要なのか?</li>
-<li>パスワードが分からない</li>
-
-<li>stu アドレスとは、何に必要なのか?</li>
-<li>どちらがどういう時に使われるのか?</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org37d61e5" class="outline-3">
-<h3 id="org37d61e5"><span class="section-number-3">9.4</span> NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</h3>
-<div class="outline-text-3" id="text-9-4">
-<ul class="org-ul">
-<li>NU-AppsG (ch****@g.nihon-u.ac.jp)</li>
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a> でログイン</li>
-<li>日本大学版 Google アカウント + Microsoft Office365 アカウント</li>
-<li>IT社会での、宇宙最強の道具</li>
-<li>Google と Microsoft というIT産業双璧の多くのクラウドサービスが利用でき、就職後に仕事で生きるITスキル</li>
-<li>文理学部の遠隔授業の標準である Blackboard とは別に、一部の教員は Google Classroom を遠隔授業で用い、その際に NU-AppsG ログインが必要
-<ul class="org-ul">
-<li>Google Chrome ウェブブラウザ を使い、 <a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a> からログイン</li>
-<li>Google Classroom には <a href="https://classroom.google.com/">https://classroom.google.com/</a> からアクセス</li>
-</ul></li>
-<li>重要
-<ul class="org-ul">
-<li>図書館の電子資料閲覧 <a href="https://www.chs.nihon-u.ac.jp/library/contents/gakunin/">https://www.chs.nihon-u.ac.jp/library/contents/gakunin/</a></li>
-<li>NU就職ナビ <a href="https://www.nihon-u.ac.jp/career/support/career_navi/">https://www.nihon-u.ac.jp/career/support/career_navi/</a></li>
-<li>他大学の無線LAN利用 eduroam <a href="https://eduroam.jp/">https://eduroam.jp/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org8d344e5" class="outline-3">
-<h3 id="org8d344e5"><span class="section-number-3">9.5</span> stu メール / Microsoft Office365 Web利用 / Zoom / Webex</h3>
-<div class="outline-text-3" id="text-9-5">
-<ul class="org-ul">
-<li>***@stu.chs.nihon-u.ac.jp</li>
-<li><a href="https://mail.office365.com/">https://mail.office365.com/</a> からログイン</li>
-<li>文理学部では、履修登録と共通で使いやすい Blackboard が、遠隔授業の標準</li>
-<li>新しい Blackboard (クラウド版) / Microsoft Office365 / Zoom / Webex 等と連携する、文理学部で発行しているメールアドレス</li>
-<li>Blackboard と連携して、授業で便利に使える</li>
-<li>***@stu.chs.nihon-u.ac.jp も、Microsoft Office365 アカウントを兼ねている</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org0287409" class="outline-3">
-<h3 id="org0287409"><span class="section-number-3">9.6</span> Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</h3>
-<div class="outline-text-3" id="text-9-6">
-<ul class="org-ul">
-<li>文理学部生は、日本大学全学サービスの Office365 と、文理学部サービスの Office365 と、二つの Office365サービスを使える</li>
-<li>ただし、アカウントを上手に切り替えて利用しないと、エラーで作業が出来ない</li>
-<li>Blackboard のコースで共有される資料の閲覧には、  ***@stu.chs.nihon-u.ac.jp でログインしないと閲覧できない場合があるかも知れない</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org04655e9" class="outline-3">
-<h3 id="org04655e9"><span class="section-number-3">9.7</span> tアドレス</h3>
-<div class="outline-text-3" id="text-9-7">
-<ul class="org-ul">
-<li>tアドレスとは何か？
-<ul class="org-ul">
-<li>教員は "t" から始まるアカウント、学生は "s" から始まる教育用アカウントが発行されており、コンピュータセンターの Windows ログオン等で必要</li>
-<li>頭文字一文字が異なるが、 stuメールアドレスと対応と考えて良さそう</li>
-</ul></li>
-
-<li>stu アカウント ( xxx@stu.chs.nihon-u.ac.jp )
-<ul class="org-ul">
-<li>教員の stu メールは、 t で始まるアカウントとなっている</li>
-<li>学生は、人によって頭文字のアルファベットが異なる</li>
-<li>Blackboard からの連絡は、デフォルトでは、
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-にログインして確認できるメールに届く</li>
-</ul></li>
-<li>学内 Windows端末へのログオンは、学生は s で始まるアカウント</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org594fc9a" class="outline-3">
-<h3 id="org594fc9a"><span class="section-number-3">9.8</span> 教育 Web Mail (Active!Mail) とは何か?</h3>
-<div class="outline-text-3" id="text-9-8">
-<ul class="org-ul">
-<li>文理学部ポータルサイトの教育用 Web Mail (Active!Mail)
-<a href="https://webmail.educ.chs.nihon-u.ac.jp/">https://webmail.educ.chs.nihon-u.ac.jp/</a></li>
-
-<li>日本大学文理学部コンピュータセンター｜アカウントについて
-<a href="http://www.cc.chs.nihon-u.ac.jp/edu/account.html">http://www.cc.chs.nihon-u.ac.jp/edu/account.html</a>
-<ul class="org-ul">
-<li>「なお一部の教員および４年生が使用している「***@educ.chs.nihon-u.ac.jp」のアドレスは，令和元年度に「***@stu.chs.nihon-u.ac.jp」へ切り替えを予定しております。」</li>
-</ul></li>
-
-<li>今後は、特に利用しなくても大丈夫</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org20c5879" class="outline-3">
-<h3 id="org20c5879"><span class="section-number-3">9.9</span> 教員に送信したEメールの返信をチェックしたい</h3>
-<div class="outline-text-3" id="text-9-9">
-<p>
-教員に送信したEメールの返信をチェックしたい
-</p>
-
-<ul class="org-ul">
-<li>Blackboard からの連絡は、デフォルトでは、
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-にログインして確認できる、 stuメールに届く</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org2c704b0" class="outline-3">
-<h3 id="org2c704b0"><span class="section-number-3">9.10</span> ツールの eメールに質問を送った場合、返信をどこで確認するのか?</h3>
-<div class="outline-text-3" id="text-9-10">
-<ul class="org-ul">
-<li>ポータルサイトの下にある
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-で、 stuメールの Microsoft Office365 アカウントでログインし、確認</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgd4f4409" class="outline-3">
-<h3 id="orgd4f4409"><span class="section-number-3">9.11</span> 文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</h3>
-<div class="outline-text-3" id="text-9-11">
-<ul class="org-ul">
-<li>文理学部のメール xxx@stu.chs.nihon-u.ac.jp <a href="https://mail.office365.com/">https://mail.office365.com/</a> でメールを送受信すると、文字化けとなり、文字が全く読めない</li>
-
-<li>利用コンピュータの OS、OSのバージョン、ブラウザの種類、ブラウザのバージョンの違いによって、不具合が生じる可能性がある
-<ul class="org-ul">
-<li>PC で Google Chromeブラウザを利用する</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org16cc8a0" class="outline-2">
-<h2 id="org16cc8a0"><span class="section-number-2">10</span> Blackboard</h2>
-<div class="outline-text-2" id="text-10">
-</div>
-<div id="outline-container-org842e286" class="outline-3">
-<h3 id="org842e286"><span class="section-number-3">10.1</span> 課題についての質問を Bb ツールのメール機能で送信したが返事がない</h3>
-<div class="outline-text-3" id="text-10-1">
-<ul class="org-ul">
-<li>質問：課題についての質問を Bb ツールのメール機能で送信したが返事がない</li>
-
-<li>受講者数が多い授業では、教員の返信はすぐには難しい可能性がある</li>
-<li>連絡通知や掲示板に、問い合わせへの返事がまとめて記載される場合もあるので、定期的に確認もされたい</li>
-<li>基本的には、その授業の教員に、掲示板経由で問い合わせをしたり、メールを送ること等が、主要な連絡手段と思われる
-<ul class="org-ul">
-<li>授業は、授業担当教員の責任で行っている</li>
-<li>その授業の Blackboard コースに、教務課や社会学科事務室が勝手に参加したり、関与することはできない</li>
-<li>総合教育科目 は、社会学科と関係がない場合が多く、幹事学科に連絡をしてお願いをすることになる</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org2b03dfb" class="outline-3">
-<h3 id="org2b03dfb"><span class="section-number-3">10.2</span> PC からファイル添付することができない</h3>
-<div class="outline-text-3" id="text-10-2">
-<ul class="org-ul">
-<li>質問：PC からファイル添付することができない
-<ul class="org-ul">
-<li>2020年前期の授業が始まるまでは使えていたが、できなくなった</li>
-</ul></li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>広島大学の情報
-<ul class="org-ul">
-<li><a href="https://support.vle.hiroshima-u.ac.jp/bb9:%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1%E3%83%BBedge%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E9%80%81%E4%BF%A1">bb9:不具合情報・edgeでのファイル送信 ［オンライン学習支援システム］</a></li>
-<li>「Windows10の標準ブラウザEdgeでBb9にレポートを提出するときには、注意が必要です。
-EdgeでMicrosoft Office の文書ファイル (Word/Excel/PowerPoint) を添付して提出する際に、
-アプリケーションでそのファイルを開いたままの状態だと、うまく提出できません。」</li>
-</ul></li>
-</ul>
-
-
-<ul class="org-ul">
-<li>玉川大学の情報
-<ul class="org-ul">
-<li><a href="https://www.tamagawa.ac.jp/student_guidebook/2020/pdf/03/077-080.pdf">Blackboard @ Tamagawa 077-080.pdf</a></li>
-<li>「※「Microsoft Edge」で課題ファイルの提出を行うと、上手く添付できない場合があるため、利用しないでください。」</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org8683e6f" class="outline-3">
-<h3 id="org8683e6f"><span class="section-number-3">10.3</span> 課題が出されているが、提出先がない</h3>
-<div class="outline-text-3" id="text-10-3">
-<ul class="org-ul">
-<li>質問：課題が出されているが、提出先がない
-<ul class="org-ul">
-<li>Blackboard に掲示板が設置されていない</li>
-<li>シラバスにもメールアドレスが記載されていないため質問できない</li>
-</ul></li>
-
-<li>シラバスで <b>総合教育科目</b> の場合、社会学科の担当でない場合がある
-<ul class="org-ul">
-<li>他の教員の Blackboard のコースの中身は、教務課も教員も勝手には確認ができないので、よく分からない</li>
-<li>掲示板がなく、教員へ連絡をとる場合、［ツール］から［Eメールの送信］で授業の教員へ問い合わせや添付ファイルでレポートの提出、は可能でしょうか？</li>
-<li>自分の stu メールの送受信は、 Blackboard と共通のアカウントで
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-にアクセスし、 ****@stu.chs.niihon-u.ac.jp でログインで確認できる。</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org4315c2c" class="outline-3">
-<h3 id="org4315c2c"><span class="section-number-3">10.4</span> 課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</h3>
-<div class="outline-text-3" id="text-10-4">
-<ul class="org-ul">
-<li>質問：Blackboard の課題提出で、 「新規に開始」がなく、課題の再提出ができない</li>
-
-<li>授業は、担当教員それぞれで対応が異なるため、その授業の担当教員に問い合わせるしかない
-<ul class="org-ul">
-<li>その授業のメニューで「ツール」→「Ｅメールの送信」から送信相手を選び、メールを送れる</li>
-<li>ただし、 stuメールに、教員が確実に目を通しているかどうかまでは、保証できない</li>
-<li>課題提出先として記載されていたメールアドレスが、 ＠stuメールアドレス以外のメールアドレスだった、という事例もあった</li>
-</ul></li>
-</ul>
-
-
-<ul class="org-ul">
-<li>課題は、一度しか提出できない設定の場合がある
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a></li>
-<li>「教員が複数回の送信を許可していない場合、課題は一度しか送信できません。 ［提出］を選択する前に、必要なファイルがすべて添付されていることを確認してください。」</li>
-</ul></li>
-
-<li>教員が自分で設定を変更しない限り、再提出は出来ない仕様</li>
-<li>サーバが不安定な時間帯の送信は、失敗の可能性があるので、避ける</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd758693" class="outline-3">
-<h3 id="orgd758693"><span class="section-number-3">10.5</span> 課題の提出をやり直したい / 再提出をしたい</h3>
-<div class="outline-text-3" id="text-10-5">
-<ul class="org-ul">
-<li>教員側で、手動で、課題の提出を複数回に設定している場合は、再提出が出来る</li>
-<li>ただ、 Blackboard では、課題提出のデフォルト設定が1回のため、そのままの設定の授業も多い</li>
-<li>再提出が出来ない場合、その授業の掲示板か、Eメールで、教員に連絡をすることになる</li>
-<li>課題提出についての富山大学の説明で、
-<ul class="org-ul">
-<li><a href="http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html">http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html</a></li>
-<li>上記 webページの中の 「6.3　課題の再提出」という箇所に説明あり</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org831b2c2" class="outline-3">
-<h3 id="org831b2c2"><span class="section-number-3">10.6</span> 課題提出で失敗</h3>
-<div class="outline-text-3" id="text-10-6">
-<ul class="org-ul">
-<li>Word ファイルを編集中・開いたままの状態で添付すると、送信失敗というトラブル</li>
-
-<li>How to Submit a Blackboard Assignment (For Students) – eLearning Support and Resources
-<ul class="org-ul">
-<li><a href="https://elearn.southampton.ac.uk/blackboard/student/submitass/">https://elearn.southampton.ac.uk/blackboard/student/submitass/</a></li>
-<li>You are strongly recommended to convert your submission to a PDF file before submitting it.
-Office 365 (see below) has the ability to save files as PDFs.</li>
-<li>「Offce 365ファイルのまま送るのではなく、PDF化して送ることを強く推奨」という方針も見かけた</li>
-</ul></li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org271001d" class="outline-3">
-<h3 id="org271001d"><span class="section-number-3">10.7</span> 課題提出ができなくなった</h3>
-<div class="outline-text-3" id="text-10-7">
-<ul class="org-ul">
-<li>質問：Blackboard で課題提出が PC からできなくなった
-<ul class="org-ul">
-<li>何度行ってもエラー</li>
-</ul></li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>注意：提出するファイルを、保存・編集終了した状態で添付するように心がける</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org127c073" class="outline-3">
-<h3 id="org127c073"><span class="section-number-3">10.8</span> 教材の添付ファイルがダウンロードできない</h3>
-<div class="outline-text-3" id="text-10-8">
-<ul class="org-ul">
-<li>質問：Blackboard がクラウド移行してから、全ての授業で教材の添付ファイルがダウンロードできない
-<ul class="org-ul">
-<li>MacBook Air を使用</li>
-</ul></li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>Blackboard から DLする際に、 ***@stu.chs.nihon-u.ac.jp の Office365 アカウントであるかどうかチェックする
-<ul class="org-ul">
-<li>ch***@g.nihon-u.ac.jp の日本大学本部 Office365アカウントだと、文理学部の外とみなされ、
-アクセス権限を与えられない可能性がある</li>
-</ul></li>
-
-<li>教員が、ダウンロード禁止設定を施した可能性
-<ul class="org-ul">
-<li>サーバへの負担軽減のため、これまでダウンロード保存による閲覧を学部で推奨</li>
-<li>クラウド化に伴い、ダウンロード禁止とする教材が増える可能性がある</li>
-<li>Office 書類のダウンロード禁止設定については、例えば Microsoft 公式サポートに説明がある
-<ul class="org-ul">
-<li><a href="https://support.microsoft.com/ja-jp/office/onedrive-%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC%E3%81%AE%E5%85%B1%E6%9C%89-9fcc2f7d-de0c-4cec-93b0-a82024800c07">OneDrive のファイルとフォルダーの共有 - Office サポート</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org969f185" class="outline-3">
-<h3 id="org969f185"><span class="section-number-3">10.9</span> 課題提出でのエラー</h3>
-<div class="outline-text-3" id="text-10-9">
-<ul class="org-ul">
-<li>質問：課題を提出したときに、 Blackboard でエラー
-<ul class="org-ul">
-<li>内容を見たら、すべて白紙の状態で提出となってしまっていた</li>
-</ul></li>
-
-<li>Blackboard の課題で、アップロードが失敗
-<ul class="org-ul">
-<li><a href="http://www.lt-lab.teikyo-u.ac.jp/lms-ss/">http://www.lt-lab.teikyo-u.ac.jp/lms-ss/</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgeeeb491" class="outline-3">
-<h3 id="orgeeeb491"><span class="section-number-3">10.10</span> スマートフォンで課題を提出しても、反映されない</h3>
-<div class="outline-text-3" id="text-10-10">
-<ul class="org-ul">
-<li>質問：iPad や PCだと提出扱いになる
-<ul class="org-ul">
-<li>スマホで課題提出が遅れる時があるが、こういうケースはよくあるのか?</li>
-<li>提出した課題の文章を再確認したい場合は、どうしたらいいか?</li>
-</ul></li>
-
-<li>Blackboardの利用環境 は、 <b>PC/Mac が推奨環境</b>
-<ul class="org-ul">
-<li>スマートフォンは動作保証対象外</li>
-<li>スマートフォンの OS の種類やバージョン、 Google Chrome ブラウザ利用かアプリ利用か等、全ての場合における動作保証は現実的に無理</li>
-</ul></li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-</ul>
-
-
-<pre class="example" id="orgdfac4b8">
-Blackboardの利用環境ブラウザの対応状況
-
-Bbの現在のバージョン（Q2-2019 CU7）での推奨環境は、以下のとおりです。
-
-デスクトップ*ブラウザのバージョン
-Google Chrome ** 63 以上
-Microsoft Edge ** 42 以上
-Mozilla Firefox 57 以上
-Apple Safari 12 以上 (MacOSのみ)
-
-重要：Internet Explorer 11は動作保証対象外となりましたので，ご注意ください。
-
-
-同名のブラウザであってもモバイル版はサポートされません。例え利用できたとしてもサポート対象外ですので注意してください。
-
-Google Chrome バージョン42以降および Microsoft Edge では 、
-Javaプラグインや他のメディアプラグインを含むNPAPIタイプのプラグインが サポート対象外となりました。
-そのため、BbにおいてもNPAPIを利用する組み込み型メディアを利用できません。
-
-Microsoft Edgeにつきましては、2020年1月15日にリリースされたChromiumベースの新しいEdgeもサポートされます。
-</pre>
-</div>
-</div>
-
-<div id="outline-container-orgdb3ef89" class="outline-3">
-<h3 id="orgdb3ef89"><span class="section-number-3">10.11</span> 期限切れの課題を提出したい</h3>
-<div class="outline-text-3" id="text-10-11">
-<ul class="org-ul">
-<li>質問：期限切れの課題を提出したい
-<ul class="org-ul">
-<li>期限が過ぎた課題でも、提出フォームが残っていることがある</li>
-</ul></li>
-
-<li><p>
-授業と教員次第なので、自分で問い合わせるしかない
-</p>
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a></li>
-</ul>
-
-<pre class="example" id="orgc402409">
-  「教員により、答案の提出が1回に制限されている場合は、提出後に作業を編集することはできません。
-  教員が複数回の答案の提出を許可しており、期日を過ぎてから提出する場合は、
-  その答案には期限遅れのマークが付きます。
-  期日前に提出した答案には、期限遅れのマークは付きません。」
-</pre></li>
-</ul>
-</div>
-</div>
-
-
-
-<div id="outline-container-org352b485" class="outline-3">
-<h3 id="org352b485"><span class="section-number-3">10.12</span> Blackboard で提出した課題の内容の確認をしたい</h3>
-<div class="outline-text-3" id="text-10-12">
-<ul class="org-ul">
-<li>質問：Blackboard で提出した課題の内容の確認をしたい</li>
-
-<li>立教大学 Blackboard 学生用 マニュアル 提出した内容を確認する
-<ul class="org-ul">
-<li><a href="https://spirit.rikkyo.ac.jp/blackboard/SiteAssets/pdf/stu_check.pdf">https://spirit.rikkyo.ac.jp/blackboard/SiteAssets/pdf/stu_check.pdf</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgf46c09b" class="outline-3">
-<h3 id="orgf46c09b"><span class="section-number-3">10.13</span> 長文を記入して送信を行うと、作業内容が全て消えた</h3>
-<div class="outline-text-3" id="text-10-13">
-<ul class="org-ul">
-<li>質問：長文を記入して送信を行うと、作業内容が全て消えた</li>
-
-<li>旧 Blackboard サーバへのアクセスが集中して、動作が重い場合、通信エラーが生じる可能性がある</li>
-<li>今後のクラウド運用では負荷分散により大丈夫と思われるが、提出の際は通信状態に注意</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org8bf89a0" class="outline-3">
-<h3 id="org8bf89a0"><span class="section-number-3">10.14</span> 「この Microsoft Edge は推奨されません」</h3>
-<div class="outline-text-3" id="text-10-14">
-<ul class="org-ul">
-<li>質問：Blackboard にサインインするとき、この Microsoft Edge は推奨されませんと表示される</li>
-<li>Blackboard Collaborate Ultra を利用した際、教員の音声が聞こえなかった</li>
-
-<li>利用ブラウザ Microsoft Edge がサポート対象外</li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>Blackboard 内の「教育機関」ページの「連絡事項」（以下リンク先）
-<ul class="org-ul">
-<li><a href="https://nuchs.blackboard.com/webapps/blackboard/execute/announcement?method=search&amp;context=mybb&amp;searchSelect=_1_1&amp;viewChoice=1">https://nuchs.blackboard.com/webapps/blackboard/execute/announcement?method=search&amp;context=mybb&amp;searchSelect=_1_1&amp;viewChoice=1</a></li>
-</ul></li>
-</ul>
-
-<pre class="example" id="org030ae7c">
-BlackBoard利用時の推奨ブラウザについて＞投稿日 : 2020年5月25日 15時33分00秒 JST
-
-2020年3月に実施したバージョンアップにより，
-BlackBoard及びBlackboard Collaborate Ultra(BBCU) 利用時の推奨ブラウザが
-デスクトップPCのGoogle Chrome(バージョン63以上)となりました。
-BBCUを使用しない場合には，Microsoft Edge (バージョン42以上)も利用できますが，
-課題提出時にはファイルを必ず閉じてから行うようにお願いします。
-（開いたまま行うと提出に失敗します。）
-
-最新版のMicrosoft Edge (Chronium)はこの問題が解消され，
-BBCUでもサポート対象となっておりますので，バージョンを推奨します。
-
-またiPadやiPhoneなどのモバイル環境では利用できる機能もありますが、
-サポート対象外となっています。
-
-さらにInternet Explorer 11については動作保証対象外となりましたので、ご注意ください。
-</pre>
-</div>
-</div>
-
-
-<div id="outline-container-orgd5b6fb7" class="outline-3">
-<h3 id="orgd5b6fb7"><span class="section-number-3">10.15</span> Microsoft Word 提出の際の行間の余白について</h3>
-<div class="outline-text-3" id="text-10-15">
-<ul class="org-ul">
-<li>質問：Blackboard で提出した際に、 Microsoft Word ファイルの文字の行間の余白が勝手に大きくなった
-<ul class="org-ul">
-<li>1ページ目のみ、勝手に大きくなる</li>
-<li>PCで編集する際には Word のデフォルトの書式を使っているが、提出する際のブラウザに Safari を利用していることが原因か？</li>
-<li>環境： MacBook Air 2019,  Safari</li>
-</ul></li>
-
-<li>Word や Blackboard はあまり使っていないのでわからない
-<ul class="org-ul">
-<li>タイトルその他などで、他の Word文書や Web ブラウザからのコピー・ペーストがある場合、
-目視では確認できない不可視制御文字列が混入する場合がある。
-これが何らかのエラーを引き起こすことが、 Wordに限らずどのようなアプリケーションでもありえる。</li>
-<li>提出した添付ファイルは、相手の教員が Word で開けば問題がないという可能性もある</li>
-<li>Blackboard 提出時のプレビュー画面の表示だけの問題の可能性もある</li>
-<li>提出ファイルを、自分で再ダウンロードする機能があるのであれば試して、行間が変わってしまっていたとしたら、データ保存・コンバート時のトラブルで、相手にも行間が変わって届くかもしれない。</li>
-<li>利用 Word の種類によっても事情が変わる
-<ul class="org-ul">
-<li>文理学部の Office365 で Webブラウザ限定利用版のオンライン Word / 日本大学本部の Office365 で PC/Mac でダウンロード利用できるアプリケーションの Word</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org49e4426" class="outline-3">
-<h3 id="org49e4426"><span class="section-number-3">10.16</span> PC で授業の動画を見ることができなくなった</h3>
-<div class="outline-text-3" id="text-10-16">
-<ul class="org-ul">
-<li>質問：PC で授業の動画を見ることができなくなった</li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>→ ◯ (解決のフィードバックあり) Google Chrome でアクセスをしたら、動画が無事に再生された</li>
-
-<li>Blackboard の教材動画は、文理学部の Office365 アカウントでないと閲覧できない可能性がある
-<ul class="org-ul">
-<li>日本大学本部の NU-AppsG アカウントで Office365にログインしている場合、ログアウトして、
-<a href="https://mail.office365.com/">https://mail.office365.com/</a> から xxx@stu.chs.nihon-u.ac.jp の文理学部 Office365 アカウントでログインし直す</li>
-</ul></li>
-
-<li>帝京大学の Blackboard でのトラブル事例
-<ul class="org-ul">
-<li><p>
-<a href="http://www.lt-lab.teikyo-u.ac.jp/lms-ss/index.php?%A4%AA%C3%CE%A4%E9%A4%BB%2F%B2%E1%B5%EE%A4%CE%C9%D4%B6%F1%B9%E7%BE%F0%CA%F3">教材の閲覧，再生やアップロードができないことがあるトラブルが発生しています（2020.06.12）</a>
-</p>
-
-<pre class="example" id="org4a45262">
-    &gt; 6/12から発生しておりますトラブルについて，ベンダーより状況報告がありましたので報告いたします．
-    &gt; Blackboard社からの正式な報告はありませんが，6/13(土)11:00頃から現象は解消されたようです．
-    &gt; 正式な報告があるまで様子見として，ご利用いただけますようお願いいたします．
-    &gt; －－－－－現在，LMSにおいてトラブルが発生しており，以下のような状況が発生することがあります．
-    &gt; 　・教材の閲覧・視聴ができない（ファイルや音声，動画が開かない）
-    &gt; 　・教材のアップロードができない
-    &gt; 　・コンテンツ管理エリアを開こうとするとエラーがでる
-    &gt; 現在，原因を調査中です．
-    &gt; 少し時間をおいて，ブラウザの再起動やログインを試されることで解決されることもあるようです．
-    &gt; ご迷惑をおかけいたしますが，復旧までしばらくお待ち下さい
-</pre></li>
-
-<li>→ ◯ (解決のフィードバックあり) Google Chrome でアクセスをしたら、動画が無事に再生された</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org8e1a0e1" class="outline-3">
-<h3 id="org8e1a0e1"><span class="section-number-3">10.17</span> Word での提出の仕方がわからない</h3>
-<div class="outline-text-3" id="text-10-17">
-<ul class="org-ul">
-<li>質問：Word での提出の仕方がわからない</li>
-
-<li>→ フォーラム : Blackboardの使い方についての質問・相談 スレッド : Blackboard の課題添付について</li>
-
-<li>注意：授業のデフォルト設定（一度しか提出できない）の課題では、提出の失敗は許されない
-<ul class="org-ul">
-<li>サーバが重くない時間帯に、慎重に提出すべき</li>
-</ul></li>
-
-<li>旧 Edge ブラウザで、失敗事例あり</li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>Word のファイルを開いたままでは、添付・送信に失敗する</li>
-
-<li>第2章　基本機能｜在学生の方｜玉川大学
-<ul class="org-ul">
-<li><a href="https://www.tamagawa.jp/university/intra/blackboard/manual/manual_02-05.html">https://www.tamagawa.jp/university/intra/blackboard/manual/manual_02-05.html</a></li>
-</ul></li>
-
-<li>立教大学 Blackboard 学生用 マニュアル
-<ul class="org-ul">
-<li><a href="https://spirit.rikkyo.ac.jp/blackboard/SiteAssets/pdf/stu_report.pdf">https://spirit.rikkyo.ac.jp/blackboard/SiteAssets/pdf/stu_report.pdf</a></li>
-</ul></li>
-
-<li>富山大学 Blackboard 課題提出
-<ul class="org-ul">
-<li><a href="http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html">http://www.itc.u-toyama.ac.jp/bb/st_guide/problem.html</a></li>
-</ul></li>
-
-<li>課題の提出 | Blackboardヘルプ
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Submit_Assignments</a></li>
-</ul></li>
-
-<li>クラウドストレージからのファイルの追加 | Blackboardヘルプ
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Cloud_Storage">https://help.blackboard.com/ja-jp/Learn/Student/Assignments/Cloud_Storage</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org9a84d8b" class="outline-3">
-<h3 id="org9a84d8b"><span class="section-number-3">10.18</span> 音声付きPowerPointスライドの閲覧について</h3>
-<div class="outline-text-3" id="text-10-18">
-<ul class="org-ul">
-<li>質問：教材の音声付きのパワーポイントで、音声を聞けない
-<ul class="org-ul">
-<li>iPhone では、 PowerPoint の音声を聞くことはできないのか?</li>
-</ul></li>
-
-<li>iOS やアプリのバージョン、作成環境、素材ファイルの組み合わせが多岐にわたり、再現が出来ないので詳細不明
-<ul class="org-ul">
-<li>情報が不正確かも知れないので、下記は参考程度</li>
-<li>音声付き PowerPoint 資料で困っている人は、結構多いかも知れない</li>
-</ul></li>
-</ul>
-</div>
-
-
-<div id="outline-container-orgf51d47a" class="outline-4">
-<h4 id="orgf51d47a"><span class="section-number-4">10.18.1</span> 【Apple Keynote アプリ】</h4>
-<div class="outline-text-4" id="text-10-18-1">
-<ul class="org-ul">
-<li>Keynote はある程度の互換性があると思われるが、PowerPoint 書類の全ての機能を利用できない可能性はある</li>
-<li><a href="https://answers.microsoft.com/en-us/msoffice/forum/all/powerpoint-on-ipad-still-no-audio/b9a77c5d-a744-4829-b28e-6fd409b21ad6">Powerpoint on iPad: still no audio!!! - Microsoft Community</a> によると、Keynoteで問題ない、とも記載あり</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgec4010b" class="outline-4">
-<h4 id="orgec4010b"><span class="section-number-4">10.18.2</span> 【Microsoft PowerPoint アプリ】</h4>
-<div class="outline-text-4" id="text-10-18-2">
-<ul class="org-ul">
-<li>iPhone の Appストアの、無料でインストールできる Microsoft PowerPoint での音声</li>
-<li>PowerPoint、Office365 には文理学部の stu メールアドレスの Microsoft アカウントか、
-日本大学本部の NU-AppsG メールアドレスの Microsoft アカウントか、どちらかで利用すると、有料の機能も使えると思われる</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgcd3ac38" class="outline-4">
-<h4 id="orgcd3ac38"><span class="section-number-4">10.18.3</span> 【iOS版 PowerPoint は WAV 音声は再生不可？】</h4>
-<div class="outline-text-4" id="text-10-18-3">
-<ul class="org-ul">
-<li>Microsoftのサポート情報 <a href="https://support.microsoft.com/en-gb/office/can-i-add-audio-to-a-powerpoint-presentation-on-a-mobile-device-76a88d09-96b2-465c-a0ad-036a24940d40#:~:text=On%20iOS%3A%20No,are%20already%20in%20PowerPoint%20presentations.">Can I add audio to a PowerPoint presentation on a mobile device?</a>
-によると、 iOS の PowerPoint で音声挿入ファイルの作成は出来ないが、再生は出来る、と記載あり
-<ul class="org-ul">
-<li>However, you can play back screen recordings or audio that are already in PowerPoint presentations.</li>
-</ul></li>
-<li>iPhone の PowerPoint で音声再生は出来ると Microsoft が公式に述べているが、盲点がある</li>
-<li>iPhone の PowerPoint で再生できる音声フォーマットは、限られているという記載がある
-<ul class="org-ul">
-<li><a href="https://support.microsoft.com/en-us/office/video-and-audio-file-formats-supported-in-powerpoint-d8b12450-26db-4c7b-a5c1-593d3418fb59">Video and audio file formats supported in PowerPoint - Office Support</a></li>
-<li><a href="https://support.microsoft.com/en-us/office/file-formats-that-are-supported-in-powerpoint-252c6fa0-a4bc-41be-ac82-b77c9773f9dc">File formats that are supported in PowerPoint - Office Support</a></li>
-</ul></li>
-
-<li>見る限り、 Windows での音声標準フォーマットである WAV ファイルが、再生可能リストに含まれていない
-<ul class="org-ul">
-<li>教員が mp3 で音声を入れてくれれば問題はない</li>
-<li>しかし、教員が WAV 形式で入れると、 iPhone では音声再生が出来ない可能性がある
-<ul class="org-ul">
-<li>試してみた： Mac OS X の PowerPoint 書類に WAV 音声を読み込んで作成したところ、 iPad の PowerPoint で音声が確認できた</li>
-<li>Windows 版 PowerPoint で WAV 音声を読み込んで作成すると iPhone では音声再生ができない?&#x2026;など、複合要因が絡むのかも知れない</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org1f51126" class="outline-4">
-<h4 id="org1f51126"><span class="section-number-4">10.18.4</span> 【クラウドストレージとストリーミングの問題】</h4>
-<div class="outline-text-4" id="text-10-18-4">
-<ul class="org-ul">
-<li>注意点として、アップロードされた PowerPoint ファイルをダウンロードをせずに
-（OneDrive 等と書いてありますが）ストリーミング再生する場合も、音声が聞こえないことがある模様</li>
-<li><p>
-「<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&amp;item_id=198673&amp;file_id=1&amp;file_no=1">そして誰もいなくなる：学生に嫌がられる動画・音声資料 (IPSJ-SSS2019051.pdf)</a>
-</p>
-<pre class="example" id="org107d923">
-    「スマホでは通常ストリーミングで (音声が入っているファイルも音声が再生されない )
-    PowerPoint Online により開くことが標準的な操作であり,
-    たとえ無料でも BYOD でのスマホに標準では入っていなく,
-    全ての講義で使う訳ではない PowerPoint 公式アプリをこの講義のために入れてくれる学生は少ない.」
-</pre></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orga3ae045" class="outline-4">
-<h4 id="orga3ae045"><span class="section-number-4">10.18.5</span> 【困っている人は多そう】</h4>
-<div class="outline-text-4" id="text-10-18-5">
-<ul class="org-ul">
-<li>同じような症状で未解決
-<ul class="org-ul">
-<li><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12224034462">大学のオンライン授業で、音声付きパワーポイントをGoogle drive&#x2026; - Yahoo!知恵袋</a></li>
-</ul></li>
-<li>iPad で PowerPoint の WAV音声が聞こえるが、 Android では聞こえずに未解決
-<a href="https://support.google.com/googleplay/thread/24892579?hl=ja">AndroidのPowerPointでpptxファイル内のwavの音を鳴らす方法をご教授ください - Google Play Community</a></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgace5619" class="outline-4">
-<h4 id="orgace5619"><span class="section-number-4">10.18.6</span> 【その他もろもろ】</h4>
-<div class="outline-text-4" id="text-10-18-6">
-<ul class="org-ul">
-<li><a href="https://kokonats.com/ipad-power-point-technical-issue">https://kokonats.com/ipad-power-point-technical-issue</a> には、 iPad での PowerPoint 自体が音声ミュートされている、と書いてある
-イヤホンを差し込んで聞いてみて、とも書いてある
-<ul class="org-ul">
-<li>試してみた：  PowerPoint をインストールして使ってみた限りでは、特に、音声ミュートされなかった</li>
-</ul></li>
-<li>音声が埋め込まれているスライドをまず選んで、その音声スライドから再生ボタンを押してみると聞こえる、という情報もあり</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org6ad39c4" class="outline-3">
-<h3 id="org6ad39c4"><span class="section-number-3">10.19</span> 教材の音声ファイルが再生できない</h3>
-<div class="outline-text-3" id="text-10-19">
-<ul class="org-ul">
-<li>質問：教材の音声ファイルが再生できない</li>
-
-<li>PC / Mac で Google Chrome ブラウザの最新バージョンをインストールして、試す
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-<li>Web ブラウザを変更するだけで解決することも多い</li>
-</ul></li>
-
-<li>あるいは、 PC / Mac で Firefox ブラウザの最新バージョンをインストールし、試す
-<ul class="org-ul">
-<li><a href="https://www.mozilla.org/ja/firefox/new/">https://www.mozilla.org/ja/firefox/new/</a></li>
-</ul></li>
-
-<li>スマホを利用する場合も、多くの場合は対応可能と思われるが、動作保証はない</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org09d58b3" class="outline-3">
-<h3 id="org09d58b3"><span class="section-number-3">10.20</span> 授業の動画再生について</h3>
-<div class="outline-text-3" id="text-10-20">
-<ul class="org-ul">
-<li>質問：授業の動画再生が途切れる</li>
-
-<li>動画が重く、再生されない授業がある (旧 Blackboard)</li>
-<li>旧 Blackboard に教材が保存されている場合、サーバはどうしても混む</li>
-
-<li>時間をずらす
-<ul class="org-ul">
-<li>オンデマンド型授業の場合、混み合っている授業時間に視聴をしなくともよい</li>
-</ul></li>
-
-<li>再生画質を落とす
-<ul class="org-ul">
-<li>ストリーミング再生の場合、高解像度の 720p、中解像度 480p、低解像度 240p など、画質を落としてデータ転送量を減らせる場合がある</li>
-</ul></li>
-
-<li>DL して視聴する
-<ul class="org-ul">
-<li>混み合っていない時間帯でも、 ストリーミング再生（ダウンロードをしつつ同時並行で再生）は、 Blackboard では途切れるかもしれない</li>
-<li>おそらく確実なのは、「マウス右クリックで」動画をダウンロードし、後から視聴する</li>
-<li>自分のPCやスマホに保存が出来る場合は、早朝や食事時など、上手に時間をずらしてダウンロードしておくことが考えられる</li>
-<li>混み合っている時間帯では、ファイルのダウンロードに失敗したり、ダウンロードしてもファイルが破損していたりする</li>
-<li>なお、教材のダウンロードを教員が許可しない設定の場合、「マウス右クリック」による保存はできない</li>
-</ul></li>
-
-<li>学部側の対応状況
-<ul class="org-ul">
-<li>教員には、Blackboard のサーバダウンを防ぐため、 Googleドライブや Oneドライブなど、Blackboard のサーバ以外に教材をアップロードするよう依頼が出ている</li>
-<li>新しい Blackboard (クラウド運用) では、アクセスが集中すると、それに対応して CPU、メモリ、HDD が自動的にスケールアウトし、負荷分散</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgf5b3a3b" class="outline-3">
-<h3 id="orgf5b3a3b"><span class="section-number-3">10.21</span> 掲示板に間違って作ったスレッドを、削除したい</h3>
-<div class="outline-text-3" id="text-10-21">
-<ul class="org-ul">
-<li>質問：掲示板に間違って作ったスレッドを、削除したい</li>
-
-<li>学生ロールのアカウントでは、消せない
-<ul class="org-ul">
-<li>TAロールや教員ロールのアカウントでは消せる</li>
-<li>依頼をして消すか、放置して、TA以上の判断に委ねる</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org88c5a24" class="outline-3">
-<h3 id="org88c5a24"><span class="section-number-3">10.22</span> 登録していた授業が消えた</h3>
-<div class="outline-text-3" id="text-10-22">
-<ul class="org-ul">
-<li>質問：以前表示されていて、課題の提出も出来ていたコースから、自分の登録が解除されていた</li>
-
-<li>クラス指定や受講資格などが、間違っていないかどうか、確認</li>
-<li>あっている場合、教員の操作ミスが可能性として考えられる</li>
-<li>Blackboard のコースの登録がまだ出来る場合、登録をする</li>
-<li>授業の担当教員に、状況を説明し、連絡をとる
-<ul class="org-ul">
-<li>そのコースのツールからEメール送信など</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org9710517" class="outline-3">
-<h3 id="org9710517"><span class="section-number-3">10.23</span> 新しい Blackboard に入るためのメールアドレスが分からない</h3>
-<div class="outline-text-3" id="text-10-23">
-<ul class="org-ul">
-<li>質問：新しい Blackboard に入るためのメールアドレスが分からない
-<ul class="org-ul">
-<li>@stu.chs.nihon-u.ac.jp は作成した覚えがない</li>
-</ul></li>
-
-<li><a href="https://www.chs.nihon-u.ac.jp/faq4/">https://www.chs.nihon-u.ac.jp/faq4/</a></li>
-</ul>
-
-<pre class="example" id="org93447c4">
-【文理学部ホームページ】
-→「お問い合わせ」
-→「[Q&amp;A] 授業に関するよくある問い合わせ【教務課】」
-→「@stu.chs.nihon-u.ac.jp」メールアドレスが分かりません。【5/13】」
-（ https://www.chs.nihon-u.ac.jp/faq4/ ）
-
-①　Blackboard （ https://minerva3.educ.chs.nihon-u.ac.jp/ ）にログイン
-②　登録されているコースのいずれかをクリック
-③　左側のツールをクリックしEメールの送信をクリック
-④　対象者を選択
-⑤　メール作成画面に自身のメールアドレスが表示されているのを確認
-⑥　メールを送信せず，Blackboardを閉じる
-※stuのメールアドレスのパスワードはBlackboardにログインするパスワードと同じです
-</pre>
-</div>
-</div>
-
-<div id="outline-container-org83a1d52" class="outline-3">
-<h3 id="org83a1d52"><span class="section-number-3">10.24</span> 新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</h3>
-<div class="outline-text-3" id="text-10-24">
-<ul class="org-ul">
-<li>質問：新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</li>
-</ul>
-
-<pre class="example" id="orgf9a0733">
-選択されたユーザー アカウントは、テナント '日本大学文理学部' に存在しないため、
-そのテナントのアプリケーション
-'https://nuchs.blackboard.com/auth-saml/saml/SSO/entity-id/SAML_AD' にアクセスできません。
-最初に、アカウントをテナントの外部ユーザーとして追加してください。
-別のアカウントをお使いください。
-</pre>
-
-
-<ul class="org-ul">
-<li>新しい Blackboard へは文理学部の stu メールアドレスでサインインする
-<ul class="org-ul">
-<li>新しい Blackboard へ NU-AppsG のメールアドレスでサインインできないのは、正常な動作</li>
-</ul></li>
-
-<li>文理学部の学生は、二つのメールアドレスを持つ
-<ol class="org-ol">
-<li>文理学部の stu メールアドレス
-<ul class="org-ul">
-<li>Microsoft Office365 WebMail(Outlook Web App) ***@stu.chs.nihon-u.ac.jp</li>
-</ul></li>
-<li>本部の Google Gmail (NU-AppsG)
-<ul class="org-ul">
-<li>ch*****@g.nihon-u.ac.jp</li>
-</ul></li>
-</ol></li>
-
-<li>新しい Blackboard は <a href="https://nuchs.blackboard.com/">https://nuchs.blackboard.com/</a>
-<ul class="org-ul">
-<li>［サードパーティのアカウントでサインイン］をクリック、 ［日本大学文理学部］をクリック、 ***@stu.chs.nihon-u.ac.jp でログイン</li>
-<li>stu メールアドレスを知らないと、サインインできない</li>
-</ul></li>
-</ul>
-
-
-<ul class="org-ul">
-<li>ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
-<ul class="org-ul">
-<li>本部管轄</li>
-<li>文理学部で提供するサービス、履修登録や Blackboard とは全く関係がない</li>
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a> からメールチェック</li>
-</ul></li>
-
-<li>*番号@stu.chs.nihon-u.ac.jp は、Microsoft Office365 の Outlook でメールが使え、新しいクラウド版 Blackboard へのサインインに必要
-<ul class="org-ul">
-<li>文理学部管轄</li>
-<li>日本大学全学で提供するサービス、Office365 のインストール・ライセンスや NU就職ナビとは全く関係がない</li>
-<li>Blackboard 掲示板、あるいは他の授業のコースで、左上のメニューで「ツール」から「Eメールの送信」を選ぶと、メールが送れる
-<ul class="org-ul">
-<li>その際に、自分のメールアドレス ***@stu.chs.nihon-u.ac.jp も確認できる</li>
-</ul></li>
-<li>メールアドレスが分かれば、 <a href="https://mail.office365.com/">https://mail.office365.com/</a> へアクセスして、そのメールアドレス ***@stu.chs.nihon-u.ac.jp と、Blackboard などで使う同じパスワードで、メールの送受信が出来る。</li>
-</ul></li>
-</ul>
-
-
-<ul class="org-ul">
-<li><p>
-ややこしいことに、
-</p>
-<ol class="org-ol">
-<li>ch*****@g.nihon-u.ac.jp も、</li>
-<li>***@stu.chs.nihon-u.ac.jp も、</li>
-</ol>
-<p>
-両方とも Microsoft Office365 アカウント
-</p></li>
-
-<li>文理学部の遠隔授業において、 Blackboard での資料閲覧でエラー・見れない場合は、
-Microsoft Office365 アカウントを、日大大学本部 NU-AppsG ではなく、文理学部 stuメールアドレスに切り替える必要がある</li>
-
-<li>アカウント切り替えが上手くいかず困る場合、 <a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> にアクセスし、明示的に片方をログアウト、片方へログインとすれば、トラブルが減るかもしれない</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgf23cfbb" class="outline-3">
-<h3 id="orgf23cfbb"><span class="section-number-3">10.25</span> 掲示板にある、購読とはどのような機能か?</h3>
-<div class="outline-text-3" id="text-10-25">
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Interact/Discussions/Discussion_FAQs">https://help.blackboard.com/ja-jp/Learn/Student/Interact/Discussions/Discussion_FAQs</a></li>
-<li>質問：[購読]とはどういう意味か?</li>
-<li>教員が許可している場合は、新規投稿が発行されたときにEメールで警告を受け取ることができます。</li>
-<li>教員は、投稿がフォーラムレベルで行われたときに通知するか、スレッドレベルで行われたときに通知するかを選択します。</li>
-<li>フォーラムのEメール購読機能が有効な場合は、[購読]を選択します。</li>
-<li>これにより、フォーラムに新規投稿があったときにEメールが届きます。</li>
-<li>スレッドのEメール購読機能が有効な場合は、1つ以上のスレッドチェックボックスをオンにして、[スレッドアクション]メニューで[購読]を選択します。</li>
-<li>これにより、選択したスレッドに新規投稿があったときにEメールが届きます。</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7693e30" class="outline-3">
-<h3 id="org7693e30"><span class="section-number-3">10.26</span> 過去に登録したコースを消去したい</h3>
-<div class="outline-text-3" id="text-10-26">
-<ul class="org-ul">
-<li>Blackboard でのコース解除は、ユーザ側からでは無理</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd46b2e4" class="outline-3">
-<h3 id="orgd46b2e4"><span class="section-number-3">10.27</span> スマホの Blackboard アプリで、表示するコースを選ぶ</h3>
-<div class="outline-text-3" id="text-10-27">
-<ul class="org-ul">
-<li>画面上で選択できる</li>
-<li>注意：Blackboard のフル機能を利用するには PC/Mac で Google Chrome ブラウザが推奨環境</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgb797910" class="outline-3">
-<h3 id="orgb797910"><span class="section-number-3">10.28</span> Google Chrome ブラウザでの利用時に、表示リストを減らしたい</h3>
-<div class="outline-text-3" id="text-10-28">
-<ul class="org-ul">
-<li>「コースをリストで非表示にする」
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses">https://help.blackboard.com/ja-jp/Learn/Student/Getting_Started/Find_Your_Courses</a></li>
-</ul></li>
-
-<li>Blackboard にログイン後、画面右半分の「▼コース」がある</li>
-<li>「▼コース」の右端の、設定（歯車）アイコンをクリック</li>
-<li>「コースのパーソナライズ」画面になり、自分のコースが一覧表示される</li>
-<li>不要なコースのクリックを外し、最後に「送信」する</li>
-<li>表示を少なく出来るだけで、コースの登録解除ではないことに注意</li>
-<li>間違って登録してしまったコースから、学生自身による登録解除は無理なので、教員に依頼することになる</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-orgfc4a011" class="outline-2">
-<h2 id="orgfc4a011"><span class="section-number-2">11</span> Blackboard 掲示板</h2>
-<div class="outline-text-2" id="text-11">
-</div>
-<div id="outline-container-orgf609d58" class="outline-3">
-<h3 id="orgf609d58"><span class="section-number-3">11.1</span> Blackboard の掲示板で検索をしたい</h3>
-<div class="outline-text-3" id="text-11-1">
-<ul class="org-ul">
-<li>Blackboard 掲示板の画面右上で「検索」が出来る
-<ul class="org-ul">
-<li>例： Blackboard 掲示板の一番上の階層の画面まで戻って、「メール」で検索すると、色々なフォーラムやスレッドで関連情報がヒットする</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org0e10019" class="outline-2">
-<h2 id="org0e10019"><span class="section-number-2">12</span> 語学</h2>
-<div class="outline-text-2" id="text-12">
-</div>
-<div id="outline-container-orgf020813" class="outline-3">
-<h3 id="orgf020813"><span class="section-number-3">12.1</span> 英語の eラーニング (neo) にログインできない</h3>
-<div class="outline-text-3" id="text-12-1">
-<ul class="org-ul">
-<li>sアカウントでログイン
-<ul class="org-ul">
-<li>「sアカウント」 ( "s" + 学生証番号、 COMITS2 / CHIPS 等で利用) でログオン</li>
-</ul></li>
-
-<li>日本大学文理学部外国語教育センターへ問い合わせ
-<ul class="org-ul">
-<li><a href="https://www.chs.nihon-u.ac.jp/contact/flec_form/">日本大学文理学部 | 日本大学文理学部外国語教育センター（お問い合わせ）</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org896c3d1" class="outline-3">
-<h3 id="org896c3d1"><span class="section-number-3">12.2</span> sアカウントとは何か?</h3>
-<div class="outline-text-3" id="text-12-2">
-<ul class="org-ul">
-<li>質問： <b>sアカウント</b> とは、アルファベット一文字から始まる教育用 <b>stu メールアドレス</b> のことか?</li>
-
-<li>stu メールアドレスと微妙に違う！ パスワードは共通</li>
-<li>sアカウントと stu メールアドレスは連携しているが、同一ではないので注意</li>
-
-<li>「sアカウント」とは、 <b>s</b> + <b>学生証番号</b>
-<ul class="org-ul">
-<li>情報掲示板 COMITS2 / 履修登録 CHIPS / 英語 eラーニング(neo) / コンピュータセンター Windows ログオンに利用</li>
-</ul></li>
-
-<li>stu メールアドレス： 何らかのアルファベット1文字で始まる記号番号に@stu.chs.nihon-u.ac.jpがつくメールアドレス
-<ul class="org-ul">
-<li>Blackboard / Microsoft Office365 Web利用 / Zoom / Webex に利用</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org2a209ac" class="outline-3">
-<h3 id="org2a209ac"><span class="section-number-3">12.3</span> 英語のクラス分けが分からない</h3>
-<div class="outline-text-3" id="text-12-3">
-<ul class="org-ul">
-<li>「ガイダンス資料」参照
-<ul class="org-ul">
-<li>Blackboard のコースの教材</li>
-</ul></li>
-
-<li>文理学部の <a href="https://comits2.educ.chs.nihon-u.ac.jp/uniprove_pt/UnLoginAction">情報掲示板 COMITS2</a> に Sアカウントでログイン
-<ul class="org-ul">
-<li>→ 新入生ガイダンス
-<ul class="org-ul">
-<li>→ 社会
-<ul class="org-ul">
-<li>→ 英語１～２クラス名簿 (PDF)</li>
-<li>→ 英語３～４クラス名簿 (PDF)</li>
-</ul></li>
-</ul></li>
-</ul></li>
-
-<li>文理学部の <a href="https://comits2.educ.chs.nihon-u.ac.jp/uniprove_pt/UnLoginAction">情報掲示板 COMITS2</a> に Sアカウントでログイン
-<ul class="org-ul">
-<li>→ 在学生ガイダンス
-<ul class="org-ul">
-<li>→ 社会
-<ul class="org-ul">
-<li>→ 英語５～８クラス名簿 (PDF)</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org7aeca61" class="outline-2">
-<h2 id="org7aeca61"><span class="section-number-2">13</span> Microsoft Office365</h2>
-<div class="outline-text-2" id="text-13">
-</div>
-<div id="outline-container-org63ef711" class="outline-3">
-<h3 id="org63ef711"><span class="section-number-3">13.1</span> Microsoft Office365 のインストールが分からない</h3>
-<div class="outline-text-3" id="text-13-1">
-<ol class="org-ol">
-<li>PC/Mac に Microsoft Office 製品をダウンロードして利用したい
-<ul class="org-ul">
-<li>NU-AppsG ***@g.nihon-u.ac.jp (= 日本大学本部管轄の Office365 アカウント) で <a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> へログイン</li>
-<li>→ ◯ (解決のフィードバックあり) 無事にインストール成功</li>
-</ul></li>
-
-<li>文理学部 Blackboard 授業で、教員との連絡・ブラウザ上での Office365利用、共有教材の閲覧
-<ul class="org-ul">
-<li>***@stu.chs.nihon.ac.jp (= 文理学部管轄の Office365 アカウント) で <a href="https://mail.office365.com/">https://mail.office365.com/</a> へログイン</li>
-<li>マニュアル
-<ul class="org-ul">
-<li><a href="http://133.43.161.30/index.php?id=20140522144228&amp;n=21">http://133.43.161.30/index.php?id=20140522144228&amp;n=21</a></li>
-<li><a href="http://www.cc.chs.nihon-u.ac.jp/topics/files/1403749271_0732.pdf">http://www.cc.chs.nihon-u.ac.jp/topics/files/1403749271_0732.pdf</a></li>
-</ul></li>
-</ul></li>
-</ol>
-
-
-<p>
-文理学部の学生は、2種類の Office365 を利用可能
-</p>
-
-<ol class="org-ol">
-<li>日本大学 NU-AppsG メールアドレス名義の Office365 アカウント
-<ul class="org-ul">
-<li>PC にインストール可能な Office 製品ダウンロード版の利用権がふくまれている</li>
-<li>「Office のインストール」ボタン（ NU-AppsG 側のみライセンス有効）</li>
-</ul></li>
-
-<li>文理学部の stu メールアドレス名義の Office365 アカウント
-<ul class="org-ul">
-<li>PC にインストール可能な Office 製品ダウンロード版の利用権はふくまれていない</li>
-<li>メール、OneDrive 以外の機能については，サポート対象外</li>
-</ul></li>
-</ol>
-</div>
-</div>
-
-
-<div id="outline-container-org9cb69a7" class="outline-3">
-<h3 id="org9cb69a7"><span class="section-number-3">13.2</span> 文理学部では Microsoft Office365 は2種類</h3>
-<div class="outline-text-3" id="text-13-2">
-<p>
-文理学部の学生は、2種類の Office365 を利用可能
-</p>
-</div>
-
-<div id="outline-container-orgc4e96ca" class="outline-4">
-<h4 id="orgc4e96ca"><span class="section-number-4">13.2.1</span> 【文理学部】</h4>
-<div class="outline-text-4" id="text-13-2-1">
-<ul class="org-ul">
-<li>PCにインストールをせず、ブラウザ上の Office365 のみ利用</li>
-<li>文理学部では、 Blackboard との連携もあり、ブラウザ上で Office365 を利用するだけであれば、
-stu メールアドレス名義の Office365 アカウントを使うのが便利</li>
-
-<li><a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> に、stuメールアドレスで、ログイン</li>
-<li><a href="http://www.cc.chs.nihon-u.ac.jp/topics/files/1459308480_4412.pdf">http://www.cc.chs.nihon-u.ac.jp/topics/files/1459308480_4412.pdf</a>
-によると、ログインのアドレスは <a href="http://aka.ms/my_office">http://aka.ms/my_office</a></li>
-
-<li>ポータルサイトの下にある、
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-は、文理学部 stuメールアカウントの Office365 アカウントでないとログインできない
-<ul class="org-ul">
-<li>日本大学本部 NU-AppsG メールの Office365 アカウントで入ろうとするとエラーになる
-<ul class="org-ul">
-<li>文理学部 stu メールアドレス名義の Office365 アカウントのサービスでは Outlook が使えるが、
-日本大学本部 NU-AppsG メール名義の Office365 アカウントのサービスでは Outlook は使えない</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org641d6ba" class="outline-4">
-<h4 id="org641d6ba"><span class="section-number-4">13.2.2</span> 【日本大学本部】</h4>
-<div class="outline-text-4" id="text-13-2-2">
-<ul class="org-ul">
-<li>PC に Office365 をインストール出来ないと困る作業がある場合</li>
-<li>就職活動などで必要</li>
-<li>日本大学全学サービスの NU-AppsG の Office365 アカウントを有効にして、PC版Office をダウンロード・インストールしたい場合</li>
-<li><a href="https://mail.office365.com/">https://mail.office365.com/</a> に文理学部 stu メールアドレスでログインし、ログアウトをしておく</li>
-<li>日本大学本部 Office365 へのログインは <a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> へ NU-AppsG アドレスで入る
-<ul class="org-ul">
-<li><a href="https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&amp;hl=ja">シークレット ブラウジング - パソコン - Google Chrome ヘルプ</a> を利用する方法もあるかもしれない</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org4955351" class="outline-4">
-<h4 id="org4955351"><span class="section-number-4">13.2.3</span> 閲覧権限、アクセス制限でのエラーに注意</h4>
-<div class="outline-text-4" id="text-13-2-3">
-<ul class="org-ul">
-<li>アクセス制限のため閲覧できない場合、一度ログアウトして、もう片方のアカウントでログインし直す必要がある
-<ul class="org-ul">
-<li><a href="https://mail.office365.com/">https://mail.office365.com/</a> に文理学部 stu メールアドレスでログインし、ログアウト、 <a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> へ日本大学本部 NU-AppsG アドレスでログイン、閲覧できる</li>
-<li><a href="https://login.microsoftonline.com/">https://login.microsoftonline.com/</a> へ日本大学本部 NU-AppsG アドレスでログインし、ログアウトし、  <a href="https://mail.office365.com/">https://mail.office365.com/</a> に文理学部 stu アカウントでログイン、閲覧できる</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-orgce71429" class="outline-3">
-<h3 id="orgce71429"><span class="section-number-3">13.3</span> 文理学部では Microsoft Office365 と Blackboard のアカウントが連携</h3>
-<div class="outline-text-3" id="text-13-3">
-<ul class="org-ul">
-<li>手っ取り早くブラウザ上で文理学部の Office365 を使う場合、下記情報に集約される
-<ul class="org-ul">
-<li><a href="http://www.cc.chs.nihon-u.ac.jp/index.php?id=20170425145449&amp;n=21">http://www.cc.chs.nihon-u.ac.jp/index.php?id=20170425145449&amp;n=21</a></li>
-<li>ただし、自分の PC/Mac に Microsoft Office365 (本部ライセンス) のダウンロード・インストールは出来ない</li>
-</ul></li>
-</ul>
-
-<pre class="example" id="org8984d01">
-2017.04.25 文理学部提供のMicrosoft Office 365利用開始について
-文理学部提供のMicrosoft Office 365利用開始について
-文理学部では，平成２９年４月より，教育・研究環境向上を目的として，Microsoft Office 365のサービスを開始します。
-※日本大学全体のMicrosoft Office 365も継続してサービス中です。
-
-平成２９年４月現在，文理学部提供のMicrosoft Office 365については，以下の機能が利用可能となっております。
-・メール(outlook Web App)
-・OneDrive
-
-以下URLよりアクセスし，ご利用ください。
-https://mail.office365.com/
-
-＜注意事項＞
-・メール，OneDrive以外の機能については，サポート対象外となります。
-・サービス利用には，文理学部教育用アカウントおよびメールアドレス
-「xxx@stu.chs.nihon-u.ac.jp」
-が必要となります。
-</pre>
-</div>
-</div>
-</div>
-
-
-
-
-<div id="outline-container-org53ec64e" class="outline-2">
-<h2 id="org53ec64e"><span class="section-number-2">14</span> Webex</h2>
-<div class="outline-text-2" id="text-14">
-</div>
-<div id="outline-container-orgfe074d2" class="outline-3">
-<h3 id="orgfe074d2"><span class="section-number-3">14.1</span> Webex がわからない</h3>
-<div class="outline-text-3" id="text-14-1">
-<ul class="org-ul">
-<li>webex へのログインの際に必要となるメールアドレスは、授業用メールアドレスの stuメールアドレスを使えば良いか</li>
-
-<li>Webexは、文理学部の stuアカウントと連携</li>
-<li>Blackboard 遠隔授業サポート「教材」内
-<ul class="org-ul">
-<li>「学生用Webex利用マニュアル」ミーティングへのアクセス3/3に記載あり</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-org0487e66" class="outline-2">
-<h2 id="org0487e66"><span class="section-number-2">15</span> Zoom</h2>
-<div class="outline-text-2" id="text-15">
-</div>
-<div id="outline-container-orgf9c8757" class="outline-3">
-<h3 id="orgf9c8757"><span class="section-number-3">15.1</span> Surface GO (Microsoft Windows S) に Zoom をインストールできない</h3>
-<div class="outline-text-3" id="text-15-1">
-<ul class="org-ul">
-<li>Windows S に Zoom をインストールできない</li>
-
-<li>Zoom のインストールをせずに利用・参加する場合
-<ul class="org-ul">
-<li>Zoom のミーティング/ウェビナー参加に、ブラウザから参加</li>
-<li><a href="https://sites.google.com/zoom.us/zoomjapanfaq/faq/join-from-browser">Zoom Japan FAQ - ブラウザから参加</a></li>
-</ul></li>
-
-<li>Windows 10 S の場合は Sモードをオフにして、インストール
-<ul class="org-ul">
-<li><a href="https://answers.microsoft.com/ja-jp/surface/forum/all/surface-go-s%E3%83%A2%E3%83%BC%E3%83%89/e3a51b44-fcb4-463b-aaa6-a6b23c7e43b7">surface go Sモード　オフにできません - マイクロソフト コミュニティ</a></li>
-<li>→ ◯ (解決のフィードバックあり) 無事にインストール成功</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-
-<div id="outline-container-orgd65caba" class="outline-2">
-<h2 id="orgd65caba"><span class="section-number-2">16</span> Blackboard Collaborate Ultra</h2>
-<div class="outline-text-2" id="text-16">
-</div>
-<div id="outline-container-orgdc488ec" class="outline-3">
-<h3 id="orgdc488ec"><span class="section-number-3">16.1</span> Blackboard Collaborate Ultra について</h3>
-<div class="outline-text-3" id="text-16-1">
-<p>
-Blackboard Collaborate Ultra の授業に入ったが、授業が始まっていない
-</p>
-
-<ul class="org-ul">
-<li><a href="https://help.blackboard.com/ja-jp/Collaborate/Ultra/Participant/Join_Sessions/Blackboard_Learn">https://help.blackboard.com/ja-jp/Collaborate/Ultra/Participant/Join_Sessions/Blackboard_Learn</a></li>
-<li>授業のシラバスと、 Blackboard のその授業のコースの「連絡事項」を確認</li>
-<li>授業の Blackboard のコース内のメニューで「ツール」→「Eメールの送信」で、教員に質問をしてみる</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-orgc15eb18" class="outline-2">
-<h2 id="orgc15eb18"><span class="section-number-2">17</span> 授業情報</h2>
-<div class="outline-text-2" id="text-17">
-</div>
-<div id="outline-container-org7d91921" class="outline-3">
-<h3 id="org7d91921"><span class="section-number-3">17.1</span> Blackboard でクラウド移行が出来ていない科目</h3>
-<div class="outline-text-3" id="text-17-1">
-<ul class="org-ul">
-<li>2020年度前期： 新しい Blackboard へ移行した科目、従来の Blackboard を利用する科目
-<ul class="org-ul">
-<li>COMITS2 で情報を確認のこと</li>
-<li>当時、一部の科目は、移行ができなかった</li>
-<li>Blackboard Collaborate Ultra (BBCU) は、全コース移行完了後、クラウド版のみで利用可能
-<ul class="org-ul">
-<li>それまでは、クラウド版では BBCU は利用不可</li>
-<li>移行前のコースは学内版で BBCU を利用できるが、移行完了コースについては、移行期間中は Zoom, Webex を利用とのこと</li>
-<li>ただし、2020年度後期から Blackboard Collaborate Ultra (BBCU) は利用不可</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org00ccea8" class="outline-3">
-<h3 id="org00ccea8"><span class="section-number-3">17.2</span> 夏期集中講義の実施日時・形態が分からない</h3>
-<div class="outline-text-3" id="text-17-2">
-<ul class="org-ul">
-<li>夏期集中講義の実施日時・形態が分からない</li>
-<li>◯◯先生の◯◯が8月の集中授業で行われるとシラバスの方に書いてある。
-<ul class="org-ul">
-<li>Blackboard からの連絡がない</li>
-<li>Comits2 に掲示されている 「遠隔授業により集中授業に移行した科目・時間割」(PDF) に記載がない</li>
-<li>掲示板が設置されておらず、教員のメールアドレス等が分からないため連絡がとれない</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgb3102f3" class="outline-3">
-<h3 id="orgb3102f3"><span class="section-number-3">17.3</span> オンラインで行われる集中講義の情報を知りたい</h3>
-<div class="outline-text-3" id="text-17-3">
-<ul class="org-ul">
-<li>オンラインで行われる集中講義の情報を知りたい</li>
-<li>オンラインの集中講義の情報は、 Comits2 の PDF には記載されない
-<ul class="org-ul">
-<li>各教員が Blackboard で通知することが基本。</li>
-<li>社会学科事務室の判断で、遠隔授業実施により集中授業に移行した科目の中で、オンライン授業となる科目の一覧（社会学科）を公開</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org79332f1" class="outline-3">
-<h3 id="org79332f1"><span class="section-number-3">17.4</span> 夏期集中の授業の実施日程が分からない</h3>
-<div class="outline-text-3" id="text-17-4">
-<ul class="org-ul">
-<li>教員のメールアドレスが分からず、連絡がとれない</li>
-<li>集中講義日程・実施形態は、 COMITS2 で公表される
-<ul class="org-ul">
-<li>オンラインで実施される集中講義については、教員自身で Blackboard で通知する</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgd0250ac" class="outline-2">
-<h2 id="orgd0250ac"><span class="section-number-2">18</span> NU-AppsG / Google Classroom</h2>
-<div class="outline-text-2" id="text-18">
-</div>
-<div id="outline-container-orgbbe9b1c" class="outline-3">
-<h3 id="orgbbe9b1c"><span class="section-number-3">18.1</span> NU-AppsG とは何ですか?</h3>
-<div class="outline-text-3" id="text-18-1">
-<p>
-ch*****@g.nihon-u.ac.ip は、NU-AppsG という日本大学版 Gmail
-</p>
-<ul class="org-ul">
-<li>本部管轄</li>
-<li>文理学部の Blackboard とは全く関係がない</li>
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a>
-からメールの読み書きが出来ます。</li>
-</ul>
-
-
-
-<p>
-*番号@stu.chs.nihon-u.ac.jp は、Microsoft Office365 の Outlook でメールが使える
-</p>
-<ul class="org-ul">
-<li>新しいクラウド版 Blackboard へのログインで使われる</li>
-<li>文理学部管轄</li>
-<li>授業のコースで、左上のメニューで「ツール」から「Eメールの送信」を選ぶと、メールが送れる</li>
-<li>その際に、自分のメールアドレス ***@stu.chs.nihon-u.ac.jp も確認できる</li>
-<li>メールアドレスが分かれば、
-<a href="https://mail.office365.com/">https://mail.office365.com/</a>
-へアクセスし、そのメールアドレス ***@stu.chs.nihon-u.ac.jp と、Blackboard などで使う同じパスワードで、メールの送受信が出来る</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org5f35889" class="outline-3">
-<h3 id="org5f35889"><span class="section-number-3">18.2</span> Google Classroom にクラスコードを入力しても、エラーで参加できない</h3>
-<div class="outline-text-3" id="text-18-2">
-<ul class="org-ul">
-<li>日本大学の Google Classroom には、個人の Google アカウントでは参加できない</li>
-<li>日本大学の Google Classroom には、日本大学本部の Google アカウントである NU-AppsG にログインをして、参加する</li>
-<li>個人の Google アカウントをログアウトし、 NU-AppsG にログインし、 Google Classroom でクラスコードを入力すれば、クラスに参加できる</li>
-<li>うまくいかない場合、スマホではなく、 PC / Mac の Google Chrome ブラウザで作業を行うと成功する</li>
-<li>皮肉な話だが、スマホで作業を行うと、複数の要因が絡み (利用ブラウザ、デフォルトブラウザ、複数アプリ間のアカウントの不整合) 、難易度が高くなり、解決できない人が一定数存在する</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org7efa637" class="outline-3">
-<h3 id="org7efa637"><span class="section-number-3">18.3</span> NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</h3>
-<div class="outline-text-3" id="text-18-3">
-<ul class="org-ul">
-<li>NU-AppsG パスワード再発行
-<a href="https://forms.gle/gLPuHeyQfYGSfNvWA">https://forms.gle/gLPuHeyQfYGSfNvWA</a>
-へ記入、申請して下さい</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org644b3de" class="outline-3">
-<h3 id="org644b3de"><span class="section-number-3">18.4</span> Google Classroom の授業で、参加の方法が分からない</h3>
-<div class="outline-text-3" id="text-18-4">
-<ul class="org-ul">
-<li>まず、シラバスを確認</li>
-<li>シラバスにクラスコードが記載されている場合、 NU-AppsG アカウントを用いて参加</li>
-
-<li>まず、PC/Mac であれ iPhone/Android であれ、 Google Chrome ブラウザを使うのが何かと無難
-<ul class="org-ul">
-<li><a href="https://www.google.com/intl/ja_jp/chrome/">https://www.google.com/intl/ja_jp/chrome/</a></li>
-</ul></li>
-
-<li>日本大学の遠隔授業に用いられている Google Classroom は、
-日本大学の Google アカウント NU-AppsG ( ch****@g.nihon-u.ac.jp ) でログインしないと、参加できない
-<ul class="org-ul">
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a></li>
-</ul></li>
-
-<li>通常の個人の Google アカウント ( ***@gmail.com ) で、授業料を支払っている日本大学の授業に参加できては困る</li>
-<li>NU-AppsG アカウントは、5月8日以降に郵送で届いている筈</li>
-
-<li>NU-AppsG のパスワードを忘れた場合は、再発行手続きが必要</li>
-<li>他学部からの転部生も、学期中に過去の学部の NU-AppsG アカウントが使えなくなるため、文理学部への転部生です、と早めに再発行申請しておいて下さい
-<ul class="org-ul">
-<li><a href="https://forms.gle/gLPuHeyQfYGSfNvWA">https://forms.gle/gLPuHeyQfYGSfNvWA</a></li>
-</ul></li>
-
-<li>Google Classroom のクラスへ参加するためのクラスコードを入力しても、
-NU-AppsG でログインしているのに Google Classroom でうまくいかない！という場合は、
-複数の <b>アカウントの切り替えがうまくいっていない</b> 可能性がある</li>
-
-<li>全ての個人 Googleアカウントをログアウトしておき、
-NU-AppsG のみでログインし、Google Classroom のクラスへ参加して下さい</li>
-
-<li>コンピュータのトラブルは、複雑な要因が絡み、原因特定が難しい</li>
-
-<li>iPhone や Android スマホで Classroom アプリをインストールしてうまくいかない場合、
-一度削除・アンインストールをしておいて、
-Google Chromeブラウザから Google Classroom へログインすれば、成功する
-<ul class="org-ul">
-<li>スマホではトラブルが多い</li>
-<li>スマホでの利用ブラウザ、デフォルトブラウザ、Google ドライブなどの関連アプリの間で、ログインしているアカウントの整合性がとれない場合、
-情報の「閲覧権限がない」アクセスエラーが生じてしまう場合がある</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org7443aab" class="outline-3">
-<h3 id="org7443aab"><span class="section-number-3">18.5</span> Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</h3>
-<div class="outline-text-3" id="text-18-5">
-<ul class="org-ul">
-<li>Google Classroom で、他の学生に見られずに、教員へ連絡をとる方法の一つが、課題に対して書き込める「限定公開コメント」</li>
-
-<li>ただし、特定個人からの、特定の課題に対する「限定公開コメント」という形になる
-<ul class="org-ul">
-<li>つまり、受講者が多く、課題が多い場合、教員が気づくかどうかは、保証できない</li>
-</ul></li>
-
-<li>日本大学理工学部土木工学科 <a href="https://cve-cst.github.io/classroom#QA">https://cve-cst.github.io/classroom#QA</a>
-<ul class="org-ul">
-<li>全体へのコメント (資料や課題については、クラス全体（教員を含む）に発信できます。)
-個々の質問（課題から可能） (課題については、宛先を教員に限定した質問をすることができます。)</li>
-</ul></li>
-
-<li>課題がある場合は、その課題から、「限定公開コメント」を記入できる
-<ul class="org-ul">
-<li>課題がないと、一般公開される通常の「コメント」しかできない</li>
-</ul></li>
-
-<li>個人的な見解
-<ul class="org-ul">
-<li>大規模な授業で、「限定公開コメント」全てへの個別対応は、現実的に不可能</li>
-<li>他方で、一人が質問する時は、だいたい他の人もわからないで困っている</li>
-<li>そこで、 Googleフォームなどで質問を受けつけ、まとめて回答をすると、教員側も無駄な重複作業が減り、学生側も知りたい情報を共有できるのではないかと思う</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgcd96d32" class="outline-3">
-<h3 id="orgcd96d32"><span class="section-number-3">18.6</span> Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</h3>
-<div class="outline-text-3" id="text-18-6">
-<ul class="org-ul">
-<li>Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい
-<ul class="org-ul">
-<li>Google Classroom で「課題」がまだ状況で、他の学生に見られたくない連絡を教員にとりたい場合があるかもしれない</li>
-<li>その場合、なにか一文字「あ」など、一般公開される「コメント」をダミー作業で仮に行っておく</li>
-<li>その自分の「コメント」に対して、自分が「限定公開コメント」ができ、この記入内容は、他の人には見られない</li>
-</ul></li>
-
-<li>個人的な見解
-<ul class="org-ul">
-<li>大規模な授業で、「限定公開コメント」全てへの個別対応は、現実的に不可能</li>
-<li>他方で、一人が質問する時は、だいたい他の人もわからないで困っている</li>
-<li>そこで、 Googleフォームなどで質問を受けつけ、まとめて回答をすると、教員側も無駄な重複作業が減り、学生側も知りたい情報を共有できるのではないかと思う</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org8ec7b79" class="outline-3">
-<h3 id="org8ec7b79"><span class="section-number-3">18.7</span> Google Classroom で、教員にメールが送れない</h3>
-<div class="outline-text-3" id="text-18-7">
-<ul class="org-ul">
-<li>Google Classroom の使い方については、 YouTube でも情報が豊富でインフラとしての強みがある</li>
-<li>他方で、 NU-AppsG という日本大学の Google アカウントでは、カスタマイズがされている模様</li>
-<li>例えば、 Google Classroom のクラス所属の学生は、教員へ直接には NU-AppsG メールを送れない
-<ul class="org-ul">
-<li>通常の Google Classroom では「メンバー」タブの教員の箇所から、メールを送れる</li>
-<li>NU-AppsG での Google Classroom では、メールを送るアイコンがなく、学生から教員へメールを送れない</li>
-</ul></li>
-
-<li>ただし、連絡の手段は確保されている</li>
-<li>Google Classroom には「コメント機能」があるので、気楽に教員に質問ができる</li>
-<li>「コメント」は、クラスメンバー全員に一般公開されるため、抵抗を感じるかもしれない</li>
-<li>そこで使われるのが「限定コメント」</li>
-<li>「限定コメント」は、書き込んだ学生と教員だけに見え、他の学生には見えない</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orge541e3b" class="outline-3">
-<h3 id="orge541e3b"><span class="section-number-3">18.8</span> 学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</h3>
-<div class="outline-text-3" id="text-18-8">
-<ul class="org-ul">
-<li>教員が NU-Apps ドメイン、学生が NU-AppsG ドメインで、アカウントが別扱いということが影響</li>
-<li>現状の設定では、 Google の「チャット」は、 NU-Apps と NU-AppsG をまたいでコミュニケーションができない</li>
-<li>Google 「チャット」については、教員同士だけか、学生同士だけか、しかできないと思われる</li>
-<li>Google Meet のテキストチャットは、教員・学生混合で利用可能</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org04466f4" class="outline-3">
-<h3 id="org04466f4"><span class="section-number-3">18.9</span> Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</h3>
-<div class="outline-text-3" id="text-18-9">
-<ul class="org-ul">
-<li><a href="https://support.google.com/edu/classroom/answer/6315899?co=GENIE.Platform%3DDesktop&amp;hl=ja">生徒向けのトラブルシューティング - パソコン - Classroom ヘルプ</a></li>
-</ul>
-
-<p>
-日本大学版 Gmail である NU-AppsG の Google Classroom のクラスに参加するには、
-</p>
-
-<ol class="org-ol">
-<li>★ブラウザでプライベートな Gmail を、全てログアウト★ ← ココ大事！</li>
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">https://mail.google.com/a/g.nihon-u.ac.jp</a> にアクセス</li>
-<li>日本大学版 Gmail である NU-AppsG に ch****@g.nihon-u.ac.jp でログイン</li>
-<li><a href="https://classroom.google.com/?hl=ja">https://classroom.google.com/?hl=ja</a> にアクセス</li>
-<li>「私は生徒です」をクリック</li>
-<li>「＋」をクリック、参加する授業のクラスコードを入力、参加</li>
-</ol>
-
-<p>
-以上で Google Classroom のクラスに参加できる
-</p>
-</div>
-</div>
-
-<div id="outline-container-org0a69524" class="outline-3">
-<h3 id="org0a69524"><span class="section-number-3">18.10</span> NU-AppsG にログインできません → 事前にログインしておいて下さい</h3>
-<div class="outline-text-3" id="text-18-10">
-<ul class="org-ul">
-<li>NU-AppsG にログインできません → 事前にログインしておいて下さい</li>
-
-<li>NU-AppsG ログインで失敗した場合は、何度か再度ログインを実施して下さい
-<ul class="org-ul">
-<li>授業開始時は込み合うので、あらかじめ NU-AppsG ログインを行っておくこと</li>
-</ul></li>
-
-<li>一般に、 NU-AppsG に常時ログインしたままだと、何も不具合を感じないことが多い
-<ul class="org-ul">
-<li>Google Classroom も G Suite もほぼ一年中通常通りで使える</li>
-</ul></li>
-
-<li>しかし、一度ログアウトしてしまったり、別の端末でログインしようとすると、混雑時にログインが出来ないことがある</li>
-
-<li>NU-AppsG にログインするには、
-<a href="http://mail.g.nihon-u.ac.jp/">http://mail.g.nihon-u.ac.jp/</a>
-へアクセスするが、日大のサーバーにアクセスが集中すると "502 Bad Gateway" となり、ログインできないことがある</li>
-
-<li>ただ、日大の業務利用で必要なためか、本部が対応し、休日であってもすぐに復旧する</li>
-<li>Google 側の動作状況は G Suite Status Dashboard で分かる
-<ul class="org-ul">
-<li><a href="https://www.google.com/appsstatus#hl=ja">https://www.google.com/appsstatus#hl=ja</a></li>
-</ul></li>
-
-<li>グローバルな競争にさらされてきた Google Cloud のサービス不調は非常に稀で、そのたびに世界的にニュースで取り上げられるくらいレア
-<ul class="org-ul">
-<li><a href="https://cloudplatform-jp.googleblog.com/2016/10/pokemon-go-google-cloud.html">Google Cloud Platform Japan 公式ブログ: Pokémon GO の爆発的ヒットを支える Google Cloud</a></li>
-<li><a href="https://cloud.google.com/blog/ja/topics/customers/super-mario-run-google-app-engine">任天堂株式会社の導入事例：ビッグタイトル『Super Mario Run』のバックエンドを支えた Google App Engine | Google Cloud Blog</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orge112343" class="outline-3">
-<h3 id="orge112343"><span class="section-number-3">18.11</span> Google Classroom クラスへの登録を解除する</h3>
-<div class="outline-text-3" id="text-18-11">
-<ul class="org-ul">
-<li><a href="https://support.google.com/edu/classroom/answer/6069981?co=GENIE.Platform%3DDesktop&amp;hl=ja">クラスへの登録を解除する</a>
-<ul class="org-ul">
-<li>注意：クラスへの登録を解除すると、記録されていた一部の課題や、成績の記録が消えてしまう</li>
-<li>アーカイブ化されたクラスからは、抜け出せないが、普通に生きているクラスからは脱出可能</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org9af7937" class="outline-3">
-<h3 id="org9af7937"><span class="section-number-3">18.12</span> 研究生の NU-AppsG</h3>
-<div class="outline-text-3" id="text-18-12">
-<ul class="org-ul">
-<li>文理学部では、 NU-AppsG アカウントは研究生に未発行、必要に応じて申請</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org58c4dfe" class="outline-2">
-<h2 id="org58c4dfe"><span class="section-number-2">19</span> その他</h2>
-<div class="outline-text-2" id="text-19">
-</div>
-<div id="outline-container-org25d5ffa" class="outline-3">
-<h3 id="org25d5ffa"><span class="section-number-3">19.1</span> 教科書が届かない</h3>
-<div class="outline-text-3" id="text-19-1">
-<ul class="org-ul">
-<li>2020年5月5日に教科書を注文して1週間経過したが、届かない</li>
-<li>順次発送対応
-<ul class="org-ul">
-<li>地域・時期によっては、郵便局閉鎖情報を確認のこと</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org9dce465" class="outline-3">
-<h3 id="org9dce465"><span class="section-number-3">19.2</span> オンデマンド型の授業では、出席確認をするか</h3>
-<div class="outline-text-3" id="text-19-2">
-<ul class="org-ul">
-<li>オンデマンド型の授業では、出席確認をするか</li>
-
-<li>オンデマンド型の授業でも、規則正しい学習習慣の形成が望ましいとされている</li>
-
-<li>授業と担当教員による
-<ul class="org-ul">
-<li>オンデマンド型や課題研究では、教材を一定期間の間に学習し、課題提出をすることが多い</li>
-<li>時間割の授業時簡帯に課題を課し、出席を確認することもありうる</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="date">&#26085;&#20184;: \DTMnow</p>
-<p class="author">&#33879;&#32773;: 菅野 剛</p>
-<p class="date">Created: 2021-01-02 Sat 13:10</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
-</body>
-</html>
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>日本大学文理学部社会学科 Blackboard FAQ 非公式</TITLE>
+<META NAME="description" CONTENT="日本大学文理学部社会学科 Blackboard FAQ 非公式">
+<META NAME="keywords" CONTENT="blackboard-faq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="blackboard-faq.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
+<A ID="tex2html102"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A ID="tex2html103"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<P>
+<H1 class="CENTER">日本大学文理学部社会学科 Blackboard FAQ 非公式</H1>
+<P class="CENTER"><STRONG>菅野 剛</STRONG>
+</P>
+<HR>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html104"
+  HREF="node1.html">Contents</A>
+<LI><A ID="tex2html105"
+  HREF="node2.html">概要</A>
+<UL>
+<LI><A ID="tex2html106"
+  HREF="node3.html">概要</A>
+<LI><A ID="tex2html107"
+  HREF="node4.html">注意</A>
+<LI><A ID="tex2html108"
+  HREF="node5.html">キーワード指定でページ内検索</A>
+</UL>
+<BR>
+<LI><A ID="tex2html109"
+  HREF="node6.html">個別の授業</A>
+<LI><A ID="tex2html110"
+  HREF="node7.html">Blackboard へのログイン</A>
+<UL>
+<LI><A ID="tex2html111"
+  HREF="node8.html">ログイン</A>
+<UL>
+<LI><A ID="tex2html112"
+  HREF="node9.html">どの Webページからログインをするのでしょうか？</A>
+<LI><A ID="tex2html113"
+  HREF="node10.html">ログインのアカウントとパスワードがわかりせん</A>
+<LI><A ID="tex2html114"
+  HREF="node11.html">ログインすると、エラー表示</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html115"
+  HREF="node12.html">Blackboard のコース</A>
+<UL>
+<LI><A ID="tex2html116"
+  HREF="node13.html">コースの検索</A>
+<UL>
+<LI><A ID="tex2html117"
+  HREF="node14.html">履修する授業のコースを検索しても、見つからない</A>
+</UL>
+<LI><A ID="tex2html118"
+  HREF="node15.html">コースの登録</A>
+<UL>
+<LI><A ID="tex2html119"
+  HREF="node16.html">履修する授業のコースを見つけたが、登録できない</A>
+<LI><A ID="tex2html120"
+  HREF="node17.html">履修する授業のコースに登録したのですが、教材がなく、授業に参加できない</A>
+<LI><A ID="tex2html121"
+  HREF="node18.html">履修する授業のコースから、いつの間にか登録解除されていた</A>
+</UL>
+<LI><A ID="tex2html122"
+  HREF="node19.html">コースの表示</A>
+<UL>
+<LI><A ID="tex2html123"
+  HREF="node20.html">スマホで、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</A>
+<LI><A ID="tex2html124"
+  HREF="node21.html">PC / Mac で、過去のコースが多くて表示が見にくい / 不要なコースの表示を消したい</A>
+</UL>
+<LI><A ID="tex2html125"
+  HREF="node22.html">コースの利用</A>
+<UL>
+<LI><A ID="tex2html126"
+  HREF="node23.html">教材・資料は、いつまで利用できますか</A>
+</UL>
+<LI><A ID="tex2html127"
+  HREF="node24.html">コースの解除</A>
+<UL>
+<LI><A ID="tex2html128"
+  HREF="node25.html">履修をしない授業のコースに、間違って自己登録をしてしまった / コースから解除したい</A>
+<LI><A ID="tex2html129"
+  HREF="node26.html">過去に受講し、現在は不要である授業のコースを解除したい</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html130"
+  HREF="node27.html">Blackboard の課題</A>
+<UL>
+<LI><A ID="tex2html131"
+  HREF="node28.html">課題の提出</A>
+<UL>
+<LI><A ID="tex2html132"
+  HREF="node29.html">課題を提出するとエラー / 課題の提出ができない</A>
+<LI><A ID="tex2html133"
+  HREF="node30.html">今まで PC で課題の提出ができていたが、提出できなくなった</A>
+<LI><A ID="tex2html134"
+  HREF="node31.html">間違って課題を提出してしまった / 再提出をしたい</A>
+<LI><A ID="tex2html135"
+  HREF="node32.html">課題を提出したが、提出内容が空になってしまった</A>
+<LI><A ID="tex2html136"
+  HREF="node33.html">期限が過ぎた課題の提出をしたい</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html137"
+  HREF="node34.html">Blackboard の Eメール</A>
+<UL>
+<LI><A ID="tex2html138"
+  HREF="node35.html">Eメール</A>
+<UL>
+<LI><A ID="tex2html139"
+  HREF="node36.html">教員に Eメールで連絡をする方法がわからない</A>
+<LI><A ID="tex2html140"
+  HREF="node37.html">教員に連絡をとる方法を知りたい</A>
+<LI><A ID="tex2html141"
+  HREF="node38.html">教員に Eメールを送信する方法がわからない</A>
+<LI><A ID="tex2html142"
+  HREF="node39.html">教員に Eメールを送ったが、返事が来ない</A>
+<LI><A ID="tex2html143"
+  HREF="node40.html">Eメールの送受信すると、文字化けをしてしまい、全く読めない</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html144"
+  HREF="node41.html">Blackboard の掲示板</A>
+<UL>
+<LI><A ID="tex2html145"
+  HREF="node42.html">掲示板の編集</A>
+<UL>
+<LI><A ID="tex2html146"
+  HREF="node43.html">掲示板で、匿名で記入するつもりが、誤って記名で記入をしてしまった / 匿名に修正をしたい</A>
+<LI><A ID="tex2html147"
+  HREF="node44.html">掲示板で、記入したタイトルや文章を削除・編集したい</A>
+<LI><A ID="tex2html148"
+  HREF="node45.html">ログインの方法がわからない</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html149"
+  HREF="node46.html">Blackboard の教材</A>
+<UL>
+<LI><A ID="tex2html150"
+  HREF="node47.html">教材の閲覧・視聴・ダウンロード</A>
+<UL>
+<LI><A ID="tex2html151"
+  HREF="node48.html">教材の動画が視聴できない</A>
+<LI><A ID="tex2html152"
+  HREF="node49.html">音声付き PowerPoint の音声が再生できない</A>
+<LI><A ID="tex2html153"
+  HREF="node50.html">教材の資料がダウンロードできない</A>
+<LI><A ID="tex2html154"
+  HREF="node51.html">教材の資料がダウンロードできていたのに、できなくなった</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html155"
+  HREF="node52.html">その他</A>
+<UL>
+<LI><A ID="tex2html156"
+  HREF="node53.html">個別の授業への問い合わせ、対応の要請</A>
+<UL>
+<LI><A ID="tex2html157"
+  HREF="node54.html">◯◯ 先生の △△ という授業が、×× なのですが</A>
+<LI><A ID="tex2html158"
+  HREF="node55.html">◯◯ 先生の △△ という授業が、×× なのですが</A>
+<LI><A ID="tex2html159"
+  HREF="node56.html">その他</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html160"
+  HREF="node57.html">メールとアカウント</A>
+<UL>
+<LI><A ID="tex2html161"
+  HREF="node58.html">stu メールアドレスがわからない</A>
+<LI><A ID="tex2html162"
+  HREF="node59.html">文理学部のメールがわからない</A>
+<LI><A ID="tex2html163"
+  HREF="node60.html">メールで分からないことが多い</A>
+<LI><A ID="tex2html164"
+  HREF="node61.html">NUメール / NU-MailG / NU-AppsG / Google Classrom / Microsoft Office365 インストール利用 / 図書館の電子資料閲覧 / NU就職ナビ</A>
+<LI><A ID="tex2html165"
+  HREF="node62.html">stu メール / Microsoft Office365 Web利用 / Zoom / Webex</A>
+<LI><A ID="tex2html166"
+  HREF="node63.html">Microsoft Office365 利用時のアカウント切り替え (NU-AppsG と stuメール)</A>
+<LI><A ID="tex2html167"
+  HREF="node64.html">tアドレス</A>
+<LI><A ID="tex2html168"
+  HREF="node65.html">教育 Web Mail (Active!Mail) とは何か?</A>
+<LI><A ID="tex2html169"
+  HREF="node66.html">教員に送信したEメールの返信をチェックしたい</A>
+<LI><A ID="tex2html170"
+  HREF="node67.html">ツールの eメールに質問を送った場合、返信をどこで確認するのか?</A>
+<LI><A ID="tex2html171"
+  HREF="node68.html">文理学部メール ***@stu.chs.nihon-u.ac.jp の送受信で文字化けしてしまう</A>
+</UL>
+<BR>
+<LI><A ID="tex2html172"
+  HREF="node69.html">Blackboard</A>
+<UL>
+<LI><A ID="tex2html173"
+  HREF="node70.html">課題についての質問を Bb ツールのメール機能で送信したが返事がない</A>
+<LI><A ID="tex2html174"
+  HREF="node71.html">PC からファイル添付することができない</A>
+<LI><A ID="tex2html175"
+  HREF="node72.html">課題が出されているが、提出先がない</A>
+<LI><A ID="tex2html176"
+  HREF="node73.html">課題提出で、「新規に開始」という機能が表示されず、課題の提出ができない</A>
+<LI><A ID="tex2html177"
+  HREF="node74.html">課題の提出をやり直したい / 再提出をしたい</A>
+<LI><A ID="tex2html178"
+  HREF="node75.html">課題提出で失敗</A>
+<LI><A ID="tex2html179"
+  HREF="node76.html">課題提出ができなくなった</A>
+<LI><A ID="tex2html180"
+  HREF="node77.html">教材の添付ファイルがダウンロードできない</A>
+<LI><A ID="tex2html181"
+  HREF="node78.html">課題提出でのエラー</A>
+<LI><A ID="tex2html182"
+  HREF="node79.html">スマートフォンで課題を提出しても、反映されない</A>
+<LI><A ID="tex2html183"
+  HREF="node80.html">期限切れの課題を提出したい</A>
+<LI><A ID="tex2html184"
+  HREF="node81.html">Blackboard で提出した課題の内容の確認をしたい</A>
+<LI><A ID="tex2html185"
+  HREF="node82.html">長文を記入して送信を行うと、作業内容が全て消えた</A>
+<LI><A ID="tex2html186"
+  HREF="node83.html">「この Microsoft Edge は推奨されません」</A>
+<LI><A ID="tex2html187"
+  HREF="node84.html">Microsoft Word 提出の際の行間の余白について</A>
+<LI><A ID="tex2html188"
+  HREF="node85.html">PC で授業の動画を見ることができなくなった</A>
+<LI><A ID="tex2html189"
+  HREF="node86.html">Word での提出の仕方がわからない</A>
+<LI><A ID="tex2html190"
+  HREF="node87.html">音声付きPowerPointスライドの閲覧について</A>
+<UL>
+<LI><A ID="tex2html191"
+  HREF="node88.html">【Apple Keynote アプリ】</A>
+<LI><A ID="tex2html192"
+  HREF="node89.html">【Microsoft PowerPoint アプリ】</A>
+<LI><A ID="tex2html193"
+  HREF="node90.html">【iOS版 PowerPoint は WAV 音声は再生不可？】</A>
+<LI><A ID="tex2html194"
+  HREF="node91.html">【クラウドストレージとストリーミングの問題】</A>
+<LI><A ID="tex2html195"
+  HREF="node92.html">【困っている人は多そう】</A>
+<LI><A ID="tex2html196"
+  HREF="node93.html">【その他もろもろ】</A>
+</UL>
+<LI><A ID="tex2html197"
+  HREF="node94.html">教材の音声ファイルが再生できない</A>
+<LI><A ID="tex2html198"
+  HREF="node95.html">授業の動画再生について</A>
+<LI><A ID="tex2html199"
+  HREF="node96.html">掲示板に間違って作ったスレッドを、削除したい</A>
+<LI><A ID="tex2html200"
+  HREF="node97.html">登録していた授業が消えた</A>
+<LI><A ID="tex2html201"
+  HREF="node98.html">新しい Blackboard に入るためのメールアドレスが分からない</A>
+<LI><A ID="tex2html202"
+  HREF="node99.html">新しい Blackboard へ NU-AppsG のメールアドレスでサインインできない</A>
+<LI><A ID="tex2html203"
+  HREF="node100.html">掲示板にある、購読とはどのような機能か?</A>
+<LI><A ID="tex2html204"
+  HREF="node101.html">過去に登録したコースを消去したい</A>
+<LI><A ID="tex2html205"
+  HREF="node102.html">スマホの Blackboard アプリで、表示するコースを選ぶ</A>
+<LI><A ID="tex2html206"
+  HREF="node103.html">Google Chrome ブラウザでの利用時に、表示リストを減らしたい</A>
+</UL>
+<BR>
+<LI><A ID="tex2html207"
+  HREF="node104.html">Blackboard 掲示板</A>
+<UL>
+<LI><A ID="tex2html208"
+  HREF="node105.html">Blackboard の掲示板で検索をしたい</A>
+</UL>
+<BR>
+<LI><A ID="tex2html209"
+  HREF="node106.html">語学</A>
+<UL>
+<LI><A ID="tex2html210"
+  HREF="node107.html">英語の eラーニング (neo) にログインできない</A>
+<LI><A ID="tex2html211"
+  HREF="node108.html">sアカウントとは何か?</A>
+<LI><A ID="tex2html212"
+  HREF="node109.html">英語のクラス分けが分からない</A>
+</UL>
+<BR>
+<LI><A ID="tex2html213"
+  HREF="node110.html">Microsoft Office365</A>
+<UL>
+<LI><A ID="tex2html214"
+  HREF="node111.html">Microsoft Office365 のインストールが分からない</A>
+<LI><A ID="tex2html215"
+  HREF="node112.html">文理学部では Microsoft Office365 は2種類</A>
+<UL>
+<LI><A ID="tex2html216"
+  HREF="node113.html">【文理学部】</A>
+<LI><A ID="tex2html217"
+  HREF="node114.html">【日本大学本部】</A>
+<LI><A ID="tex2html218"
+  HREF="node115.html">閲覧権限、アクセス制限でのエラーに注意</A>
+</UL>
+<LI><A ID="tex2html219"
+  HREF="node116.html">文理学部では Microsoft Office365 と Blackboard のアカウントが連携</A>
+</UL>
+<BR>
+<LI><A ID="tex2html220"
+  HREF="node117.html">Webex</A>
+<UL>
+<LI><A ID="tex2html221"
+  HREF="node118.html">Webex がわからない</A>
+<LI><A ID="tex2html222"
+  HREF="node119.html">(教職員) Webex でミーティングを開始する</A>
+</UL>
+<BR>
+<LI><A ID="tex2html223"
+  HREF="node120.html">Zoom</A>
+<UL>
+<LI><A ID="tex2html224"
+  HREF="node121.html">Zoom 利用での注意</A>
+<LI><A ID="tex2html225"
+  HREF="node122.html">Surface GO (Microsoft Windows S) に Zoom をインストールできない</A>
+</UL>
+<BR>
+<LI><A ID="tex2html226"
+  HREF="node123.html">Blackboard Collaborate Ultra</A>
+<UL>
+<LI><A ID="tex2html227"
+  HREF="node124.html">Blackboard Collaborate Ultra について</A>
+</UL>
+<BR>
+<LI><A ID="tex2html228"
+  HREF="node125.html">授業情報</A>
+<UL>
+<LI><A ID="tex2html229"
+  HREF="node126.html">Blackboard でクラウド移行が出来ていない科目</A>
+<LI><A ID="tex2html230"
+  HREF="node127.html">夏期集中講義の実施日時・形態が分からない</A>
+<LI><A ID="tex2html231"
+  HREF="node128.html">オンラインで行われる集中講義の情報を知りたい</A>
+<LI><A ID="tex2html232"
+  HREF="node129.html">夏期集中の授業の実施日程が分からない</A>
+</UL>
+<BR>
+<LI><A ID="tex2html233"
+  HREF="node130.html">NU-AppsG / Google Classroom</A>
+<UL>
+<LI><A ID="tex2html234"
+  HREF="node131.html">NU-AppsG とは何ですか?</A>
+<LI><A ID="tex2html235"
+  HREF="node132.html">Google Classroom にクラスコードを入力しても、エラーで参加できない</A>
+<LI><A ID="tex2html236"
+  HREF="node133.html">NU-AppsG のパスワードを忘れ、 Google Classroom にログインできない</A>
+<LI><A ID="tex2html237"
+  HREF="node134.html">Google Classroom の授業で、参加の方法が分からない</A>
+<LI><A ID="tex2html238"
+  HREF="node135.html">Google Classroom で、他の学生に見られずに、教員へ「コメント」を記入したい</A>
+<LI><A ID="tex2html239"
+  HREF="node136.html">Google Classroom で「課題」がないが、教員へ「限定公開コメント」を記入したい</A>
+<LI><A ID="tex2html240"
+  HREF="node137.html">Google Classroom で、教員にメールが送れない</A>
+<LI><A ID="tex2html241"
+  HREF="node138.html">学生の NU-AppsG と教員の NU-Apps で、 Google チャットが出来ない</A>
+<LI><A ID="tex2html242"
+  HREF="node139.html">Google Classroom のクラスコード入力で、「アクセス権限がありません」エラー</A>
+<LI><A ID="tex2html243"
+  HREF="node140.html">NU-AppsG にログインできません → 事前にログインしておいて下さい</A>
+<LI><A ID="tex2html244"
+  HREF="node141.html">Google Classroom クラスへの登録を解除する</A>
+<LI><A ID="tex2html245"
+  HREF="node142.html">研究生の NU-AppsG</A>
+</UL>
+<BR>
+<LI><A ID="tex2html246"
+  HREF="node143.html">その他</A>
+<UL>
+<LI><A ID="tex2html247"
+  HREF="node144.html">教科書が届かない</A>
+<LI><A ID="tex2html248"
+  HREF="node145.html">オンデマンド型の授業では、出席確認をするか</A>
+</UL>
+<BR>
+<LI><A ID="tex2html249"
+  HREF="node146.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>
