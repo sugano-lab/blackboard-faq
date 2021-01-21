@@ -2,6 +2,10 @@
 # Associate internals original text with physical files.
 
 
+$key = q/fig:org23b5a81/;
+$ref_files{$key} = "$dir".q|node1.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:org97dd0bf/;
 $ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
