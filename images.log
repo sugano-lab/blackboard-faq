@@ -603,8 +603,7 @@ ormation.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count300
 \l__pdf_internal_box=\box78
-)
-No file images.aux.
+) (./images.aux)
 \openout1 = `images.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
@@ -655,6 +654,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 142.
 LaTeX Info: Redefining \pageref on input line 142.
 LaTeX Info: Redefining \nameref on input line 142.
+(./images.out) (./images.out)
 \@outlinefile=\write7
 \openout7 = `images.out'.
 
@@ -730,7 +730,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 [label={sec:org0cbcfad},fragile]{概
+l.169 [label={sec:orgc30a9e5},fragile]{概
                                           要}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -743,7 +743,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 [label={sec:org0cbcfad},fragile]{概要
+l.169 [label={sec:orgc30a9e5},fragile]{概要
                                              }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -16174,7 +16174,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 ...rame}[label={sec:org581a33c},fragile]{個
+l.255 ...rame}[label={sec:orgb5859c3},fragile]{個
                                                   別の授業}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -16187,7 +16187,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 ...e}[label={sec:org581a33c},fragile]{個別
+l.255 ...e}[label={sec:orgb5859c3},fragile]{個別
                                                   の授業}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -16200,7 +16200,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 ...label={sec:org581a33c},fragile]{個別の
+l.255 ...label={sec:orgb5859c3},fragile]{個別の
                                                   授業}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -16213,7 +16213,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 ...el={sec:org581a33c},fragile]{個別の授
+l.255 ...el={sec:orgb5859c3},fragile]{個別の授
                                                   業}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -16226,7 +16226,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 ...{sec:org581a33c},fragile]{個別の授業
+l.255 ...{sec:orgb5859c3},fragile]{個別の授業
                                                   }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19612,7 +19612,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...rame}[label={sec:org3e5f598},fragile]{新
+l.282 ...rame}[label={sec:org810c794},fragile]{新
                                                   型コロナ感染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19625,7 +19625,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...e}[label={sec:org3e5f598},fragile]{新型
+l.282 ...e}[label={sec:org810c794},fragile]{新型
                                                   コロナ感染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19638,7 +19638,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...label={sec:org3e5f598},fragile]{新型コ
+l.282 ...label={sec:org810c794},fragile]{新型コ
                                                   ロナ感染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19651,7 +19651,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...el={sec:org3e5f598},fragile]{新型コロ
+l.282 ...el={sec:org810c794},fragile]{新型コロ
                                                   ナ感染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19664,7 +19664,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...{sec:org3e5f598},fragile]{新型コロナ
+l.282 ...{sec:org810c794},fragile]{新型コロナ
                                                   感染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19677,7 +19677,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...c:org3e5f598},fragile]{新型コロナ感
+l.282 ...c:org810c794},fragile]{新型コロナ感
                                                   染症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19690,7 +19690,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...rg3e5f598},fragile]{新型コロナ感染
+l.282 ...rg810c794},fragile]{新型コロナ感染
                                                   症}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -19703,7 +19703,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 ...e5f598},fragile]{新型コロナ感染症
+l.282 ...10c794},fragile]{新型コロナ感染症
                                                   }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24687,7 +24687,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...={sec:orgbc11a07},fragile]{Blackboard へ
+l.318 ...={sec:org92b203c},fragile]{Blackboard へ
                                                   のログイン}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24700,7 +24700,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...ec:orgbc11a07},fragile]{Blackboard への
+l.318 ...ec:org92b203c},fragile]{Blackboard への
                                                   ログイン}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24713,7 +24713,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...orgbc11a07},fragile]{Blackboard へのロ
+l.318 ...org92b203c},fragile]{Blackboard へのロ
                                                   グイン}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24726,7 +24726,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...bc11a07},fragile]{Blackboard へのログ
+l.318 ...92b203c},fragile]{Blackboard へのログ
                                                   イン}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24739,7 +24739,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...1a07},fragile]{Blackboard へのログイ
+l.318 ...203c},fragile]{Blackboard へのログイ
                                                   ン}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -24752,7 +24752,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 ...7},fragile]{Blackboard へのログイン
+l.318 ...c},fragile]{Blackboard へのログイン
                                                   }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -28686,7 +28686,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...={sec:org4d8bc57},fragile]{Blackboard の
+l.358 ...={sec:orgda0915a},fragile]{Blackboard の
                                                   コース}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -28699,7 +28699,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...ec:org4d8bc57},fragile]{Blackboard のコ
+l.358 ...ec:orgda0915a},fragile]{Blackboard のコ
                                                   ース}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -28712,7 +28712,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...org4d8bc57},fragile]{Blackboard のコー
+l.358 ...orgda0915a},fragile]{Blackboard のコー
                                                   ス}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -28725,7 +28725,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358 ...4d8bc57},fragile]{Blackboard のコース
+l.358 ...da0915a},fragile]{Blackboard のコース
                                                   }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -48007,7 +48007,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.457 ...={sec:org02882cd},fragile]{Blackboard の
+l.457 ...={sec:org6cf18dd},fragile]{Blackboard の
                                                   課題}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -48020,7 +48020,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.457 ...ec:org02882cd},fragile]{Blackboard の課
+l.457 ...ec:org6cf18dd},fragile]{Blackboard の課
                                                   題}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -48033,7 +48033,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.457 ...org02882cd},fragile]{Blackboard の課題
+l.457 ...org6cf18dd},fragile]{Blackboard の課題
                                                   }
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -61358,9 +61358,9 @@ l.525 ...��は期限遅れのマークが付きま
                                                   す。
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 13149 strings out of 480608
- 226332 string characters out of 5905556
- 553112 words of memory out of 5000000
+ 13155 strings out of 480608
+ 226398 string characters out of 5905556
+ 553216 words of memory out of 5000000
  28791 multiletter control sequences out of 15000+600000
  534954 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
